@@ -1,0 +1,771 @@
+@import "compass/css3";
+
+/* === Импорт ============================================================*/
+
+/* фильтры */
+@import "controls/controlPopupFilterBrowse";
+
+$colorGraySelect : #ccc;
+$colorGraySelected : #4c4c4c;
+$colorBlackText : #333;
+$colorGray : #333;
+$colorHeader : #4c4c4c;
+$colorActiveItem :  #777;
+
+
+header {
+  position: fixed;
+  background-color: $colorHeader;
+  width: 100%;
+  top: 0;
+  height: 50px;
+  z-index: 101;
+
+  * {
+    @include box-sizing(border-box);
+    //-webkit-transition-delay: .1s; /* Safari */
+    //transition-delay: .1s;
+    -webkit-transition: right .6s, max-height .6s, color .6s; /* For Safari 3.1 to 6.0 */
+    transition: right .6s, max-height .6s, color .6s;
+  }
+
+  /* Иконки */
+
+  
+  .expo-icon{
+    background-image: url('/img/icons/menu/expo-black.png');
+  }
+
+  .discover-icon{
+    background-image: url('/img/icons/menu/discover-black.png');
+  }
+
+  .forum-icon{
+    background-image: url('/img/icons/menu/forum-black.png');
+  }
+
+  .contests-icon{
+    background-image: url('/img/icons/menu/contests-black.png');
+  }
+
+  .photos-icon{
+    background-image: url('/img/header/ico-photos.png');
+  }
+
+  .stories-icon{
+    background-image: url('/img/header/ico-stories.png');
+  }
+
+  .live-icon{
+    background-image: url('/img/header/ico-live.png');
+  }
+
+  .personal-icon{
+    background-image: url('/img/header/personal.png');
+  }
+
+  .chat-icon{
+    background-image: url('/img/header/chat.png');
+  }
+
+  .settings-icon{
+    background-image: url('/img/header/settings.png');
+  }
+
+  .logout-icon{
+    background-image: url('/img/header/logout.png');
+  }
+
+  .current-icon{
+    background-image: url('/img/header/current.png');
+  }
+
+  .completed-icon{
+    background-image: url('/img/header/completed.png');
+  }
+
+  .archive-icon{
+    background-image: url('/img/header/archive.png');
+  }
+
+  .active, .link:hover, .item:hover .link{
+    &.expo-icon{
+      background-image: url('/img/icons/menu/expo-white.png');
+    }
+
+    &.discover-icon{
+      background-image: url('/img/icons/menu/discover-white.png');
+    }
+
+    &.forum-icon{
+      background-image: url('/img/icons/menu/forum-white.png');
+    }
+
+    &.contests-icon{
+      background-image: url('/img/icons/menu/contests-white.png');
+    }
+  }
+
+  /* Обёртка для шапки */
+  .wrapper-header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  
+  /* Логотип сайта */
+  .logo {
+    display: block;
+    height: 100%;
+    width: 190px;
+    background-size: contain;
+    background-image: url(/img/header/logo-big-size.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+    z-index: 1000;
+  }
+
+
+  /* Главное навигационное меню */
+  .navigation {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    -webkit-transition: none; /* For Safari 3.1 to 6.0 */
+    transition: none;
+
+    .auth-menu{
+      float: right;
+      top: -50px;
+      position: relative;
+      cursor: pointer;
+
+      &:hover{
+        .list-items_auth-menu{
+          max-height: 1000px;
+        }
+      }
+    }
+
+    .wrapper-list{
+      border: 1px solid $colorGraySelect;
+      border-top: none;
+    }
+
+    .list-items {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      font-size: 0;
+      margin: 0
+    }
+    ul.list-items {
+      margin-bottom: 0 !important;
+    }
+
+    .item {
+      height: 100%;
+      display: inline-block;
+      list-style: none;
+      width: 120px;
+      margin: 0 5px;
+      cursor: pointer;
+      position: relative;
+
+      & > .link {
+        background-repeat: no-repeat;
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+        display: inline-block;
+        line-height: 50px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        text-shadow: 1px 1px 1px black;
+        width: 100%;
+
+        &.active{
+          color: white !important;
+          background-color: $colorGray;
+        }
+      }
+
+      &:hover, &.open{
+        background-color: $colorGray;
+        .sub-list-items{
+          max-height: 1000px;
+        }
+      }
+
+
+      .sub-list-items{
+        top: 100%;
+        border-top-color: $colorGray;
+        max-height: 0;
+        overflow: hidden;
+        width: 100%;
+        list-style: none;
+        display: block;
+        position: absolute;
+
+        &:hover{
+          max-height: 1000px;
+        }
+
+        .sub-item{
+          background: white;
+
+          .link {
+            font-family: 'Roboto', sans-serif;
+            display: block;
+            line-height: 40px;
+            text-decoration: none;
+            color: $colorBlackText;
+            font-weight: 400;
+            width: 100%;
+            text-transform: uppercase;
+            font-size: 16px;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            text-align: center;
+            background-position: 50px 50%;
+            height: 40px;
+
+            &:hover, &.active{
+              background-color: $colorGraySelect;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+
+    .list-items_auth-menu{
+      max-height: 0px;
+      position: absolute;
+      top: 50px;
+      cursor: pointer;
+      height: auto;
+      width: 100%;
+      text-align: center;
+
+      .item{
+        margin: 0;
+        display: block;
+        width: 100%;
+        background: white;
+
+        .link{
+          color: $colorBlackText;
+          text-shadow: none;
+          font-size: 18px;
+          line-height: 40px;
+        }
+
+        // т.к. это единый блок!
+        &:hover{
+          background-color: $colorGraySelect;
+        }
+
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+
+      &.open{
+        max-height: 1000px !important;
+      }
+    }
+
+    /* === Эффекты ====================================================================== */
+
+    /* Эффекты вертикальные*/
+    .sub-list-items{
+      display: block !important;
+      max-height: 1000px;
+      overflow: hidden;
+      -webkit-transition-delay: .4s; /* Safari */
+      transition-delay: .4s;
+    }
+  }
+
+  /* Персональное меню пользователя */
+  .auth-menu {
+    color: #fff;
+    width: 160px !important;
+    display: block;
+    height: 50px;
+    margin-right: 50px;
+
+    &:hover{
+      background-color: $colorGraySelected;
+    }
+
+    &.open{
+      background-color: $colorGraySelected;
+    }
+
+    &:hover, &.open{
+      & .list-items_auth-menu{
+        max-height: 1000px;
+      }
+    }
+
+    /* Персональное меню авторизованного пользователя */
+    .auth-yes{
+      width: 100%;
+      height: 100%;
+      display: table;
+      padding: 0 10px;
+
+      .table-cell{
+        display: table-cell;
+        vertical-align: middle;
+
+        &:first-of-type{
+          text-align: right;
+        }
+
+        .unread-messages {
+          font-size: 14px;
+          background-color: white;
+          color: #F60;
+          font-weight: bold;
+          text-align: center;
+          border-radius: 3px;
+          padding: 0px 2px;
+          position: relative;
+          box-shadow: 1px 1px 1px black;
+          right: 5px;
+
+          &:before {
+            text-shadow: 0 0.8px 0px #a89e93;
+            content: "";
+            height: 5px;
+            width: 5px;
+            display: inline-block;
+            @include transform(rotate(45deg));
+            background: white;
+            position: absolute;
+            right: -2px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 1px -1px 1px black;
+          }
+        }
+
+        .avatar {
+          width: 32px;
+          height: 32px;
+          margin-right:9px;
+          display: inline-block;
+          vertical-align: middle;
+          background-image: url(/img/header/header-default-avatar.png);
+          background-size: cover;
+          border-radius: 3px;
+          box-shadow: 1px 1px 1px black;
+        }
+
+        .username {
+          vertical-align: middle;
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 600;
+          text-shadow: 1px 1px 1px black;
+        }
+      }
+
+      &:after{
+        content: '';
+        background-image: url(/img/header/arrow-list.png);
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+        background-size: 50%;
+        height: 9px;
+        width: 30px;
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+
+    /* Персональное меню не авторизованного пользователя */
+    .auth-no{
+      width: 100%;
+      height: 100%;
+
+      .link {
+        color: white;
+        float:left;
+        width: 50%;
+        text-align: center;
+        font-weight: 500;
+        border-radius: 3px;
+        line-height: 50px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &:after{
+          display: none;
+        }
+      }
+    }
+
+    /* Эффекты вертикальные*/
+    .list-items_auth-menu{
+      display: block !important;
+      max-height: 0px;
+      overflow: hidden;
+      -webkit-transition-delay: .4s; /* Safari */
+      transition-delay: .4s;
+    }
+  }
+
+
+  /* Полнотекстовый поиск в контексте страницы */
+  .search {
+    display: block;
+    width: 50px;
+    height: 100%;
+    background-image: url(/img/header/lupa.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    vertical-align: top;
+    background-size: 50%;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 0px;
+
+    &:hover{
+      background-color: $colorGraySelected;
+    }
+
+    &.open{
+      background-color: $colorGray;
+      &:hover{
+        background-color: $colorGray;
+      }
+    }
+  }
+
+  /* Подкатегории меню */
+  .section-menu{
+    text-transform: capitalize;
+    top: 100px;
+    left: 10px;
+    display: none;
+    border: 1px dashed black;
+    padding: 20px;
+    line-height: 31px;
+    text-decoration: underline;
+
+    &.open{
+      display: block;
+    }
+  }
+
+  /* Выбранный раздел (для мобильных размеров экрана) */
+  .selected-element{
+    display: none;
+  }
+}
+
+
+/* === Ресайз меню ============================================================= */
+
+
+@media all and (min-width: 960px){
+  header .navigation{
+    .link{
+      background-image: none !important;
+    }
+  }
+}
+
+@media all and (max-width: 960px){
+  header{
+    .logo{
+      background-size: contain;
+      background-image: url(/img/header/logo-big-size-mobile.png);
+      width: 90px;
+    }
+
+    .search{
+      //margin-right: 50px;
+    }
+
+    .select-wrap{
+      display: table;
+      position: absolute;
+      padding: 0 100px;
+      height: 100%;
+      right: 0;
+
+      /* Выбранный раздел */
+      .selected-element{
+        padding: 0 1em;
+        vertical-align: middle;
+        line-height: 16px;
+        height: 100%;
+        margin-right: 60px;
+        display: table-cell;
+        font-size: 20px;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+
+
+    .navigation{
+      padding-top: 50px;
+      width: 50px;
+      right: 0;
+      display: block;
+      height: 100%;
+      background-image: url(/img/header/ico-menu.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 45% 20px;
+      float: right;
+      margin-right: 50px;
+      cursor: pointer;
+
+      /* Обработчик css */
+//      &:hover{
+//        background-color: $colorGray;
+//
+//        & .list-items, & .auth-menu{
+//          right: -50px;
+//        }
+//      }
+
+      /* Обработчик js */
+      &.open {
+        background-color: $colorGray;
+        &:hover{
+          background-color: $colorGray;
+        }
+        .list-items, .auth-menu{
+          right: -50px;
+        }
+      }
+
+
+      .wrapper-list{
+        border-left: none;
+        border-bottom: none;
+        border-right: none;
+        border-top: 1px solid $colorGraySelect;
+      }
+
+      /* Элементы главного меню */
+      .list-items{
+        height: auto;
+        float: right;
+        background: #ffffff;
+        width: 200px;
+        text-align: left;
+        position: relative;
+        display: none;
+
+        .item{
+          display: block;
+          border-bottom: 1px solid $colorGraySelect;
+          border-left: 1px solid $colorGraySelect;
+          width: 100%;
+          margin: 0;
+
+          &:last-child{
+            border-bottom: none;
+          }
+
+          .link{
+            color: black;
+            font-size: 18px;
+            line-height: 50px;
+            padding-left: 60px;
+            background-position: 13px 50%;
+            background-size: 18%;
+            text-shadow: none;
+            border: 1px groove rgba(0,0,0,0);
+          }
+
+          &:hover > .link, .link:hover, .link.active {
+            color: white;
+            background-color: $colorGraySelected;
+            border: 1px groove #cccccc;
+          }
+        }
+      }
+
+
+      /* Элементы меню, модификация для персонального меню */
+      .list-items_auth-menu{
+        text-align: center;
+        text-transform: uppercase;
+        max-height: 0px !important;
+        float: none;
+        position: relative;
+        top: 0;
+
+        &:hover{
+          display: block !important;
+        }
+
+        .item{
+          border: none;
+          margin: 0;
+          background-position: 25% 50%;
+          height: 40px;
+
+          .link{
+            font-size: 16px;
+            line-height: 40px;
+            background-size: 12%;
+            background-position: 50px 50%;
+            padding-left: 80px;
+            border-left: 1px solid $colorGraySelect;
+
+            &.active{
+              border-left: none;
+              background-color: $colorActiveItem ;
+              color: $colorBlackText !important;
+            }
+          }
+
+          &:last-of-type{
+            .link{
+              border-bottom: 1px solid $colorGraySelect;
+            }
+          }
+        }
+
+        .wrapper-list{
+          border-top: none;
+        }
+      }
+
+      /* Персональное меню */
+      .auth-menu{
+        float: right;
+        background: white;
+        width: 200px !important;
+        margin: 0;
+        position: relative;
+        display: none;
+        top: 0px;
+        border: 1px solid $colorGraySelect;
+        border-right: none;
+
+
+        &:hover, &.open{
+          background-color: $colorGraySelected;
+          border: 1px groove #cccccc;
+
+          .auth-yes{
+            &:after{
+              background-position: 50% 0;
+            }
+          }
+
+          .list-items_auth-menu{
+            max-height: 1000px !important;
+          }
+
+          .username{
+            color: white !important;
+          }
+        }
+
+
+        .auth-yes{
+          display: table;
+          position: relative;
+
+          &:after{
+            display: block;
+          }
+
+          .username{
+            color: #333333;
+            text-shadow: none !important;
+          }
+        }
+
+        .auth-no{
+          .link{
+            color: black;
+          }
+        }
+      }
+
+
+      /* Подразделы главного меню */
+      .sub-list-items{
+        position: relative !important;
+        z-index: 1000;
+
+        &.open, &:hover{
+          max-height: 1000px;
+        }
+
+        .link{
+          border: 1px groove rgba(0,0,0,0) !important;
+        }
+
+        .link:hover, .link.active{
+          color: #333333 !important;
+        }
+      }
+
+      /* Эффекты горизонтальные */
+      .auth-menu, .list-items{
+        display: block !important;
+        right: -1000px;
+      }
+
+      /* Эффекты вертикальные*/
+      .list-items_auth-menu{
+        display: block !important;
+        max-height: 1000px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+
+// переключение фиксации меню
+@media all and (max-width: 480px){
+  header{
+    position: relative;
+
+    // уменьшение имени раздела в шапке
+    .selected-element{
+      font-size: 16px !important;
+    }
+  }
+  .sub-menu-wrapper{
+    position: relative !important;
+    top: 0 !important;
+  }
+  .sections-li{
+    padding-top: 0 !important;
+  }
+}
+

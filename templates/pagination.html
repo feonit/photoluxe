@@ -1,0 +1,27 @@
+
+
+<!-- Страницы -->
+
+<% for (var bunch = (currentPage%pageShow == 0 ) ? ( currentPage == pageShow ? 0 : 5) : (currentPage - currentPage%pageShow), start = firstPage + bunch, i = start, end = start + pageShow ; i < end; i++) { %>
+
+    <% if ( i == lastPage) break%>
+
+    <% if ( i == start && i != firstPage ) { %>
+        <!-- Стрелка влево -->
+        <a href="?page=<%= i - pageShow %>"
+           data-page ="<%= i - pageShow %>"
+           class="page left control-page-left">&#8592;</a>
+    <% } %>
+
+    <a href="?page=<%= i %>"
+       data-page ="<%= i %>"
+       class="page control-page <%= (currentPage == i) ? 'active' : '' %> "><%= i %></a>
+
+    <% if ( i == (end - firstPage) && i != lastPage ) { %>
+        <!--Стрелка вправо -->
+        <a href="?page=<%= i + firstPage %>"
+           data-page ="<%= i + firstPage %>"
+           class="page right control-page-right">&#8594;</a>
+    <% } %>
+
+<% } %>

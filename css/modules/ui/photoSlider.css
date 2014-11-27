@@ -1,0 +1,268 @@
+/* Chrome, Safari, Opera */
+@-webkit-keyframes slideLeft {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+/* Standard syntax */
+@keyframes slideLeft {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+.photo-slider {
+  position: relative;
+}
+.photo-slider .btn-like, .photo-slider .btn-heart {
+  background-repeat: no-repeat;
+  border: none;
+  display: block;
+  cursor: pointer;
+  float: left;
+  margin: 2px;
+  color: white;
+  width: 60px;
+  text-align: right;
+  line-height: 30px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15%;
+  background-position: 0% 50%;
+}
+.photo-slider .btn-like {
+  background-image: url(/img/icons/finger-up-white.png);
+}
+.photo-slider .btn-heart {
+  background-image: url(/img/icons/heart-white.png);
+}
+.photo-slider .arrow-left, .photo-slider .arrow-right {
+  height: 50px;
+  width: 50px;
+  margin-top: -25px;
+  position: absolute;
+  top: 50%;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+.photo-slider .arrow-left {
+  background-image: url("../../../img/index/arrow-left.png");
+  left: 0;
+}
+.photo-slider .arrow-right {
+  right: 0;
+  background-image: url("../../../img/index/arrow-right.png");
+}
+.photo-slider .top-bar, .photo-slider .bottom-bar {
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.photo-slider .slides {
+  cursor: pointer;
+}
+.photo-slider .slides .preview-big {
+  min-height: 100%;
+  right: 0;
+  margin: 0 auto;
+  width: 100% !important;
+  height: auto !important;
+}
+.photo-slider .loading {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.photo-slider .loading .shadow {
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  position: absolute;
+  display: block;
+  background-color: #000000;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.photo-slider .loading .image-loader {
+  position: absolute;
+  display: block;
+  background: url(../../../lib/slider.js-master/img/loading.gif) no-repeat center center;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.photo-slider .bottom-bar {
+  position: absolute;
+  bottom: 0;
+  background: white;
+  background: -moz-linear-gradient(top, transparent 0%, black 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, transparent), color-stop(100%, black));
+  background: -webkit-linear-gradient(top, transparent 0%, black 100%);
+  background: -o-linear-gradient(top, transparent 0%, black 100%);
+  background: -ms-linear-gradient(top, transparent 0%, black 100%);
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+.photo-slider .bottom-bar .col {
+  padding: 0;
+}
+.photo-slider .bottom-bar .row .row {
+  margin: 0;
+}
+.photo-slider .bottom-bar .inner {
+  -webkit-animation: slideLeft .5s;
+  /* Chrome, Safari, Opera */
+  animation: slideLeft .5s;
+  position: relative;
+  color: white;
+  text-shadow: 0 0 3px #000;
+  margin: 0 auto;
+  width: 700px;
+  padding-top: 15px;
+}
+.photo-slider .bottom-bar .inner .avatar {
+  width: 100px;
+}
+.photo-slider .bottom-bar .inner .info {
+  width: 600px;
+}
+.photo-slider .bottom-bar .inner .info .author-name,
+.photo-slider .bottom-bar .inner .info .photo-name {
+  font-size: 16px;
+  display: inline-block;
+  max-width: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+}
+.photo-slider .bottom-bar .inner .info .photo-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+.photo-slider .bottom-bar .inner .info .from {
+  font-size: 13px;
+}
+.photo-slider .bottom-bar .inner .info .actions .simple i.icon {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-image: url(../../../img/icons/photo-slider-bar-sprite.png);
+}
+.photo-slider .bottom-bar .inner .info .actions .simple i.icon.like {
+  background-position: 0 0;
+}
+.photo-slider .bottom-bar .inner .info .actions .simple i.icon.follow {
+  background-position: -25px 0;
+}
+.photo-slider .bottom-bar .inner .info .actions .simple i.icon.comments {
+  background-position: -50px 0;
+}
+.photo-slider .bottom-bar .inner .info .actions .simple i.icon.share {
+  background-position: -75px 0;
+}
+.photo-slider .bottom-bar .inner .info .actions .simple i.icon.info {
+  background-position: -100px 0;
+}
+.photo-slider .bottom-bar .inner .info .actions .simple i.icon.set {
+  background-position-y: -25px;
+}
+.photo-slider .bottom-bar .inner .info .actions .simple span {
+  font-size: 12px;
+}
+.photo-slider .bottom-bar .pt50 {
+  width: 50%;
+}
+.photo-slider .bottom-bar .pt40 {
+  width: 40%;
+}
+.photo-slider .bottom-bar .pt30 {
+  width: 30%;
+}
+.photo-slider .bottom-bar .pt20 {
+  width: 20%;
+}
+.photo-slider .bottom-bar .pt15 {
+  width: 15%;
+}
+.photo-slider .bottom-bar .pt10 {
+  width: 10%;
+}
+.photo-slider .bottom-bar .h33 {
+  height: 33px;
+}
+.photo-slider .bottom-bar .tac {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .user-album-name, .link.resource span, .section-name {
+    display: none !important;
+  }
+}
+/* jssor slider thumbnail navigator skin 07 css */
+/*
+.thumbnavigator .p            (normal)
+.thumbnavigator .p:hover      (normal mouseover)
+.thumbnavigator .pav          (active)
+.thumbnavigator .pav:hover    (active mouseover)
+.thumbnavigator .pdn          (mousedown)
+*/
+/* ie quirks mode adjust */
+* html .thumbnavigator .rama {
+  width: 172px;
+  height: 172px;
+}
+
+.thumbnavigator {
+  position: relative;
+  height: 172px;
+}
+.thumbnavigator .thumb {
+  top: 0px;
+  left: 0px;
+  width: 172px;
+  height: 172px;
+  /*filter: alpha(opacity=80);
+  opacity: .8;*/
+}
+.thumbnavigator .p:hover .thumb, .thumbnavigator .thumbnavigator .pav .thumb {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+.thumbnavigator .rama {
+  position: absolute;
+  top: 0px;
+  width: 170px;
+  height: 170px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: border-color .6s;
+  -moz-transition: border-color .6s;
+  -webkit-transition: border-color .6s;
+  -o-transition: border-color .6s;
+}
+.thumbnavigator .pav .rama, .thumbnavigator .thumbnavigator .p:hover .rama {
+  border-color: #fff;
+}
+.thumbnavigator .pav:hover .rama {
+  border-color: #0099FF;
+}
+.thumbnavigator .p:hover .rama {
+  transition: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: none;
+}

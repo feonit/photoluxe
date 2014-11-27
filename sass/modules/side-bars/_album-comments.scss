@@ -1,0 +1,127 @@
+/* Вкладка комментариев к альбому */
+
+// это якорь, он не изменится, поэтому использую id
+@import "compass/utilities";
+
+
+$colorGray: #999999;
+$colorLightGray: #ece7e4;
+@import "compass/utilities";
+@import "compass/css3/transform";
+
+
+.tabs-list{
+    @include pie-clearfix();
+}
+
+/* Аватарки */
+.avatar{
+    height: 35px;
+    width: 35px;
+    float: left;
+
+    img{
+        width: 100%;
+        border-radius: 4px;
+    }
+}
+
+.message{
+    line-height: 20px;
+    font-size: 14px;
+    float: right;
+    width: 87%;
+
+    @include pie-clearfix();
+
+    .date{
+        //float: right;
+        font-size: 10px;
+        color: $colorGray;
+        line-height: 9px;
+        display: inline-block;
+        height: 18px;
+    }
+
+    .controls{
+        float: right;
+
+        .message-link{
+            color: $colorGray;
+            font-weight: normal;
+            font-size: 10px;
+            float: right;
+
+            &:hover{
+                color: $colorLightGray;
+            }
+        }
+    }
+}
+
+
+.item-messages{
+    @include pie-clearfix();
+    margin-bottom: 30px;
+    margin-top: 30px
+}
+
+.head{
+    padding: 22px 36px;
+    @include pie-clearfix();
+}
+
+.body{
+    padding: 30px;
+}
+
+/* Новое сообщение и коммиты */
+$colorFrame: #E4E4E4;
+.new-message, .new-answer{
+    padding: 15px 24px;
+    background: #ffffff;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid $colorFrame;
+
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 10px;
+        @include rotate(45deg);
+        background: #ffffff;
+        left: -6px;
+        height: 10px;
+        width: 10px;
+        border-left: 1px solid $colorFrame;
+        border-bottom: 1px solid $colorFrame;
+    }
+}
+
+
+// for textarea
+.new-message textarea, .new-answer textarea{
+    border: none;
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.b-new-answer{
+    @include pie-clearfix();
+    margin-top: 20px;
+
+    .new-answer{
+        border: 1px solid $colorLightGray;
+
+        &:before{
+            border-left: inherit;
+            border-bottom: inherit;
+        }
+    }
+}
+
+/* конец Новое сообщение и коммиты */

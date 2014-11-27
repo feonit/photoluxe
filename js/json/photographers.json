@@ -1,0 +1,49 @@
+{
+    "user": [
+        {
+            "gid": "string",
+            "first_name": "Марфуша",
+            "last_name": "Николаевна",
+            "avatar": "/img/habib.png",
+            "status": "занят",
+            "about": "Редиска",
+            "socials": {
+                "facebook_uid": "0",
+                "google_uid": "0"
+            },
+            "phones": ["string"],
+            "websites": ["string"],
+            "languages": [
+                "string"
+            ],
+            "location": {
+                "country": {
+                    "gid": "Unknown",
+                    "title": "Россия"
+                },
+                "region": {
+                    "gid": "Unknown",
+                    "title": "М/o"
+                },
+                "city": {
+                    "gid": "Unknown",
+                    "title": "Москва"
+                },
+                "longitude": "Unknown",
+                "latitude": "Unknown"
+            },
+            "followers": {
+                "amount": "3331",
+                "flag": "1"
+            },
+            "following": {
+                "amount": "123",
+                "flag": "1"
+            },
+            "views": {
+                "amount": "3123",
+                "flag": "1"
+            }
+        }
+    ]
+}

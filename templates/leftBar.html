@@ -1,0 +1,148 @@
+<!-- template for photographer side bar info -->
+
+<link rel="stylesheet" type="text/css" href="/css/modules/side-bars/bar-left.css">
+
+<!-- вкладки -->
+<ul class="tabs-list">
+    <li class="tab-item">
+        <a href="#photographer-info"  class="link active">Info</a>
+    </li>
+    <li class="tab-item">
+        <a href="#photographer-chat"  class="link">Chat</a>
+    </li>
+</ul>
+<!-- конец вкладок -->
+<!-- список страниц-->
+<ul class="content-list">
+    <!-- 1-ая страница-->
+    <li class="content-item" id="photographer-info">
+        <div class="pressed pseudo-tab-1">
+            <a class="link"  href="#photographer-info">Info</a>
+        </div>
+        <div class="side-bar-table">
+            <div class="side-bar-table-row1">
+                <div class="side-bar-table-cell">
+                    <div class="head">
+                        <div class="avatar">
+                            <img src="<%= avatar%>">
+                        </div>
+                        <div class="info">
+                            <h1 class="name"><%= first_name + ' ' + last_name %></h1>
+                            <!--<a class="busy-link" >Busy now</a>-->
+<!--                            <blockquote class="blockquote">The King of Pop has been forced to give up his crown. Yet, Michael
+                                Jackson was not losing all his charm and popularity since he alreadey
+                            </blockquote>-->
+                            <% if ( parseInt(followers['flag']) ) {%>
+                                <a class="btn btn-active btn-mod_big-width control-unfollow">Unfollow</a>
+                            <% } else {%>
+                             <a class="btn btn-base btn-mod_big-width control-unfollow">Follow</a>
+                            <% } %>
+                            <% if ( parseInt(favorites['flag']) ) {%>
+                                <a class="btn btn-active btn-mod_big-width control-favorites">To favorites</a>
+                            <% } else { %>
+                                <a class="btn btn-base btn-mod_big-width control-favorites">Out favorites</a>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side-bar-table-row2">
+                <div class="side-bar-table-cell">
+                    <div class="side-bar-scrolable">
+                        <div class="body">
+                            <!--<h2 class="job">Photography, Icon Design, Illustration, Web Design</h2>-->
+                            <p class="age-lang">Language:  <% _.each(languages, function(language){ print(language+' ')}) %></p>
+                            <div class="contact-info">
+                                <p class="contact">
+                                    <% if (location && location['country'] && location['country']['title']) { %>
+                                    <%= location['country']['title'] %>
+                                    <% } %>
+
+                                    <% if (location && location['region'] && location['region']['title']) { %>
+                                    <%= location['region']['title'] %>
+                                    <% } %>
+
+                                    <% if (location && location['city'] && location['city']['title']) { %>
+                                    <%= location['city']['title'] %>
+                                    <% } %>
+                                </p>
+                                <p class="contact"><%= phones%></p>
+                                <p class="contact"><%= email%></p>
+                            </div>
+                            <a class="my-site" href="#"><%= _.each(websites, function(website){print(website+' ')}) %></a>
+
+                            <div class="pulse-block">
+                                <div class="pulse">
+                                    <!--<p class="line">Pulse<span class="value">97</span></p>-->
+                                    <p class="line">Folowers<span class="value"><%= followers['amount']%></span></p>
+                                    <p class="line">Favorites<span class="value"><%= favorites['amount']%></span></p>
+                                </div>
+
+                                <!--<p class="data">Member since Lune 12, 2001</p>-->
+                            </div>
+                            <p class="description"><%= about%></p>
+                            <!--<div class="social">-->
+                                <!--<a class="img-link vkontakte"  href="#"></a>-->
+                                <!--<a class="img-link google"  href="#"></a>-->
+                                <!--<a class="img-link facebook"  href="#"></a>-->
+                                <!--<a class="img-link habib"  href="#"></a>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- конец 1-ая страница-->
+    <!-- 2-ая страница-->
+    <li class="content-item" id="photographer-chat">
+        <div class="pressed pseudo-tab-2">
+            <a class="link"  href="#photographer-chat">Chat</a>
+        </div>
+        <div class="side-bar-table">
+            <div class="side-bar-table-row1">
+                <div class="side-bar-table-cell">
+                    <div class="head">
+                        <div class="avatar">
+                            <img src="/img/user-small.jpg">
+                        </div>
+                        <div class="message">
+                            <div class="new-message">
+                                <textarea>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab </textarea>
+                            </div>
+                            <button class="btn btn-active btn-mod_big-width-120">Send</button>
+                            <button class="btn btn-base btn-mod_big-width-120">Attach file</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-bar-table-row2">
+                <div class="side-bar-table-cell">
+                    <div class="side-bar-scrolable">
+                        <div class="body">
+                            <ul class="messages">
+                                {% for i in 1..5 %}
+                                <li class="item-messages">
+                                    <div class="avatar">
+                                        <img src="/img/user-small.jpg">
+                                    </div>
+                                    <div class="message">
+                                        <div class="message-head">
+                                            <span class="date">MAY 23, 2014</span>
+                                        </div>
+                                        <p>Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt.
+                                    </div>
+                                    </p>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- конец 2-ая страница-->
+</ul>
+<!-- конец список страниц-->

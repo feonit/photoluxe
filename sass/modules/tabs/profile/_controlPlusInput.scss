@@ -1,0 +1,87 @@
+.input-field{
+  position: relative;
+  margin: 10px 0;
+}
+
+.input-delete{
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.input-delete:after {
+  content: "×" !important;
+  color: #333 !important;
+  font-size: 24px !important;
+  height: 34px !important;
+  display: inline-block !important;
+  line-height: 34px !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  margin: auto !important;
+  font-weight: 100 !important;
+  cursor: pointer;
+}
+
+.input-field:last-of-type{
+  padding-right: 42px
+}
+
+.input-plus{
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 17px;
+
+  &:after{
+    content: "+" !important;
+    float: right !important;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    height: 34px !important;
+    width: 34px !important;
+    border: 1px solid #333 !important;
+    text-align: center !important;
+    border-radius: 3px !important;
+    position: absolute !important;
+    opacity: .9 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    margin: auto !important;
+    right: 0 !important;
+    font-weight: 100 !important;
+    color: #333;
+  }
+
+//  background: url('/img/plus.png') no-repeat 50% 50%;
+}
+
+
+/*.input-field:last-of-type .input-plus{*/
+/*display: block;*/
+/*}*/
+.input-field:last-of-type .input-delete{
+  display: none;
+}
+
+.input-field:not(:last-of-type) .input-delete{
+  display: block;
+}
+/*.input-field:not(:last-of-type) .input-plus{*/
+/*display: block;*/
+/*}*/
+
+.inputs{
+  position: relative;
+}
+
+.new-control{
+  position: relative;
+
+  span.glyphicon.form-control-feedback{
+    top: 0 !important;
+    right: 40px;
+  }
+}

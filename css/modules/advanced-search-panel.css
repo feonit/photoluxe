@@ -1,0 +1,236 @@
+/*resetting default grid _margin-padding_ values*/
+.advanced-search-container .col { padding: 0; }
+.advanced-search-container .row .row { margin: 0; }
+
+/* ~~~~~~~~~ */
+
+.advanced-search-container {
+    text-align: center;
+
+}
+
+.advanced-search-container::before {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid;
+    border-bottom: 0;
+    border-right: 0;
+    border-color: #ddd;
+    margin-bottom: -9px;
+    content: "";
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #f6f2ef;
+}
+
+.advanced-search-panel {
+    text-align: center;
+    background: #f6f2ef;
+    border-top: 1px solid #ddd;
+
+}
+
+.advFilter {
+    margin: 10px;
+    width: 208px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.adv-search-combobox {
+    overflow: hidden;
+    height: 36px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    background-image: url(/img/selectbox-arrow.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.adv-search-combobox > select {
+    width: 120%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding: 6px 0;
+    text-indent: 5px;
+    color: #999;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+.adv-search-combobox > select > option {
+    font-weight: normal;
+    color: #444;
+}
+
+.adv-search-combobox > select > option[disabled] {
+    font-weight: normal;
+    color: #999;
+}
+
+select.adv-search-combobox_font_bold {
+    font-weight: bolder;
+    color: #444;
+}
+
+
+button.advFilter_apply-button {
+    margin: 0 2% 0 0;
+    width: 48%;
+    height: 36px;
+    border-width: 1px;
+    border-color: #e9d8a0 #e9d69e #d7ca95 #e7d69e;
+    border-style: solid;
+    border-radius: 4px;
+    font-weight: bolder;
+    font-size: 14px;
+    outline: none;
+    background-color: #efdd9f;
+    color: #444;
+    cursor: pointer;
+}
+
+button.advFilter_remove-last-button {
+    width: 50%;
+    line-height: 36px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 20%;
+    background-image: url(/img/small-cross.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: 20% center;
+    color: #444;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+button.advFilter_remove-last-button:disabled {
+    cursor: initial;
+    color: #999;
+}
+
+
+/* ~~~~~~~~~ */
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 1201px) {
+    /*override default*/
+    .advanced-search-panel > .col {
+        float: none
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+    .advFilter {
+        width: 18%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 455px) {
+    .advanced-search-panel {
+        width: 456px;
+        margin: auto;
+        text-align: left;
+    }
+    .advanced-search-panel .advFilter:nth-child(even) {
+        clear:right;
+    }
+    .advFilter {
+        float: left;
+    }
+}
+
+@media screen and (max-width: 456px) {
+    .advFilter {
+        width: 208px;
+        float: none;
+    }
+}
+
+/* ~~~~~~~~~ */
+
+/*SEARCH TAGGZ*/
+.advSearch-tagz {
+    margin: 20px;
+
+}
+
+.advSearch-tag {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+    color: #999;
+    line-height: 1em;
+    padding: 3px;
+    border-radius: 3px;
+    background: #fff;
+    margin-right: 5px;
+}
+
+.advSearch-tag-remove {
+    content: "×";
+    font-size: 20px;
+    vertical-align: sub;
+    font-weight: bolder;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+/* ~~~~~~~~~ */
+
+/* helpers */
+
+.box-left {
+    float: left;
+}
+.box-right {
+    float: right;
+}
+
+
+.advanced-block {
+    width:100%;
+    /*border-bottom:1px solid #ddd;*/
+    display: none;
+}
+
+.advanced {
+    position: absolute;
+    right: 0;
+    padding-right: 25px;
+    background: #fff url(/img/icons/adv_search.png) center right no-repeat;
+}
+
+.advanced:hover {
+    color:#3e3d39;
+}
+
+.advanced.selected {
+    background: #fff url(/img/icons/adv_search_up.png) center right no-repeat;
+}

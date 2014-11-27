@@ -1,0 +1,50 @@
+.under-header-panel {
+  height: 0;
+  top: 57px;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  .wrap {
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+    height: 0;
+    background-color: #ff0000; //если всё хорошо, то это место видно не будет.
+    font-size: 0; //чтобы небыло отступов между элементами
+    .panel-item {
+      font-size: 12px; //dev tools определил, что это было дефолтное значение до сброса на 0
+      display: inline-block;
+      .box { //этот элемент тут только для одинаковых отступов внутри (лишним не будет)
+        margin-top: 5px;
+        margin-left: 5px;
+      }
+    }
+
+    .search-panel {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: #FFF;
+      .search-item {
+        font-size: 12px; //dev tools определил, что это было дефолтное значение до сброса на 0
+
+        display: inline-block;
+        vertical-align: top;
+
+        .search-input {
+          font-size: 21px;
+          text-indent: 5px;
+
+          margin-right: 5px;
+          width: 226px;
+          height: 36px;
+          border-radius: 3px;
+          border: 1px solid lightgray;
+          color: black;
+        }
+      }
+    }
+  }
+}

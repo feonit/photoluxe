@@ -1,0 +1,902 @@
+@charset "UTF-8";
+/* Сборщик правил для страницы Discover */
+.discover {
+  /* === Импорт ============================================================*/
+  /* фильтры */
+  /* тело контрола */
+  /* пагинация */
+  /* Пагинатор */
+  /* ленточка фотографа */
+  /* фотографии в портфолио фотографа */
+  /* Портфолио фотографа начало */
+  /* пинги , лайки */
+  /* ссылки на фотографии */
+  /* перезапись стилей библиотеки slick */
+  /* размер стрелок слайдера */
+  /* === Эффекты  ============================================================*/
+  /* сворачивает ленточку фотографа, управление js */
+  /* не сворачивает ленточку фотографа, управление css */
+  /* показывает и скрывает контролы на фотографиях, управляется js*/
+  /* показывает и скрывает контролы на фотографиях, управляется css*/
+  /* Появление стрелок, управление css */
+  /* === Ресайзинг ============================================================*/
+  /* ресайз стрелок */
+  /* ресайз ленты */
+  /* ресайз буковок */
+  /* ресайз точек */
+  /* === Контролы (фильтры) ============================================================*/
+}
+.discover .popup-filter-browse {
+  height: 100%;
+  position: relative;
+  text-align: left;
+  font-weight: normal;
+  font-family: 'Roboto';
+  color: #333333;
+  /* Переключатель видимости всплывающей панельки */
+  /* стрелки на заголовках */
+  /* шапка контрола */
+  /* Всплывающая панелька */
+}
+.discover .popup-filter-browse * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.discover .popup-filter-browse.open .popupPanel {
+  display: block;
+}
+.discover .popup-filter-browse.open .caption .caption-text:after {
+  background-position: 0 0;
+}
+.discover .popup-filter-browse .caption-text:after {
+  content: "";
+  background-image: url(/img/icons/drop-box-arrow.png);
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+  background-position: 0 100%;
+  display: inline-block;
+  margin-left: 1em;
+  vertical-align: middle;
+}
+.discover .popup-filter-browse > .caption {
+  display: table;
+  height: 100%;
+  line-height: 18px;
+  min-width: 150px;
+  white-space: pre;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.discover .popup-filter-browse > .caption .caption-text {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  padding: 0 1em;
+}
+.discover .popup-filter-browse .popupPanel {
+  position: absolute;
+  top: 51px;
+  font-weight: 400;
+  min-width: 150px;
+  background-color: #fff;
+  display: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  left: 0px;
+  text-align: left;
+  border-radius: 3px;
+  /* фильтры */
+  /* фильтры по времени */
+  /* Элементы меню */
+}
+.discover .popup-filter-browse .popupPanel .context {
+  font-size: 18px;
+  white-space: nowrap;
+  line-height: 36px;
+}
+.discover .popup-filter-browse .popupPanel .time {
+  text-align: left;
+  border-top: 1px solid #777;
+}
+.discover .popup-filter-browse .popupPanel .time .time-caption {
+  display: table;
+  padding-left: 50px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+}
+.discover .popup-filter-browse .popupPanel .time .time-list {
+  display: none;
+  font-size: 16px;
+  line-height: 25px;
+}
+.discover .popup-filter-browse .popupPanel .time.open .time-list {
+  display: block;
+}
+.discover .popup-filter-browse .popupPanel .time.open .caption-text:after {
+  background-position: 0 0;
+}
+.discover .popup-filter-browse .popupPanel .context .link, .discover .popup-filter-browse .popupPanel .time .link {
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  width: 100%;
+  padding: 0 30px 0 30px;
+  color: #333;
+  text-transform: capitalize;
+}
+.discover .popup-filter-browse .popupPanel .context .link.active, .discover .popup-filter-browse .popupPanel .time .link.active {
+  background-color: #e4e4e4;
+}
+.discover .popup-filter-browse .popupPanel .context .link.active:hover, .discover .popup-filter-browse .popupPanel .time .link.active:hover {
+  background-color: #e4e4e4;
+}
+.discover .popup-filter-browse .popupPanel .context .link:hover, .discover .popup-filter-browse .popupPanel .time .link:hover {
+  background-color: #eeeeee;
+}
+.discover .popup-filter-location {
+  height: 100%;
+  position: relative;
+  text-align: left;
+  /* Шапка контрола */
+  /* Переключатель видимости всплывающей панельки */
+  /* Всплывающая панелька */
+}
+.discover .popup-filter-location .col {
+  padding: 0 10px;
+}
+.discover .popup-filter-location .row .row {
+  margin: 0 10px;
+}
+.discover .popup-filter-location .caption {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #333333;
+  background-image: none;
+  padding: 24px 16px 0;
+  padding-right: 40px;
+}
+.discover .popup-filter-location .caption:after {
+  content: "";
+  background-image: url(/img/icons/drop-box-arrow.png);
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+  background-position: 0 100%;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  margin: auto;
+  right: 10px;
+}
+.discover .popup-filter-location.open .popupPanel {
+  display: block;
+}
+.discover .popup-filter-location.open > .caption:after {
+  background-position: 0 0;
+}
+.discover .popup-filter-location .popupPanel {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: white;
+  display: none;
+  top: 51px;
+  position: absolute;
+  width: 300px;
+  border-radius: 3px;
+  padding: 10px 0;
+}
+.discover .popup-filter-location .popupPanel button {
+  outline: none;
+  line-height: 33px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background-color: #FFF;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #444;
+  width: 100%;
+}
+.discover .popup-filter-location .popupPanel button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.discover .popup-filter-location .popupPanel button.active {
+  border-color: black;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+.discover .popup-filter-location .popupPanel button.inactive {
+  color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.discover .popup-filter-location .popupPanel button.selected {
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.discover .popup-filter-location .popupPanel button.activeButton {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.discover .popup-filter-location .popupPanel .topBar {
+  margin-bottom: 10px;
+}
+.discover .popup-filter-location .popupPanel .topBar .col {
+  width: 50%;
+  float: right;
+}
+.discover .popup-filter-location .popupPanel .combosBar .col {
+  margin-bottom: 10px;
+}
+.discover .popup-filter-location .popupPanel .combosBar .col select {
+  width: 100%;
+  background-color: white;
+  padding: 3px;
+  font-size: 13px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+}
+.discover .popup-filter-location .popupPanel .bottomBar .col {
+  width: 50%;
+}
+.discover .container-discover-search-panel {
+  height: 100%;
+  display: table;
+  float: right !important;
+}
+.discover .container-discover-search-panel .input-wrap {
+  display: none;
+  vertical-align: middle;
+  width: 250px;
+}
+.discover .container-discover-search-panel .input-wrap.open {
+  display: table-cell;
+}
+.discover .container-discover-search-panel .input-wrap input {
+  height: 36px;
+  width: 96%;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-indent: .5em;
+}
+.discover .popupFilterEquipment {
+  display: table-cell;
+  vertical-align: middle;
+}
+.discover .popupFilterEquipment .col {
+  padding: 0 10px;
+}
+.discover .popupFilterEquipment .row .row {
+  margin: 0 -1em;
+}
+.discover .popupFilterEquipment .icon {
+  width: 50px;
+  height: 50px;
+  background-image: url(/img/icons/photoapparat.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.discover .popupFilterEquipment .popup-panel {
+  display: none;
+  width: 300px;
+  position: absolute;
+  z-index: 1;
+  top: 51px;
+  right: 0;
+  padding: 1em 0;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #333333;
+  border-radius: 3px;
+}
+.discover .popupFilterEquipment .popup-panel button {
+  line-height: 33px;
+  background-color: #FFF;
+  border-radius: 4px;
+  width: 130px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  font-size: 16px;
+}
+.discover .popupFilterEquipment .popup-panel button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.discover .popupFilterEquipment .popup-panel button.active {
+  border-color: #333333;
+}
+.discover .popupFilterEquipment .popup-panel select {
+  background-color: white;
+  padding: 3px;
+  font-size: 13px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+}
+.discover .popupFilterEquipment .popup-panel button,
+.discover .popupFilterEquipment .popup-panel select {
+  width: 100%;
+}
+.discover .popupFilterEquipment .popup-panel .actions .col,
+.discover .popupFilterEquipment .popup-panel .sorting .col {
+  width: 50%;
+}
+.discover .popupFilterEquipment .popup-panel .selectboxes > .col,
+.discover .popupFilterEquipment .popup-panel .sorting {
+  margin-bottom: 10px;
+}
+.discover .popupFilterEquipment.open .popup-panel {
+  display: block;
+}
+.discover .pagination {
+  font-size: 23px;
+  font-weight: lighter;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.discover .pagination .page {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  width: 36px;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  font-weight: lighter;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+.discover .pagination .page.active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.discover .strip {
+  min-width: 125px;
+  min-height: 160px;
+  text-align: center;
+  position: absolute;
+  background: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1000;
+  height: 100%;
+  margin-top: -1em;
+}
+.discover .strip * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.discover .strip .table-box {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.discover .strip .table-row {
+  display: table-row;
+}
+.discover .strip .table-cell {
+  vertical-align: middle;
+  display: table-cell;
+}
+.discover .strip .strip-head {
+  background: white;
+  font-weight: 400;
+  font-size: 1.1em;
+  display: block;
+  line-height: 1em;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+.discover .strip .strip-head:hover {
+  text-decoration: underline;
+}
+.discover .strip .strip-body {
+  background: white;
+  padding: 0.3em;
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-box-shadow: rgba(50, 50, 50, 0.25) 0px 5px 5px 0px;
+  -moz-box-shadow: rgba(50, 50, 50, 0.25) 0px 5px 5px 0px;
+  box-shadow: rgba(50, 50, 50, 0.25) 0px 5px 5px 0px;
+  border: 1px solid #cccccc;
+  border-top: none;
+  /* строка с финформацией о портфолио */
+}
+.discover .strip .strip-body .avatar {
+  padding: 0 1em;
+  box-sizing: border-box;
+  width: 70%;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.discover .strip .strip-body .country {
+  color: #555;
+  font-size: .75em;
+}
+.discover .strip .strip-body .portfolio {
+  font-size: .75em;
+  color: black;
+  line-height: 1em;
+}
+.discover .strip .strip-body .portfolio:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.discover .strip .strip-body .icon-container {
+  height: 40px;
+  overflow: hidden;
+}
+.discover .strip .strip-body .icon-container .icon-wrap {
+  width: 33.33%;
+  float: left;
+}
+.discover .strip .strip-body .icon-container .icon {
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 33px;
+  display: inline-block;
+  font-style: normal;
+  line-height: 50px;
+  position: relative;
+  padding-bottom: 40px;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.discover .strip .strip-body .icon-container .icon.heart {
+  background-image: url("/img/icons/follower-gray.png");
+}
+.discover .strip .strip-body .icon-container .icon.heart.active {
+  background-image: url("/img/icons/follower-gold.png");
+}
+.discover .strip .strip-body .icon-container .icon.star {
+  background-image: url("/img/icons/favorite-gray.png");
+}
+.discover .strip .strip-body .icon-container .icon.star.active {
+  background-image: url("/img/icons/favorite-gold.png");
+}
+.discover .strip .strip-body .icon-container .icon.chat {
+  background-image: url("/img/icons/chat-gray.png");
+}
+.discover .strip .strip-body .icon-container .icon.chat.active {
+  background-image: url("/img/icons/chat-gold.png");
+}
+.discover .strip .strip-body .icon-container .icon:hover {
+  top: 0;
+}
+.discover .strip .strip-body .icon-container .icon:not(:hover) {
+  top: -50px;
+}
+.discover .thumb {
+  width: 100%;
+}
+.discover .b-controls, .discover .b-name {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+  z-index: 1;
+}
+.discover .b-controls {
+  top: -2em;
+  opacity: 0;
+  right: 0;
+  padding: .5em;
+}
+.discover .b-controls .btn-like, .discover .b-controls .btn-favorite {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  display: block;
+  cursor: pointer;
+  float: left;
+  font-weight: 600;
+  margin: 2px;
+  height: 15px;
+  color: white;
+  min-width: 27px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 13px;
+  padding: 30px 3px 5px 3px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  background-position: 50% 10%;
+  font-style: normal;
+}
+.discover .b-controls .btn-like {
+  background-image: url("/img/icons/like-white.png");
+}
+.discover .b-controls .btn-like.active {
+  background-image: url("/img/icons/like-gold.png");
+}
+.discover .b-controls .btn-favorite {
+  background-image: url("/img/icons/favorite-white.png");
+}
+.discover .b-controls .btn-favorite.active {
+  background-image: url("/img/icons/favorite-gold.png");
+}
+.discover .b-name {
+  padding: .5em;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  bottom: 0;
+}
+.discover .b-name .top {
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  bottom: -2em;
+  position: relative;
+  font-size: .6em;
+}
+.discover .b-name .bottom {
+  font-weight: 600;
+}
+.discover .b-name .bottom.text-right {
+  text-align: right;
+  font-size: .8em;
+}
+.discover .b-name .top, .discover .b-name .bottom {
+  display: block;
+}
+.discover .b-name .top a, .discover .b-name .bottom a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 1em;
+  text-shadow: 0 0 1px #000;
+  width: 66%;
+}
+.discover .b-name .top a:hover, .discover .b-name .bottom a:hover {
+  text-decoration: underline;
+}
+.discover .fixed-shadow {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.8)));
+  background-image: -webkit-linear-gradient(#ffffff, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: -moz-linear-gradient(#ffffff, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: -o-linear-gradient(#ffffff, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: linear-gradient(#ffffff, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+.discover .multiple-items {
+  width: 100%;
+  background: white;
+  margin: 4em 0;
+}
+.discover .multiple-items:first-of-type {
+  margin-top: 5em;
+}
+.discover .slick-loading {
+  width: 100%;
+  padding-bottom: 100%;
+  background-image: url(http://31.media.tumblr.com/cfa55f70bbc5ce545eed804fa61a9d26/tumblr_mfpmmdCdWA1s1r5leo1_500.gif);
+  background-position: 50% 50%;
+  height: 0;
+}
+.discover .slick-prev, .discover .slick-next {
+  transition-property: left, right, opacity;
+  transition-duration: .3s;
+  height: 100%;
+  top: 0;
+  margin-top: 0;
+}
+.discover .slick-prev:before, .discover .slick-next:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 20px;
+  background-image: url(/img/icons/arrow-slider.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  left: 0px;
+}
+.discover .slick-next:before {
+  background-position: -20px 50%;
+}
+.discover .empty-space {
+  color: white;
+}
+.discover .strip {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.discover .strip .strip-head {
+  border-bottom-color: rgba(0, 0, 0, 0);
+  -webkit-transition-property: border-bottom-color;
+  -moz-transition-property: border-bottom-color;
+  -o-transition-property: border-bottom-color;
+  transition-property: border-bottom-color;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.discover .strip .strip-body {
+  opacity: 1;
+  max-height: 500px;
+  overflow: hidden;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.discover .strip.open-slick {
+  height: 0;
+  min-height: 0 !important;
+}
+.discover .strip.open-slick .strip-head {
+  border-bottom-color: #cccccc;
+}
+.discover .strip.open-slick .strip-body {
+  opacity: 0;
+  max-height: 0;
+}
+.discover .slick-list:hover ~ .strip {
+  height: 0;
+  min-height: 0 !important;
+}
+.discover .slick-list:hover ~ .strip .strip-head {
+  border-bottom: 1px solid #cccccc;
+}
+.discover .slick-list:hover ~ .strip .strip-body:not(:hover) {
+  opacity: 0;
+  max-height: 0;
+}
+.discover .control-show-controls .b-controls {
+  top: 0em;
+  opacity: 1;
+}
+.discover .control-show-controls .b-name .top {
+  opacity: 1;
+  bottom: 0;
+}
+.discover .slick-slide:hover .b-controls {
+  opacity: 1;
+  top: 0;
+}
+.discover .slick-slide:hover .b-name .top {
+  opacity: 1;
+  bottom: 0;
+}
+.discover .multiple-items:hover .slick-prev {
+  left: 2%;
+  opacity: 1;
+}
+.discover .multiple-items:hover .slick-next {
+  right: 2%;
+  opacity: 1;
+  margin-bottom: 10em;
+}
+@media all and (max-width: 480px) {
+  .discover .slick-prev:before {
+    background-position: 10px 50%;
+    background-size: 20px;
+  }
+  .discover .slick-next:before {
+    background-position: -10px 50%;
+    background-size: 20px;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 960px) {
+  .discover .slick-prev:before {
+    background-position: 5px 50%;
+    background-size: 30px;
+  }
+  .discover .slick-next:before {
+    background-position: -15px 50%;
+    background-size: 30px;
+  }
+}
+@media all and (max-width: 960px) {
+  .discover .strip {
+    width: 25%;
+  }
+}
+@media all and (min-width: 960px) and (max-width: 1280px) {
+  .discover .strip {
+    width: 20%;
+  }
+}
+@media all and (min-width: 1280px) {
+  .discover .strip {
+    width: 15%;
+  }
+}
+@media all and (max-width: 480px) {
+  .discover {
+    font-size: 12px;
+  }
+  .discover .portfolio {
+    line-height: 1em;
+  }
+  .discover .avatar {
+    width: 60% !important;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 640px) {
+  .discover {
+    font-size: 14px;
+  }
+  .discover .portfolio {
+    line-height: 1em;
+  }
+  .discover .avatar {
+    width: 70% !important;
+  }
+}
+@media all and (min-width: 640px) and (max-width: 960px) {
+  .discover {
+    font-size: 16px;
+  }
+  .discover .portfolio {
+    line-height: 4em;
+  }
+}
+@media all and (min-width: 960px) and (max-width: 1024px) {
+  .discover {
+    font-size: 18px;
+  }
+  .discover .portfolio {
+    line-height: 2em;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  .discover {
+    font-size: 18px;
+  }
+  .discover .portfolio {
+    line-height: 1.5em;
+  }
+}
+@media all and (min-width: 1280px) {
+  .discover {
+    font-size: 24px;
+  }
+  .discover .portfolio {
+    line-height: 2em;
+  }
+}
+@media all and (max-width: 640px) {
+  .discover .slick-dots {
+    bottom: -30px !important;
+  }
+}
+@media all and (max-width: 960px) {
+  .discover .popup-filter-browse, .discover .popup-filter-location {
+    padding-left: 50px;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: 70%;
+  }
+  .discover .popup-filter-browse .caption, .discover .popup-filter-location .caption {
+    display: none;
+  }
+  .discover .popup-filter-browse .popupPanel, .discover .popup-filter-location .popupPanel {
+    top: 50px;
+  }
+  .discover .popup-filter-browse {
+    text-align: left;
+    /* Элементы меню */
+  }
+  .discover .popup-filter-browse.recent {
+    background-image: url(/img/icons/recent-black.png);
+  }
+  .discover .popup-filter-browse.recent:hover, .discover .popup-filter-browse.recent.active {
+    background-image: url(/img/icons/recent-gold.png);
+  }
+  .discover .popup-filter-browse.appreciate {
+    background-image: url(/img/icons/appreciate-black.png);
+  }
+  .discover .popup-filter-browse.appreciate:hover, .discover .popup-filter-browse.appreciate.active {
+    background-image: url(/img/icons/appreciate-gold.png);
+  }
+  .discover .popup-filter-browse.discussed {
+    background-image: url(/img/icons/discussed-black.png);
+  }
+  .discover .popup-filter-browse.discussed:hover, .discover .popup-filter-browse.discussed.active {
+    background-image: url(/img/icons/discussed-gold.png);
+  }
+  .discover .popup-filter-browse.viewed {
+    background-image: url(/img/icons/viewed-black.png);
+  }
+  .discover .popup-filter-browse.viewed:hover, .discover .popup-filter-browse.viewed.active {
+    background-image: url(/img/icons/viewed-gold.png);
+  }
+  .discover .popup-filter-browse .icon {
+    background-repeat: no-repeat;
+    background-position: 25px 50%;
+    background-size: 9%;
+  }
+  .discover .popup-filter-browse .recent {
+    background-image: url(/img/icons/recent.png);
+  }
+  .discover .popup-filter-browse .appreciate {
+    background-image: url(/img/icons/appreciate-ico.png);
+  }
+  .discover .popup-filter-browse .discussed {
+    background-image: url(/img/icons/discussed.png);
+  }
+  .discover .popup-filter-browse .viewed {
+    background-image: url(/img/icons/viewed.png);
+  }
+  .discover .popup-filter-browse .context .link, .discover .popup-filter-browse .time .link {
+    padding: 0 30px 0 70px !important;
+  }
+  .discover .container-discover-search-panel .input-wrap {
+    width: 215px;
+  }
+  .discover .popup-filter-location {
+    background-image: url(/img/icons/location-black.png);
+  }
+  .discover .popup-filter-location:hover, .discover .popup-filter-location:active {
+    background-image: url(/img/icons/location-gold.png);
+  }
+  .discover .popup-filter-location {
+    position: inherit !important;
+  }
+  .discover .popup-filter-location .popupPanel {
+    top: 50px;
+    left: 0px;
+  }
+}

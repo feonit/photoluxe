@@ -1,0 +1,109 @@
+.container-discover-search-panel {
+  height: 100%;
+  display: table;
+  float: right !important;
+
+  .input-wrap{
+    display: none;
+    vertical-align: middle;
+    width: 250px;
+
+    &.open{
+      display: table-cell;
+    }
+
+    input{
+      height: 36px;
+      width: 96%;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+      background-color: rgba(255,255,255,0.4);
+      text-indent: .5em;
+    }
+  }
+}
+
+.popupFilterEquipment {
+  display: table-cell;
+  vertical-align: middle;
+
+  .col {
+    padding: 0 10px;
+  }
+
+  .row .row {
+    margin: 0 -1em;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/icons/photoapparat.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .popup-panel {
+    display: none;
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+    top: 51px;
+    right: 0;
+    padding: 1em 0;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.1);
+    color: #333333;
+    border-radius: 3px;
+
+    button {
+      line-height: 33px;
+      background-color: #FFF;
+      border-radius: 4px;
+      width: 130px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      outline: none;
+      font-size: 16px;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, .1);
+      }
+
+      &.active {
+        border-color: #333333;
+      }
+    }
+
+    select {
+      background-color: white;
+      padding: 3px;
+      font-size: 13px;
+      border-radius: 5px;
+      border: 1px solid black;
+      outline: none;
+    }
+
+    button,
+    select {
+      width: 100%;
+    }
+
+    .actions,
+    .sorting {
+      .col {
+        width: 50%;
+      }
+    }
+
+    .selectboxes > .col,
+    .sorting {
+      margin-bottom: 10px;
+    }
+  }
+
+  &.open{
+    .popup-panel{
+      display: block;
+    }
+  }
+}

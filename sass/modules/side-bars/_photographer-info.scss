@@ -1,0 +1,135 @@
+/* Информация о фотографе */
+
+@import "compass/utilities";
+$color: #ece7e4;
+$grayColor: #ACACAC;
+
+.head{
+    @include pie-clearfix();
+    padding: 30px 30px 20px 30px;
+
+    .avatar{
+        height: 100%;
+        float: left;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .info{
+        float: right;
+        width: 285px;
+
+        .name{
+            font-size: 32px;
+            font-weight: normal;
+        }
+
+        .busy-link{
+            line-height: 30px;
+            display: block;
+            height: 30px;
+            /*              попросили убрать, возможно на время
+                            padding-left: 30px;
+                            background: url(/img/icons/busy.png) no-repeat 0 50%;*/
+        }
+
+        .blockquote{
+            line-height: 18px;
+            padding: 10px 0;
+        }
+    }
+}
+
+.body{
+    padding: 25px;
+
+    .job{
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    .age-lang{
+        line-height: 32px;
+        color: $grayColor;
+    }
+
+    .contact-info{
+        padding-left: 28px;
+        background: url(/img/icons/contacts.png) no-repeat 0 0;
+
+        .contact{
+            line-height: 22px;
+            font-size: 14px;
+        }
+
+    }
+
+
+    .my-site{
+        font-weight: bold;
+        font-size: 14px;
+        padding-left: 28px;
+        line-height: 38px;
+        color: black;
+        background: url(/img/icons/link.png) no-repeat 0 50%;
+    }
+
+    .pulse-block{
+        padding: 28px;
+
+        .line{
+            line-height: 22px;
+
+        }
+        .pulse{
+            width: 110px;
+
+            .line{
+                line-height: 20px;
+                height: 20px;
+                border-bottom: 1px solid #eeeeee;
+
+                .value{
+                    float: right;
+                }
+            }
+        }
+        .data{
+            color: $grayColor;
+        }
+    }
+
+
+    .description{
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .img-link{
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+    }
+
+    .social{
+        margin-top: 1em;
+    }
+    .vkontakte{
+        background: url(/img/icons/vkontakte.png) no-repeat 0 50%;
+    }
+
+    .google{
+        background: url(/img/icons/google.png) no-repeat 0 50%;
+    }
+
+    .facebook{
+        background: url(/img/icons/facebook.png) no-repeat 0 50%;
+    }
+
+    .habib{
+        background: url(/img/icons/habib.png) no-repeat 0 50%;
+        width: 100px;
+    }
+}

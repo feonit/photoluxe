@@ -1,0 +1,242 @@
+[
+    {
+        "photo": {
+            "gid": "1",
+            "title" : "Дорога в никуда",
+            "url": {
+                "thumbnail": "/img/discover/1.jpg",
+                "fullsize": "/img/discover/1.jpg"
+            }
+        }
+    },
+    {
+        "photo": {
+            "gid": "2",
+            "title" : "Загранью",
+            "url": {
+                "thumbnail": "/img/discover/2.jpg",
+                "fullsize": "/img/discover/2.jpg"
+            }
+        }
+    },
+    {
+        "photo": {
+            "gid": "3",
+            "title" : "Дорога дальняя",
+
+            "url": {
+                "thumbnail": "/img/discover/3.jpg",
+                "fullsize": "/img/discover/3.jpg"
+            }
+        }
+    },
+    {
+        "photo": {
+            "gid": "4",
+            "title" : "Цветной дождь",
+
+            "url": {
+                "thumbnail": "/img/discover/4.jpg",
+                "fullsize": "/img/discover/4.jpg"
+            }
+        }
+    },
+    {
+        "photo": {
+            "gid": "5",
+            "title" : "Дед Тайсона",
+
+            "url": {
+                "thumbnail": "/img/discover/5.jpg",
+                "fullsize": "/img/discover/5.jpg"
+            }
+        }
+    },
+    {
+        "photo": {
+            "gid": "6",
+            "title" : "Доски",
+
+            "url": {
+                "thumbnail": "/img/discover/6.jpg",
+                "fullsize": "/img/discover/6.jpg"
+            }
+        }
+    },
+    {
+        "photo": {
+            "gid": "7",
+            "title" : "Орлан",
+
+            "url": {
+                "thumbnail": "/img/discover/7.jpg",
+                "fullsize": "/img/discover/7.jpg"
+            }
+        }
+    },
+    {
+        "photo": {
+            "gid": "8",
+            "title" : "Море",
+
+            "url": {
+                "thumbnail": "/img/discover/8.jpg",
+                "fullsize": "/img/discover/8.jpg"
+            }
+        }
+    },
+    {
+        "photo": {
+            "gid": "9",
+            "title" : "Небо",
+
+            "url": {
+                "thumbnail": "/img/discover/9.jpg",
+                "fullsize": "/img/discover/9.jpg"
+            }
+        }
+    },
+    {
+        "photo": {
+            "gid": "10",
+            "title" : "Зима",
+
+            "url": {
+                "thumbnail": "/img/discover/11.jpg",
+                "fullsize": "/img/discover/11.jpg"
+            }
+        }
+    },
+    {
+        "photo": {
+            "gid": "11",
+            "title" : "Живой асфальт",
+
+            "url": {
+                "thumbnail": "/img/discover/12.jpg",
+                "fullsize": "/img/discover/12.jpg"
+            }
+        }
+    },
+    {
+        "photo": {
+            "gid": "12",
+            "title" : "Клён",
+
+            "url": {
+                "thumbnail": "/img/discover/13.jpg",
+                "fullsize": "/img/discover/13.jpg"
+            }
+        }
+    }
+    ,
+    {
+        "photo": {
+            "gid": "12",
+            "title" : "My love story",
+            "url": {
+                "thumbnail": "/img/discover/14.jpg",
+                "fullsize": "/img/discover/14.jpg"
+            }
+        }
+    }
+    ,
+    {
+        "photo": {
+            "gid": "12",
+            "title" : "My love story",
+            "url": {
+                "thumbnail": "/img/discover/15.jpg",
+                "fullsize": "/img/discover/15.jpg"
+            }
+        }
+    }
+    ,
+    {
+        "photo": {
+            "gid": "12",
+            "title" : "My love story",
+            "url": {
+                "thumbnail": "/img/discover/16.jpg",
+                "fullsize": "/img/discover/16.jpg"
+            }
+        }
+    }
+    ,
+    {
+        "photo": {
+            "gid": "12",
+            "title" : "My love story",
+            "url": {
+                "thumbnail": "/img/discover/17.jpg",
+                "fullsize": "/img/discover/17.jpg"
+            }
+        }
+    }
+    ,
+    {
+        "photo": {
+            "gid": "12",
+            "title" : "My love story",
+            "url": {
+                "thumbnail": "/img/discover/18.jpg",
+                "fullsize": "/img/discover/18.jpg"
+            }
+        }
+    }
+    ,
+    {
+        "photo": {
+            "gid": "12",
+            "title" : "My love story",
+            "url": {
+                "thumbnail": "/img/discover/19.jpg",
+                "fullsize": "/img/discover/19.jpg"
+            }
+        }
+    }
+    ,
+    {
+        "photo": {
+            "gid": "12",
+            "title" : "My love story",
+            "url": {
+                "thumbnail": "/img/discover/20.jpg",
+                "fullsize": "/img/discover/20.jpg"
+            }
+        }
+    }
+    ,
+    {
+        "photo": {
+            "gid": "12",
+            "title" : "My love story",
+            "url": {
+                "thumbnail": "/img/discover/21.jpg",
+                "fullsize": "/img/discover/21.jpg"
+            }
+        }
+    }
+    ,
+    {
+        "photo": {
+            "gid": "12",
+            "title" : "My love story",
+            "url": {
+                "thumbnail": "/img/discover/22.jpg",
+                "fullsize": "/img/discover/22.jpg"
+            }
+        }
+    }
+    ,
+    {
+        "photo": {
+            "gid": "12",
+            "title" : "My love story",
+            "url": {
+                "thumbnail": "/img/discover/23.jpg",
+                "fullsize": "/img/discover/23.jpg"
+            }
+        }
+    }
+]

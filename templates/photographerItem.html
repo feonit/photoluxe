@@ -1,0 +1,46 @@
+<!-- template для ленты фотографа -->
+
+<section class="strip">
+    <div class="strip-head control-strip-head">
+        <span><%= first_name + ' ' + last_name %></span>
+    </div>
+    <div class="strip-body control-strip-body">
+        <div class="table-box">
+            <div class="table-row">
+                <div class="table-cell">
+                    <img class="avatar control-avatar" src="<%= avatar.thumbnail%>">
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p class="country"><%= location.country.title + ' ' + location.city.title %></p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p class="portfolio"><%= photos_amount %> photos, <%= albums_amount %> albums, <%= stories_amount%> stories</p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <div class="icon-container">
+                        <div class="icon-wrap">
+                            <i class="icon heart control-user-follow <%= followers.flag ?'active':'' %> "><%= followers.amount%></i>
+                        </div>
+                        <div class="icon-wrap">
+                            <i class="icon star control-user-favorite <%= favorites.flag ?'active':'' %> "><%= favorites.amount%></i>
+                        </div>
+                        <div class="icon-wrap">
+                            <a href="#photographer-chat" class="icon control-user-chat chat <%= flag_chat?'active':'' %> ">Chat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Для пустого портфолио, резервируем пространство -->
+<p class="empty-space"></p>
+
+<!-- На этом же уровне находится лента фотографий для фотографий фотографа -->

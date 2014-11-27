@@ -1,0 +1,34 @@
+<link rel="stylesheet" type="text/css" href="css/modules/ui/photoSlider.css">
+
+<!--{# ВНИМАНИЕ стили в разметке жёстко привязаны со скриптами , остальное переносить в css плачевно #}-->
+
+<!-- Сам фотослайдер -->
+<div id="<%= slider_id %>">
+    <span u="arrowright" style="width: 55px; height: 55px;" class="control arrow-right next"></span>
+    <span u="arrowleft" style="width: 55px; height: 55px;" class="control arrow-left prev"></span>
+
+    <!-- Loading Screen -->
+    <div u="loading" class="loading">
+        <div class="shadow">
+        </div>
+        <div class="image-loader">
+        </div>
+    </div>
+
+    <!-- Слайды -->
+    <div id="slide-container" style='overflow:hidden;' u="slides" class="slides">
+        <!-- Шаблон каждого слайда, используется при инициализации слайдера -->
+    </div>
+
+    <!--<div class="thumbnavigator" u="thumbnavigator" style="height: 172px;">-->
+    <!--<div class="slides" u="slides">-->
+    <!--<div class="p" u="prototype"style="WIDTH: 172px; HEIGHT: 172px;">-->
+    <!--&lt;!&ndash; Шаблон либы jssor, используется внутри неё&ndash;&gt;-->
+    <!--<ThumbnailTemplate class="thumb"></ThumbnailTemplate>-->
+    <!--<div class="rama"></div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+</div>
+

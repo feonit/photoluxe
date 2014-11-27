@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/*
+ * Вкладка Personal Stories
+ *
+ * */
+.sub-menu-stories {
+    background-image: url("/img/story/stories-sub-menu.jpg");
+    height: 476px;
+    width: 1428px;
+    display: inline-block;
+    position: relative;
+}
+.sidebar-stories {
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+}
+.author-avatar {
+    background-image: url("/img/header/header-default-avatar.png");
+    float: left;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+.author-info {
+    float: right;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 16px;
+}
+.author-name {
+    font-size: 32px;
+    font-weight: 500;
+}
+.btn-story.first-btn {
+    margin-left: 100px;
+}
+.btn-story.last-btn {
+    margin-left: 300px;
+}
+.btn-story {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #000;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #FFCC9A;
+}
+.btn-story span {
+    padding: 3px;
+}

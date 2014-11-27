@@ -1,0 +1,507 @@
+[
+    {
+        "id": 2264,
+        "name": "-deprecated-",
+        "text": "Canon EF 100-400mm f/4.5-5.6L IS USM"
+    },
+    {
+        "id": 2291,
+        "name": "-deprecated-",
+        "text": "Canon EF 100mm f/2.8 Macro USM"
+    },
+    {
+        "id": 2253,
+        "name": "-deprecated-",
+        "text": "Canon EF 100mm f/2.8L Macro IS USM"
+    },
+    {
+        "id": 2254,
+        "name": "-deprecated-",
+        "text": "Canon EF 135mm f/2L USM"
+    },
+    {
+        "id": 2250,
+        "name": "-deprecated-",
+        "text": "Canon EF 16-35mm f/2.8L II USM"
+    },
+    {
+        "id": 2248,
+        "name": "-deprecated-",
+        "text": "Canon EF 17-40mm f/4L USM"
+    },
+    {
+        "id": 2224,
+        "name": "-deprecated-",
+        "text": "Canon EF 24-105mm f/4L IS USM"
+    },
+    {
+        "id": 2228,
+        "name": "-deprecated-",
+        "text": "Canon EF 24-70mm f/2.8L II USM"
+    },
+    {
+        "id": 2258,
+        "name": "-deprecated-",
+        "text": "Canon EF 24-70mm f/4L IS USM"
+    },
+    {
+        "id": 2308,
+        "name": "-deprecated-",
+        "text": "Canon EF 24mm f/1.4L II USM"
+    },
+    {
+        "id": 2262,
+        "name": "-deprecated-",
+        "text": "Canon EF 28-135mm f/3.5-5.6 IS USM"
+    },
+    {
+        "id": 2286,
+        "name": "-deprecated-",
+        "text": "Canon EF 28mm f/1.8 USM"
+    },
+    {
+        "id": 2260,
+        "name": "-deprecated-",
+        "text": "Canon EF 35mm f/1.4L USM"
+    },
+    {
+        "id": 2227,
+        "name": "-deprecated-",
+        "text": "Canon EF 40mm f/2.8 STM"
+    },
+    {
+        "id": 2263,
+        "name": "-deprecated-",
+        "text": "Canon EF 50mm f/1.2L USM"
+    },
+    {
+        "id": 2226,
+        "name": "-deprecated-",
+        "text": "Canon EF 50mm f/1.4 USM"
+    },
+    {
+        "id": 2223,
+        "name": "-deprecated-",
+        "text": "Canon EF 50mm f/1.8 II"
+    },
+    {
+        "id": 2243,
+        "name": "-deprecated-",
+        "text": "Canon EF 70-200mm f/2.8L IS II USM"
+    },
+    {
+        "id": 2261,
+        "name": "-deprecated-",
+        "text": "Canon EF 70-200mm f/2.8L USM"
+    },
+    {
+        "id": 2255,
+        "name": "-deprecated-",
+        "text": "Canon EF 70-200mm f/4L IS USM"
+    },
+    {
+        "id": 2233,
+        "name": "-deprecated-",
+        "text": "Canon EF 70-200mm f/4L USM"
+    },
+    {
+        "id": 2303,
+        "name": "-deprecated-",
+        "text": "Canon EF 70-300mm f/4-5.6L IS USM"
+    },
+    {
+        "id": 2241,
+        "name": "-deprecated-",
+        "text": "Canon EF 70-300mm f/4.0-5.6 IS USM"
+    },
+    {
+        "id": 2252,
+        "name": "-deprecated-",
+        "text": "Canon EF 75-300mm f/4-5.6 III"
+    },
+    {
+        "id": 2270,
+        "name": "-deprecated-",
+        "text": "Canon EF 75-300mm f/4-5.6 III USM"
+    },
+    {
+        "id": 2289,
+        "name": "-deprecated-",
+        "text": "Canon EF 8-15mm f/4.0L Fisheye USM"
+    },
+    {
+        "id": 2259,
+        "name": "-deprecated-",
+        "text": "Canon EF 85mm f/1.2L II USM"
+    },
+    {
+        "id": 2244,
+        "name": "-deprecated-",
+        "text": "Canon EF 85mm f/1.8 USM"
+    },
+    {
+        "id": 2275,
+        "name": "-deprecated-",
+        "text": "Canon EF-S 10-22mm f/3.5-4.5 USM"
+    },
+    {
+        "id": 2265,
+        "name": "-deprecated-",
+        "text": "Canon EF-S 15-85mm f/3.5-5.6 IS USM"
+    },
+    {
+        "id": 2249,
+        "name": "-deprecated-",
+        "text": "Canon EF-S 17-55mm f/2.8 IS USM"
+    },
+    {
+        "id": 2266,
+        "name": "-deprecated-",
+        "text": "Canon EF-S 17-85mm f/4-5.6 IS USM"
+    },
+    {
+        "id": 2240,
+        "name": "-deprecated-",
+        "text": "Canon EF-S 18-135mm f/3.5-5.6 IS"
+    },
+    {
+        "id": 2225,
+        "name": "-deprecated-",
+        "text": "Canon EF-S 18-135mm f/3.5-5.6 IS STM"
+    },
+    {
+        "id": 2239,
+        "name": "-deprecated-",
+        "text": "Canon EF-S 18-200mm f/3.5-5.6 IS"
+    },
+    {
+        "id": 2273,
+        "name": "-deprecated-",
+        "text": "Canon EF-S 18-55mm f/3.5-5.6 IS II"
+    },
+    {
+        "id": 2277,
+        "name": "-deprecated-",
+        "text": "Canon EF-S 18-55mm f/3.5-5.6 IS STM"
+    },
+    {
+        "id": 2247,
+        "name": "-deprecated-",
+        "text": "Canon EF-S 55-250mm f/4.0-5.6 IS II"
+    },
+    {
+        "id": 2295,
+        "name": "-deprecated-",
+        "text": "Nikon 10-24mm f/3.5-4.5G ED AF-S DX Nikkor"
+    },
+    {
+        "id": 2285,
+        "name": "-deprecated-",
+        "text": "Nikon 105mm f/2.8G IF-ED AF-S VR Micro-Nikkor"
+    },
+    {
+        "id": 2322,
+        "name": "-deprecated-",
+        "text": "Nikon 12-24mm f/4G ED-IF AF-S DX Zoom-Nikkor"
+    },
+    {
+        "id": 2279,
+        "name": "-deprecated-",
+        "text": "Nikon 14-24mm f/2.8G ED AF-S Nikkor"
+    },
+    {
+        "id": 2307,
+        "name": "-deprecated-",
+        "text": "Nikon 16-35mm f/4G ED AF-S VR Nikkor"
+    },
+    {
+        "id": 2245,
+        "name": "-deprecated-",
+        "text": "Nikon 16-85 mm f/3.5-5.6G ED VR AF-S DX Nikkor"
+    },
+    {
+        "id": 2282,
+        "name": "-deprecated-",
+        "text": "Nikon 17-55mm f/2.8G ED-IF AF-S DX Zoom-Nikkor"
+    },
+    {
+        "id": 2229,
+        "name": "-deprecated-",
+        "text": "Nikon 18-105mm f/3.5-5.6G AF-S ED DX VR Nikkor"
+    },
+    {
+        "id": 2251,
+        "name": "-deprecated-",
+        "text": "Nikon 18-140mm f/3.5-5.6G ED VR DX AF-S"
+    },
+    {
+        "id": 2235,
+        "name": "-deprecated-",
+        "text": "Nikon 18-200mm f/3.5-5.6G ED AF-S VR II DX Zoom-Nikkor"
+    },
+    {
+        "id": 2246,
+        "name": "-deprecated-",
+        "text": "Nikon 18-300mm f/3.5-5.6G ED AF-S VR DX"
+    },
+    {
+        "id": 2267,
+        "name": "-deprecated-",
+        "text": "Nikon 18-55mm f/3.5-5.6G AF-S VR DX Zoom-Nikkor"
+    },
+    {
+        "id": 2278,
+        "name": "-deprecated-",
+        "text": "Nikon 24-120mm f/4G ED VR AF-S Nikkor"
+    },
+    {
+        "id": 2237,
+        "name": "-deprecated-",
+        "text": "Nikon 24-70mm f/2.8G ED AF-S Nikkor"
+    },
+    {
+        "id": 2238,
+        "name": "-deprecated-",
+        "text": "Nikon 24-70mm f/2.8G ED AF-S Nikkor"
+    },
+    {
+        "id": 2268,
+        "name": "-deprecated-",
+        "text": "Nikon 24-85mm f/3.5-4.5G ED VR AF-S Nikkor"
+    },
+    {
+        "id": 2280,
+        "name": "-deprecated-",
+        "text": "Nikon 28-300mm f/3.5-5.6G ED VR AF-S Nikkor"
+    },
+    {
+        "id": 2230,
+        "name": "-deprecated-",
+        "text": "Nikon 35mm f/1.8G AF-S DX Nikkor"
+    },
+    {
+        "id": 2311,
+        "name": "-deprecated-",
+        "text": "Nikon 40mm f/2.8G AF-S DX Micro NIKKOR"
+    },
+    {
+        "id": 2271,
+        "name": "-deprecated-",
+        "text": "Nikon 50mm f/1.4D AF Nikkor"
+    },
+    {
+        "id": 2236,
+        "name": "-deprecated-",
+        "text": "Nikon 50mm f/1.4G AF-S Nikkor"
+    },
+    {
+        "id": 2234,
+        "name": "-deprecated-",
+        "text": "Nikon 50mm f/1.8D AF Nikkor"
+    },
+    {
+        "id": 2231,
+        "name": "-deprecated-",
+        "text": "Nikon 50mm f/1.8G AF-S Nikkor"
+    },
+    {
+        "id": 2305,
+        "name": "-deprecated-",
+        "text": "Nikon 55-200mm f/4-5.6G AF-S DX ED Zoom-Nikkor"
+    },
+    {
+        "id": 2232,
+        "name": "-deprecated-",
+        "text": "Nikon 55-200mm f/4-5.6G AF-S DX VR IF-ED Zoom-Nikkor"
+    },
+    {
+        "id": 2242,
+        "name": "-deprecated-",
+        "text": "Nikon 55-300mm f/4.5-5.6G ED DX VR AF-S Nikkor"
+    },
+    {
+        "id": 2257,
+        "name": "-deprecated-",
+        "text": "Nikon 70-200mm f/2.8G ED AF-S VR II Zoom-Nikkor"
+    },
+    {
+        "id": 2314,
+        "name": "-deprecated-",
+        "text": "Nikon 70-200mm f/4G ED VR AF-S Nikkor"
+    },
+    {
+        "id": 2256,
+        "name": "-deprecated-",
+        "text": "Nikon 70-300mm f/4.5-5.6G ED-IF AF-S VR Zoom-Nikkor"
+    },
+    {
+        "id": 2293,
+        "name": "-deprecated-",
+        "text": "Nikon 85mm f/1.4G AF-S Nikkor"
+    },
+    {
+        "id": 2288,
+        "name": "-deprecated-",
+        "text": "Nikon 85mm f/1.8D AF Nikkor"
+    },
+    {
+        "id": 2274,
+        "name": "-deprecated-",
+        "text": "Nikon 85mm f/1.8G AF-S Nikkor"
+    },
+    {
+        "id": 2318,
+        "name": "-deprecated-",
+        "text": "Samsung 45mm f/1.8 NX"
+    },
+    {
+        "id": 2315,
+        "name": "-deprecated-",
+        "text": "Samyang 14mm f/2.8 ED AS IF UMC Canon EF"
+    },
+    {
+        "id": 2323,
+        "name": "-deprecated-",
+        "text": "Sigma AF 10-20mm f/4-5.6 EX DC HSM Canon EF-S"
+    },
+    {
+        "id": 2298,
+        "name": "-deprecated-",
+        "text": "Sigma AF 17-50mm f/2.8 EX DC OS HSM Canon EF-S"
+    },
+    {
+        "id": 2319,
+        "name": "-deprecated-",
+        "text": "Sigma AF 17-50mm f/2.8 EX DC OS HSM Nikon F"
+    },
+    {
+        "id": 2299,
+        "name": "-deprecated-",
+        "text": "Sigma AF 18-200mm f/3.5-6.3 II DC OS HSM Nikon F"
+    },
+    {
+        "id": 2296,
+        "name": "-deprecated-",
+        "text": "Sigma AF 24-70mm f/2.8 IF EX DG ASPHERICAL HSM Canon EF"
+    },
+    {
+        "id": 2313,
+        "name": "-deprecated-",
+        "text": "Sigma AF 35mm f/1.4 DG HSM Canon EF"
+    },
+    {
+        "id": 2309,
+        "name": "-deprecated-",
+        "text": "Sigma AF 50mm f/1.4 EX DG HSM Nikon F"
+    },
+    {
+        "id": 2320,
+        "name": "-deprecated-",
+        "text": "Sigma AF 70-300mm f/4-5.6 APO Macro DG Canon EF"
+    },
+    {
+        "id": 2300,
+        "name": "-deprecated-",
+        "text": "Sony 16-50mm f/2.8 (SAL-1650)"
+    },
+    {
+        "id": 2292,
+        "name": "-deprecated-",
+        "text": "Sony 16-50mm f/3.5-5.6 (SELP1650)"
+    },
+    {
+        "id": 2302,
+        "name": "-deprecated-",
+        "text": "Sony 18-200mm f/3.5-6.3 E (SEL-18200)"
+    },
+    {
+        "id": 2321,
+        "name": "-deprecated-",
+        "text": "Sony 30mm f/3.5 Macro E (SEL-30M35)"
+    },
+    {
+        "id": 2310,
+        "name": "-deprecated-",
+        "text": "Sony 50mm f/1.4 (SAL-50F14)"
+    },
+    {
+        "id": 2272,
+        "name": "-deprecated-",
+        "text": "Sony 50mm f/1.8 (SAL-50F18)"
+    },
+    {
+        "id": 2284,
+        "name": "-deprecated-",
+        "text": "Sony 50mm f/1.8 OSS (SEL-50F18)"
+    },
+    {
+        "id": 2269,
+        "name": "-deprecated-",
+        "text": "Sony 55-210mm f/4.5-6.3 E (SEL-55210)"
+    },
+    {
+        "id": 2297,
+        "name": "-deprecated-",
+        "text": "Sony DT 18-135mm f/3.5-5.6 SAM (SAL-18135 )"
+    },
+    {
+        "id": 2290,
+        "name": "-deprecated-",
+        "text": "Sony DT 18-250mm f/3.5-6.3 (SAL-18250)"
+    },
+    {
+        "id": 2304,
+        "name": "-deprecated-",
+        "text": "Sony DT 18-55mm f/3.5-5.6 (SAL-1855)"
+    },
+    {
+        "id": 2301,
+        "name": "-deprecated-",
+        "text": "Sony DT 35mm f/1.8 SAM (SAL-35F18)"
+    },
+    {
+        "id": 2316,
+        "name": "-deprecated-",
+        "text": "Sony DT 55-200mm f/4-5.6 SAM (SAL-55200-2)"
+    },
+    {
+        "id": 2281,
+        "name": "-deprecated-",
+        "text": "Tamron AF 18-200mm f/3.5-6.3 XR Di II LD Aspherical (IF) MACRO Canon EF-S"
+    },
+    {
+        "id": 2283,
+        "name": "-deprecated-",
+        "text": "Tamron AF 18-200mm f/3.5-6.3 XR Di II LD Aspherical (IF) MACRO Nikon F"
+    },
+    {
+        "id": 2287,
+        "name": "-deprecated-",
+        "text": "Tamron AF 18-270mm f/3.5-6.3 Di II VC PZD Canon EF-S"
+    },
+    {
+        "id": 2306,
+        "name": "-deprecated-",
+        "text": "Tamron AF 18-270mm f/3.5-6.3 Di II VC PZD Nikon F"
+    },
+    {
+        "id": 2294,
+        "name": "-deprecated-",
+        "text": "Tamron SP AF 17-50mm f/2.8 XR Di II LD Aspherical (IF) Canon EF-S"
+    },
+    {
+        "id": 2276,
+        "name": "-deprecated-",
+        "text": "Tamron SP AF 17-50mm f/2.8 XR Di II LD Aspherical (IF) Nikon F"
+    },
+    {
+        "id": 2312,
+        "name": "-deprecated-",
+        "text": "Tamron SP AF 17-50mm f/2.8 XR Di II LD VC Aspherical (IF) Canon EF-S"
+    },
+    {
+        "id": 2317,
+        "name": "-deprecated-",
+        "text": "Tamron SP AF 17-50mm f/2.8 XR Di II LD VC Aspherical (IF) Nikon F"
+    }
+]

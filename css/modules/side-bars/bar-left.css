@@ -1,0 +1,237 @@
+@charset "UTF-8";
+#photographer-info {
+  height: 100%;
+  /* Информация о фотографе */
+}
+#photographer-info .head {
+  *zoom: 1;
+  padding: 30px 30px 20px 30px;
+}
+#photographer-info .head:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#photographer-info .head .avatar {
+  height: 100%;
+  float: left;
+}
+#photographer-info .head .avatar img {
+  width: 100%;
+}
+#photographer-info .head .info {
+  float: right;
+  width: 285px;
+}
+#photographer-info .head .info .name {
+  font-size: 32px;
+  font-weight: normal;
+}
+#photographer-info .head .info .busy-link {
+  line-height: 30px;
+  display: block;
+  height: 30px;
+  /*              попросили убрать, возможно на время
+                  padding-left: 30px;
+                  background: url(/img/icons/busy.png) no-repeat 0 50%;*/
+}
+#photographer-info .head .info .blockquote {
+  line-height: 18px;
+  padding: 10px 0;
+}
+#photographer-info .body {
+  padding: 25px;
+}
+#photographer-info .body .job {
+  font-size: 24px;
+  font-weight: normal;
+}
+#photographer-info .body .age-lang {
+  line-height: 32px;
+  color: #ACACAC;
+}
+#photographer-info .body .contact-info {
+  padding-left: 28px;
+  background: url(/img/icons/contacts.png) no-repeat 0 0;
+}
+#photographer-info .body .contact-info .contact {
+  line-height: 22px;
+  font-size: 14px;
+}
+#photographer-info .body .my-site {
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 28px;
+  line-height: 38px;
+  color: black;
+  background: url(/img/icons/link.png) no-repeat 0 50%;
+}
+#photographer-info .body .pulse-block {
+  padding: 28px;
+}
+#photographer-info .body .pulse-block .line {
+  line-height: 22px;
+}
+#photographer-info .body .pulse-block .pulse {
+  width: 110px;
+}
+#photographer-info .body .pulse-block .pulse .line {
+  line-height: 20px;
+  height: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+#photographer-info .body .pulse-block .pulse .line .value {
+  float: right;
+}
+#photographer-info .body .pulse-block .data {
+  color: #ACACAC;
+}
+#photographer-info .body .description {
+  line-height: 20px;
+  font-size: 14px;
+}
+#photographer-info .body .img-link {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+#photographer-info .body .social {
+  margin-top: 1em;
+}
+#photographer-info .body .vkontakte {
+  background: url(/img/icons/vkontakte.png) no-repeat 0 50%;
+}
+#photographer-info .body .google {
+  background: url(/img/icons/google.png) no-repeat 0 50%;
+}
+#photographer-info .body .facebook {
+  background: url(/img/icons/facebook.png) no-repeat 0 50%;
+}
+#photographer-info .body .habib {
+  background: url(/img/icons/habib.png) no-repeat 0 50%;
+  width: 100px;
+}
+
+#photographer-chat {
+  /* Тет-а-тет c фотографом*/
+  /* Вкладка комментариев к альбому */
+  /* Аватарки */
+  /* Новое сообщение и коммиты */
+  /* конец Новое сообщение и коммиты */
+}
+#photographer-chat .tabs-list {
+  *zoom: 1;
+}
+#photographer-chat .tabs-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#photographer-chat .avatar {
+  height: 35px;
+  width: 35px;
+  float: left;
+}
+#photographer-chat .avatar img {
+  width: 100%;
+  border-radius: 4px;
+}
+#photographer-chat .message {
+  line-height: 20px;
+  font-size: 14px;
+  float: right;
+  width: 87%;
+  *zoom: 1;
+}
+#photographer-chat .message:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#photographer-chat .message .date {
+  font-size: 10px;
+  color: #999999;
+  line-height: 9px;
+  display: inline-block;
+  height: 18px;
+}
+#photographer-chat .message .controls {
+  float: right;
+}
+#photographer-chat .message .controls .message-link {
+  color: #999999;
+  font-weight: normal;
+  font-size: 10px;
+  float: right;
+}
+#photographer-chat .message .controls .message-link:hover {
+  color: #ece7e4;
+}
+#photographer-chat .item-messages {
+  *zoom: 1;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+#photographer-chat .item-messages:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#photographer-chat .head {
+  padding: 22px 36px;
+  *zoom: 1;
+}
+#photographer-chat .head:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#photographer-chat .body {
+  padding: 30px;
+}
+#photographer-chat .new-message, #photographer-chat .new-answer {
+  padding: 15px 24px;
+  background: #ffffff;
+  margin-bottom: 14px;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid #E4E4E4;
+}
+#photographer-chat .new-message:before, #photographer-chat .new-answer:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #ffffff;
+  left: -6px;
+  height: 10px;
+  width: 10px;
+  border-left: 1px solid #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
+}
+#photographer-chat .new-message textarea, #photographer-chat .new-answer textarea {
+  border: none;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+#photographer-chat .b-new-answer {
+  *zoom: 1;
+  margin-top: 20px;
+}
+#photographer-chat .b-new-answer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#photographer-chat .b-new-answer .new-answer {
+  border: 1px solid #ece7e4;
+}
+#photographer-chat .b-new-answer .new-answer:before {
+  border-left: inherit;
+  border-bottom: inherit;
+}

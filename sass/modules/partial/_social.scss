@@ -1,0 +1,132 @@
+// from http://perfecticons.com/
+
+
+@font-face {
+  font-family: 'si';
+  src: url('./../../../img/social/socicon-1.3/socicon.eot');
+  src: url('./../../../img/social/socicon-1.3/socicon.eot?#iefix') format('embedded-opentype'),
+  url('./../../../img/social/socicon-1.3/socicon.woff') format('woff'),
+  url('./../../../img/social/socicon-1.3/socicon.ttf') format('truetype'),
+  url('./../../../img/social/socicon-1.3/socicon.svg#icomoonregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family:si;
+    src: url("./../../../img/social/socicon-1.3/socicon.svg") format(svg);
+  }
+}
+
+.soc {
+  //overflow:hidden;
+  margin:0; padding:0;
+  list-style:none;
+}
+
+.soc li {
+  display:inline-block;
+  *display:inline;
+  zoom:1;
+}
+
+
+.soc li .link {
+  font-family:si!important;
+  font-style:normal;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  box-sizing:border-box;
+  overflow:hidden;
+  text-decoration:none;
+  text-align:center;
+  display:block;
+  position: relative;
+  z-index: 1;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 3px;
+  margin-right: 10px;
+  color: #ffffff;
+  background-color: none;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 18px;
+  &:hover, &:focus {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.soc-icon-last{
+  margin:0 !important;
+}
+
+.soc-twitter {
+  background-color: #4da7de !important;
+}
+.soc-twitter:before {
+  content:'a';
+}
+.soc-facebook {
+  background-color: #3e5b98 !important;
+}
+.soc-facebook:before {
+  content:'b';
+}
+.soc-google {
+  background-color: #d93e2d !important;
+}
+.soc-google:before {
+  content:'c';
+}
+.soc-pinterest {
+  background-color: #c92619 !important;
+}
+.soc-pinterest:before {
+  content:'d';
+}
+.soc-linkedin {
+  background-color: #3371b7 !important;
+}
+.soc-linkedin:before {
+  content:'j';
+}
+.soc-rss {
+  background-color: #f26109 !important;
+}
+.soc-rss:before {
+  content:',';
+}
+.soc-vkontakte {
+  background-color: #5a7fa6 !important;
+}
+.soc-vkontakte:before {
+  content:';';
+}
+.soc-youtube {
+  background-color: #e02a20 !important;
+}
+.soc-youtube:before {
+  content:'r';
+}
+.soc-skype {
+  background-color: #28abe3 !important;
+}
+.soc-skype:before {
+  content:'g';
+}
+.soc-xbox {
+  background-color: #92C83E !important;
+}
+.soc-xbox:before {
+  content:'Y';
+}
+

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+.popupFilterBrowse {
+  position: relative;
+  text-align: left;
+}
+.popupFilterBrowse > .caption {
+  height: 36px;
+  line-height: 36px;
+  min-width: 150px;
+  background-color: #fff;
+}
+.popupFilterBrowse .popupPanel {
+  position: absolute;
+  min-width: 150px;
+  background-color: #fff;
+  padding: 5px 0;
+  display: none;
+  /*
+      li {
+        padding: 5px 10px;
+        &.selected {
+          &:after {
+            content: "✓";
+            float: right;
+          }
+        }
+      }
+  */
+}
+.popupFilterBrowse .popupPanel .context {
+  font-size: 16px;
+}
+.popupFilterBrowse .popupPanel .context li {
+  white-space: nowrap;
+}
+.popupFilterBrowse .popupPanel .time {
+  margin: 0 5px;
+  border-radius: 4px;
+}
+.popupFilterBrowse .popupPanel .time.closed .time-caption:after {
+  content: "";
+  float: right;
+  background-image: url(/img/discover/discover-browse-triangle.png);
+  background-repeat: no-repeat;
+  height: 9px;
+  width: 14px;
+  margin-top: 14px;
+  background-position: 0 100%;
+}
+.popupFilterBrowse .popupPanel .time.closed ul {
+  display: none;
+}
+.popupFilterBrowse .popupPanel .time.closed ul.closed {
+  display: block;
+}
+.popupFilterBrowse .popupPanel .time .time-caption {
+  padding: 5px 10px 5px 5px;
+}
+.popupFilterBrowse .popupPanel .time .time-caption:after {
+  content: "";
+  float: right;
+  background-image: url(/img/discover/discover-browse-triangle.png);
+  background-repeat: no-repeat;
+  height: 9px;
+  width: 14px;
+  margin-top: 14px;
+  background-position: 0 0;
+}

@@ -1,0 +1,44 @@
+/*  CHECKBOX example
+
+<div class="checkbox-block">
+    <input type="checkbox" id="male"><label for="male" class="checkbox-label">Male</label>
+</div>
+<div class="checkbox-block">
+    <input type="checkbox" id="female"><label for="female" class="checkbox-label">Female</label>
+</div>
+*/
+
+//$import: 'input-box';
+
+
+input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+label.checkbox-label {
+    cursor:pointer;
+}
+label.checkbox-label:after {
+    content: " ";
+    float: left;
+    height: 26px;
+    width: 26px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    background: url(/img/icons/checkbox-bg.png) repeat-y;
+    margin-right: 10px;
+}
+input[type=checkbox]:checked + label.checkbox-label:after {
+    background-position: 0 -24px;
+}
+label.checkbox-label:hover:after {
+    background-position: 0 -48px;
+}
+input[type=checkbox]:checked + label.checkbox-label:hover:after {
+    background-position: 0 -24px;
+}
+
+.checkbox-block{
+    display: block;
+    margin: 15px;
+}

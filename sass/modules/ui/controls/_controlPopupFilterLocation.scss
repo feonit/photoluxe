@@ -1,0 +1,132 @@
+@import "compass/css3";
+
+.popup-filter-location {
+  height: 100%;
+  position: relative;
+  text-align: left;
+
+  .col {
+    padding: 0 10px;
+  }
+
+  .row .row {
+    margin: 0 10px;
+  }
+
+  /* Шапка контрола */
+  .caption {
+    @include box-sizing(border-box);
+    height: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #333333;
+    background-image: none;
+    padding: 24px 16px 0;
+    padding-right: 40px;
+
+    &:after {
+      content: "";
+      background-image: url(/img/icons/drop-box-arrow.png);
+      background-repeat: no-repeat;
+      height: 16px;
+      width: 16px;
+      background-position: 0 100%;
+      display: block;
+      position: absolute;
+      bottom: 5px;
+      margin: auto;
+      right: 10px;
+    }
+  }
+
+  /* Переключатель видимости всплывающей панельки */
+  &.open{
+    .popupPanel{
+      display: block;
+    }
+
+    > .caption{
+      &:after{
+        background-position: 0 0;
+      }
+    }
+  }
+
+
+  /* Всплывающая панелька */
+  .popupPanel {
+    border: 1px solid rgba(0,0,0,.1);
+    background: white;
+    display: none;
+    top: 51px;
+
+
+    button {
+      outline: none;
+      line-height: 33px;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      background-color: #FFF;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #444;
+      width: 100%;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, .1);
+      }
+      &.active {
+        border-color: black;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+      }
+      &.inactive {
+        color: rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+      }
+
+      &.selected {
+        border-color: white;
+        background-color: rgba(0, 0, 0, .4);
+      }
+
+      &.activeButton {
+        background-color: rgba(0, 0, 0, .4);
+      }
+    }
+
+    position: absolute;
+    width: 300px;
+    border-radius: 3px;
+    padding: 10px 0;
+
+    .topBar {
+      margin-bottom: 10px;
+
+      .col {
+        width: 50%;
+        float: right;
+      }
+    }
+    .combosBar {
+
+      .col {
+        margin-bottom: 10px;
+
+        select {
+          width: 100%;
+          background-color: white;
+          padding: 3px;
+          font-size: 13px;
+          border-radius: 5px;
+          border: 1px solid black;
+          outline: none;
+        }
+      }
+    }
+    .bottomBar {
+      .col {
+        width: 50%;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,195 @@
+/*
+    Тут общее описание сайдбаров
+*/
+
+
+@import "compass/css3/box-shadow";
+$colorYellowLight: #fffaec;
+$colorYellowBold: #eeeedd;
+$color: #ece7e4;
+$heightButtonTab: 55px;
+$widthButtonTab: 130px;
+
+//=== Сами бары
+
+.control-panel-right {
+    right: -480px;
+}
+
+.control-panel-left {
+    left: -480px;
+}
+
+.control-panel-right, .control-panel-left{
+    position: fixed;
+    display: none;
+    width: 450px;
+    height: 100%;
+    top: 0;
+    background: #ffffff;
+    @include box-shadow(black 0 5px 20px);
+
+
+    //=== Кнопки закрытия баров
+
+    .hide-control-panel-right,
+    .hide-control-panel-left{
+        width: $heightButtonTab;
+        height: $heightButtonTab;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        box-sizing: border-box;
+        z-index: 10000;
+        position: absolute;
+        top: 0;
+
+        &:hover{
+            border: 1px solid #eeeeee;
+        }
+    }
+
+    .hide-control-panel-right {
+        background-image: url(/img/icons/close-side-bar.png);
+        left : 0;
+    }
+
+    .hide-control-panel-left {
+        background-image: url(/img/icons/close-side-bar.png);
+        right : 0;
+    }
+
+    .content-control-panel-left{
+        height: 100%;
+    }
+
+
+    //=== Общие стили для создания вкладок в сайдбарах
+
+    /* Левый сайд-бар с информацией о фотографе */
+
+    // Существует разная реализация табов на css. Основные подходы:
+    // Использование скрытых радио                          http://ruseller.com/lessons.php?rub=2&id=1226 // Safari 5.1+, Chrome 13+, Firefox 3.6+, Opera 10+, и IE 9+.
+    // наш - Использование якорей и дублирование таба в контенте  http://jsfiddle.net/bA9mF/45/light/  Табы на чистом CSS (IE9+ и остальные)
+    //                                                      http://jsfiddle.net/bA9mF/52/  Табы на чистом CSS (IE6+ и остальные)
+
+
+    // Вкладки
+    .tabs-list{
+        white-space: nowrap;
+        list-style:none;
+        width: 100%;
+
+        .tab-item{
+            position:relative;
+            display: block;
+            float: left;
+            z-index: 3;
+            width: 33.33%;
+        }
+    }
+
+    // Вкладка кнопочка
+    .content-list .pressed ,
+    .tabs-list .tab-item{
+        .link{
+            text-decoration: none;
+            display: block;
+            height: $heightButtonTab;
+            line-height: $heightButtonTab;
+            font-size: 14px;
+            text-align: center;
+            box-sizing: border-box;
+            color: #000000;
+            width: 100%;
+            border-top: 1px solid $colorYellowBold;
+            border-right: 1px solid $colorYellowBold;
+
+            &:hover{
+                background: $colorYellowLight;
+            }
+        }
+    }
+
+    // Контент для вкладки
+    .content-list{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+
+        .content-item{
+            position:relative;
+            height: 100%;
+            padding-top: $heightButtonTab;
+            box-sizing: border-box;
+
+            .pressed{
+                position:absolute;
+                color: #b55;
+                top: 0;
+                display: block;
+                float: left;
+                z-index: 3;
+
+                .link{
+                    background: $colorYellowLight;
+                }
+
+                &.pseudo-tab-1{
+                    left: 0px;
+                    width: 33.33%;
+                }
+
+                &.pseudo-tab-2{
+                    left: 33.33%;
+                    width: 33.33%;
+                }
+            }
+        }
+    }
+
+    /* общая цветова палитра */
+
+    .head{
+        background: $colorYellowLight;
+        @include box-shadow(black 0px 0px 20px -9px);
+    }
+
+}
+
+
+
+//=== это нужно для нужного эффекта скрола
+
+html,body { height: 100%; margin: 0; }
+.side-bar-table {
+    display: table;
+    max-height: 100%;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+
+.side-bar-table-row1,
+.side-bar-table-row2 {
+    display: table-row;
+}
+.side-bar-table-cell{
+    display: table-cell;
+  border-bottom: 50px;
+}
+
+.side-bar-table-row1 {
+    height: 0%;
+}
+
+.side-bar-scrolable {
+    height:100%;
+    overflow: auto;
+}
+
+
+

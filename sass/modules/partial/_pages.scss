@@ -1,0 +1,64 @@
+/*
+    Тут находится логика отображения страниц для pageSlider
+*/
+
+@import "compass/utilities";
+
+html{
+    height: 100%;
+
+    body{
+        height: 100%;
+        //min-width: 320px;
+        overflow-x: hidden;
+
+        .sliders-wrapper {
+            min-height: 100%;
+            position: relative;
+
+            .sliders-ul {
+              width: 100%;
+
+
+              @include pie-clearfix();
+
+                .sections-li {
+                  padding-top: 50px; //значение этого свойства должно быть равным высоте хидера.
+                  min-height: 100%;
+                  width: 100%;
+                  display: none;
+                  margin-bottom: 200px;
+                  background-color: white;
+                  z-index: 4;
+                  box-shadow: 0px 8px 15px -10px black;
+                  overflow: hidden;
+                  padding-bottom: 150px;
+
+                  &.active{
+                    display: block;
+                  }
+
+                  .wrapper {
+                    max-width: 1440px;
+                    min-width: 310px;
+                    margin: 0 auto;
+                    padding: 0 7px;
+                  }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

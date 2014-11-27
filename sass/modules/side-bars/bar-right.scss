@@ -1,0 +1,52 @@
+// Файл создан потому как имеет собстственную модификацую бара
+// Правый сайд-бар с информацией об альбоме
+
+// Модификация правого бара на основе описания SideBar
+
+
+    .control-panel-right  {
+        width: 570px;
+
+//        .content-list{
+//            top: 50px;
+//            padding-top: 50px;
+//
+///*            .content-item{
+//                padding-top: 55px;
+//            }*/
+//        }
+        .tab-item{
+            float: right !important;
+        }
+        .pseudo-tab-1{
+            left: 66.6% !important;
+        }
+        .pseudo-tab-2{
+            left: 33.3% !important;
+        }
+    }
+
+
+
+        /* Название альбома*/
+    .album-name{
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        font-weight: normal;
+        padding-left: 50px;
+        margin: 0px; // для кросбраузерности
+        text-align: center;
+    }
+
+// конец Модификация правого бара на основе общего описания SideBar
+
+#album-comments{
+    @import "album-comments";
+}
+
+#album-info{
+    @import "album-info";
+}
+
+

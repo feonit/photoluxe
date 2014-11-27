@@ -1,0 +1,377 @@
+@charset "UTF-8";
+.control-panel-right {
+  width: 570px;
+}
+.control-panel-right .tab-item {
+  float: right !important;
+}
+.control-panel-right .pseudo-tab-1 {
+  left: 66.6% !important;
+}
+.control-panel-right .pseudo-tab-2 {
+  left: 33.3% !important;
+}
+
+/* Название альбома*/
+.album-name {
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: normal;
+  padding-left: 50px;
+  margin: 0px;
+  text-align: center;
+}
+
+#album-comments {
+  /* Вкладка комментариев к альбому */
+  /* Аватарки */
+  /* Новое сообщение и коммиты */
+  /* конец Новое сообщение и коммиты */
+}
+#album-comments .tabs-list {
+  *zoom: 1;
+}
+#album-comments .tabs-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#album-comments .avatar {
+  height: 35px;
+  width: 35px;
+  float: left;
+}
+#album-comments .avatar img {
+  width: 100%;
+  border-radius: 4px;
+}
+#album-comments .message {
+  line-height: 20px;
+  font-size: 14px;
+  float: right;
+  width: 87%;
+  *zoom: 1;
+}
+#album-comments .message:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#album-comments .message .date {
+  font-size: 10px;
+  color: #999999;
+  line-height: 9px;
+  display: inline-block;
+  height: 18px;
+}
+#album-comments .message .controls {
+  float: right;
+}
+#album-comments .message .controls .message-link {
+  color: #999999;
+  font-weight: normal;
+  font-size: 10px;
+  float: right;
+}
+#album-comments .message .controls .message-link:hover {
+  color: #ece7e4;
+}
+#album-comments .item-messages {
+  *zoom: 1;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+#album-comments .item-messages:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#album-comments .head {
+  padding: 22px 36px;
+  *zoom: 1;
+}
+#album-comments .head:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#album-comments .body {
+  padding: 30px;
+}
+#album-comments .new-message, #album-comments .new-answer {
+  padding: 15px 24px;
+  background: #ffffff;
+  margin-bottom: 14px;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid #E4E4E4;
+}
+#album-comments .new-message:before, #album-comments .new-answer:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #ffffff;
+  left: -6px;
+  height: 10px;
+  width: 10px;
+  border-left: 1px solid #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
+}
+#album-comments .new-message textarea, #album-comments .new-answer textarea {
+  border: none;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+#album-comments .b-new-answer {
+  *zoom: 1;
+  margin-top: 20px;
+}
+#album-comments .b-new-answer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#album-comments .b-new-answer .new-answer {
+  border: 1px solid #ece7e4;
+}
+#album-comments .b-new-answer .new-answer:before {
+  border-left: inherit;
+  border-bottom: inherit;
+}
+
+#album-info {
+  /* Вкладка с информацией об альбоме */
+}
+#album-info .body {
+  padding: 30px;
+  line-height: 20px;
+  font-size: 14px;
+  /* теги */
+  /*===================================================*/
+    /*.controls {
+        margin-top: 16px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    #type-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        padding: 5px 11px 0px 11px;
+    }
+
+    #type-selector label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+    }*/
+  /*    #pac-input:focus {
+          border-color: #4d90fe;
+          margin-left: -1px;
+          padding-left: 14px;
+          width: 401px;
+      }*/
+  /*===================================================*/
+}
+#album-info .body textarea, #album-info .body input, #album-info .body select {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+}
+#album-info .body textarea:hover, #album-info .body input:hover, #album-info .body select:hover {
+  border: 1px solid rgba(148, 149, 115, 0.24);
+}
+#album-info .body textarea:focus, #album-info .body input:focus, #album-info .body select:focus {
+  border: 1px solid #949573;
+}
+#album-info .body .property input {
+  /*        &:hover, &:focus{
+              padding: 5px;
+              background: white;
+              width: 100%;
+              margin-bottom: -5px;
+          }*/
+  /*        &:hover{
+              border: 1px solid rgba(148, 149, 115, 0.24);
+          }*/
+}
+#album-info .body .btn-edit-text {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  background-position: 50% 50% !important;
+}
+#album-info .body .general-info-message {
+  position: relative;
+}
+#album-info .body .headline {
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 30px;
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 20px;
+}
+#album-info .body .row {
+  margin-bottom: 30px;
+}
+#album-info .body .row .col {
+  padding: 0;
+}
+#album-info .body .row .col.col-2 {
+  width: 46%;
+}
+#album-info .body .row .col.col-2.left {
+  margin-right: 8%;
+}
+#album-info .body .edit {
+  background-image: url(/img/icons/edit.png);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  cursor: pointer;
+  position: relative;
+  height: 20px;
+  width: 20px;
+}
+#album-info .body .info-textarea, #album-info .body textarea {
+  white-space: pre-wrap;
+}
+#album-info .body .field-tags {
+  background-position: 100% 0%;
+  height: 45px;
+  *zoom: 1;
+  position: relative;
+}
+#album-info .body .field-tags:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#album-info .body .field-tags .tags {
+  float: left;
+  margin: 10px 0px;
+}
+#album-info .body .field-tags .tags .hash-btn {
+  background: white;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 0px 6px;
+  display: inline-block;
+}
+#album-info .body .field-tags .edit-tags {
+  float: right;
+}
+#album-info .body .field-tags .input-tags {
+  opacity: 0;
+  box-sizing: border-box;
+  width: 350px;
+  position: absolute;
+  top: 0;
+}
+#album-info .body .field-tags .input-tags:focus {
+  opacity: 1;
+}
+#album-info .body .field-tags .btn-save-tags {
+  display: none;
+  float: right;
+}
+#album-info .body .property {
+  border-bottom: 1px dashed #ece7e4;
+  padding-top: 20px;
+  line-height: 10px;
+  position: relative;
+}
+#album-info .body .property .property-value {
+  color: #999999;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 130px;
+  text-align: right;
+}
+#album-info .body .property .property-value:not(:focus) {
+  border: 1px solid #ffffff;
+}
+#album-info .body .property .property-value:focus {
+  font-weight: bold;
+  color: black;
+}
+#album-info .body .pac-container {
+  font-family: Roboto;
+}
+#album-info .body #pac-input {
+  background-color: #fff;
+  padding: 0 11px 0 13px;
+  width: 400px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  margin-bottom: 25px;
+  height: 40px;
+  border-color: #cccccc;
+}
+#album-info .body #map_canvas {
+  width: 100%;
+  height: 300px;
+}
+#album-info .body .gm-style-cc {
+  display: none;
+}
+#album-info .body .geography {
+  position: relative;
+  margin: 40px 0;
+}
+#album-info .body .geography .input-location {
+  width: 300px;
+  vertical-align: middle;
+}
+#album-info .body .geography .location-edit {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  padding-left: 30px;
+  top: 0;
+}
+#album-info .body .geography .place {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 50px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+#album-info .body .input-location {
+  border: none;
+  color: #ffffff;
+  background: transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+#album-info .body .input-location:focus {
+  background: white;
+  color: #000000;
+  cursor: text;
+}

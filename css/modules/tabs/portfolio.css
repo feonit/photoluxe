@@ -1,0 +1,57 @@
+/*
+    DRAG FILE BOX
+*/
+html body .sliders-wrapper .sliders-ul .sections-li .portfolio.sections .wrapper {
+  padding-top: 60px;
+}
+
+.portfolio.sections .sub-nav .categories-2 ul a {
+  text-align: left;
+}
+
+.head-frame {
+  height: 350px;
+  background-color: rgba(252, 41, 88, 0.16);
+  text-align: center;
+}
+
+.b-drag-box {
+  border: 2px dashed #efdd9f;
+  padding: 30px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.b-drag-box:before, .b-drag-box:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  top: 0;
+  background-image: url("../../../img/icons/drag-file-box.png");
+  background-repeat: no-repeat;
+}
+
+.b-drag-box:before {
+  left: 0;
+  background-position: 95% 50%;
+}
+
+.b-drag-box:after {
+  right: 0;
+  background-position: 5% 50%;
+}
+
+.b-drag-box .e-instruction {
+  margin: 10px;
+}
+
+.b-drag-box .e-instruction-or {
+  color: #C4C4C4;
+  font-weight: bold;
+  margin: 10px;
+}
+
+/*
+    PREVIEW
+*/

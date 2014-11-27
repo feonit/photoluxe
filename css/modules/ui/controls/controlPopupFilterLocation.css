@@ -1,0 +1,70 @@
+@charset "UTF-8";
+.popupFilterLocation {
+  position: relative;
+  text-align: left;
+}
+.popupFilterLocation > .caption {
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #000;
+  color: #fff;
+  text-shadow: 0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black;
+  min-width: 150px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(/img/icons/down-bracket-sprite.png);
+  background-repeat: no-repeat;
+  background-position: 98% 100%;
+  padding-right: 30px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+.popupFilterLocation > .caption:hover, .popupFilterLocation > .caption.opened {
+  /*LALALALALALAL*/
+  background-position: 98% 0%;
+  /*   todo: вынести картинку в отдельный независимый блок */
+}
+.popupFilterLocation .popupPanel {
+  position: absolute;
+  min-width: 300px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1.5em 0;
+  box-shadow: 0 0 8px -2px white;
+  top: 50px;
+}
+.popupFilterLocation .popupPanel.hidden {
+  display: none;
+}
+.popupFilterLocation .popupPanel button {
+  width: 100%;
+}
+.popupFilterLocation .popupPanel button.selected {
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.popupFilterLocation .popupPanel button.activeButton {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.popupFilterLocation .popupPanel .topBar {
+  margin-bottom: 10px;
+}
+.popupFilterLocation .popupPanel .topBar .col {
+  width: 50%;
+  float: right;
+}
+.popupFilterLocation .popupPanel .combosBar .col {
+  margin-bottom: 10px;
+}
+.popupFilterLocation .popupPanel .combosBar .col select {
+  width: 100%;
+  background-color: white;
+  padding: 3px;
+  font-size: 13px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+}
+.popupFilterLocation .popupPanel .bottomBar .col {
+  width: 50%;
+}

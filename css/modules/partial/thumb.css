@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/*
+    Плитка фотографий
+*/
+.portfolio .hidden-block-controls .b-controls {
+  display: none;
+}
+.portfolio .thumb {
+  width: 260px;
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  /* картинка */
+  /* контролы для вкладки profile */
+  /* общий серый блок на картинке */
+}
+.portfolio .thumb img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.portfolio .thumb.new:after, .portfolio .thumb.changed:after {
+  display: block;
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  font-size: 32px;
+  text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+.portfolio .thumb.new:after {
+  content: 'New!';
+}
+.portfolio .thumb.changed:after {
+  content: 'Changed!';
+}
+.portfolio .thumb .thumb-image {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.portfolio .thumb .b-controls {
+  position: absolute;
+  z-index: 50;
+  right: 10px;
+  top: 10px;
+}
+.portfolio .thumb .b-controls .btn-edit, .portfolio .thumb .b-controls .btn-remove {
+  height: 36px;
+  width: 36px;
+  border: none;
+  display: block;
+  cursor: pointer;
+  float: left;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+}
+.portfolio .thumb .b-controls .btn-edit {
+  background-image: url("/img/icons/photo-edit.png");
+}
+.portfolio .thumb .b-controls .btn-remove {
+  background-image: url("/img/icons/photo-remove.png");
+}
+.portfolio .thumb .b-name {
+  width: 100%;
+  position: absolute;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  z-index: 1;
+  bottom: 0;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.portfolio .thumb .b-name .b-top {
+  position: relative;
+}
+.portfolio .thumb .b-name .b-top .control-chat {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("/img/index/gray-chat.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+.portfolio .thumb .b-name .b-top .control-chat:hover {
+  background-image: url("/img/index/chat.png");
+}
+.portfolio .thumb .b-name .b-bottom {
+  margin-top: 15px;
+  text-align: right;
+}
+.portfolio .thumb .b-name .e-link-name {
+  text-decoration: none;
+  display: inline;
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+  /* модификаторы */
+}
+.portfolio .thumb .b-name .e-link-name:hover {
+  text-decoration: underline;
+}
+.portfolio .thumb .b-name .e-link-name.m-top {
+  font-size: 12px;
+}
+.portfolio .thumb .b-name .e-link-name.m-bottom {
+  font-size: 14px;
+  text-align: right;
+}

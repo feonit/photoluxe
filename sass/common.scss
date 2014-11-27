@@ -1,0 +1,82 @@
+/*
+    Менеджер глобальных стилей приложения
+    Здесь подключаются все необходимые для любой страницы компоненты, интерфейсы, модули
+*/
+
+/* @deprecated старое наследие, нужен рефактор */
+@import './main';
+
+// шапка
+@import 'modules/ui/menu';
+
+// второй уровень меню
+@import 'modules/ui/sub-menu';
+
+// подвал
+@import './modules/partial/footer';
+
+// Шрифты
+@import './components/fonts';
+
+// @deprecated
+// Интерфейсы браузера, стилизованные
+// @import './components/input';
+@import './components/checkbox';
+@import './components/button';
+
+// Интерфейс Сайдбар
+@import './modules/ui/SideBar';
+
+// @deprecated
+// вспомогательные общие кусочки
+@import './components/helpers';
+
+// Правила для функционала поддержки эффекта scrollPage
+@import './modules/partial/pages';
+
+// новая панель второго уровня
+@import './modules/partial/under-header-panel';
+
+// @deprecated
+// хлебные крошки
+@import './modules/partial/breadcrumb';
+
+@import './modules/partial/ajaxLoader';
+
+// @deprecated
+///* пагинатор */
+//@import './modules/partial/paginator';
+
+// социальные иконки
+@import './modules/partial/social';
+
+// ================================================================================================================
+// Единовременный переход на платформу Bootstrap не возможен в ходе активной независимой веб-разработки,
+// Но это очень нужно, для использования единого стиля и шаблонов
+
+// Поэтому подключение компонентов
+// будет происходить по мере возможности
+// чтобы минимизировать случаи когда страница "поехала"
+
+
+// Core variables and mixins
+// (подключение не опасно)
+@import "./modules/bootstrap/variables";
+@import "./modules/bootstrap/mixins";
+
+// Components
+// (подключаем осторожно)
+@import "./modules/bootstrap/modals"; // модальное окно всплывает в корне дерева DOM, поэтому такие компоненты нужно первыми глобализировать
+@import "./modules/bootstrap/popovers"; // как и модальные окна, завязаны на корне DOM
+
+// Внимание, этот компонент не является частью bootstrap, но в процессе кастомизации может использовать теже переменные и миксины
+// Это астомизация контролов на основе select2 селект бокс контрола, появляется на уровне body в документе поэтому должен быть глобальным
+@import "./modules/partial/custom-select2";
+
+// Utility classes
+// (подключение не опасно)
+@import "./modules/bootstrap/utilities";
+@import "./modules/bootstrap/responsive-utilities";
+
+/* bootstrap */
+@import './modules/bootstrap/bootstrap.scss';

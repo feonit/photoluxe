@@ -1,0 +1,124 @@
+.popupFilterBrowse {
+  position: relative;
+  text-align: left;
+
+  > .caption {
+    height: 36px;
+    line-height: 36px;
+//    border:1px solid #000;
+//    color: #fff;
+//    text-shadow: 0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black;
+    min-width: 150px;
+    background-color: #fff;
+//    background-image: url(/img/icons/down-bracket-sprite.png);
+//    background-repeat: no-repeat;
+//    background-position: 98% 100%;
+//    padding-right: 30px;
+//    padding-left: 10px;
+//    border-radius: 5px;
+
+    &:hover,&.opened {
+//      background-position: 98% 0%; //todo: вынести картинку в отдельный независимый блок
+    }
+
+  }
+
+  .popupPanel {
+    position: absolute;
+    min-width: 150px;
+    background-color: #fff;
+//    border: 1px solid black;
+//    border-radius: 5px;
+    padding: 5px 0;
+//    box-shadow: 0 0 8px -2px white;
+    display: none;
+//    top: 50px; // выравнивание попап-панели с другими менюшками. (надо подстроить позже)
+
+    //для всех <LI>шек
+/*
+    li {
+      padding: 5px 10px;
+      &.selected {
+        &:after {
+          content: "✓";
+          float: right;
+        }
+      }
+    }
+*/
+    //li {}
+
+    .context {
+//      text-shadow: 0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black;
+      font-size: 16px;
+//      color: white;
+      li {
+        white-space: nowrap;
+        &:hover {
+//        background: rgba(255, 255, 255,0.4);
+//        outline: 1px solid white;
+        }
+      }
+    }
+    .time {
+//      background: white;
+      margin: 0 5px;
+      border-radius: 4px;
+      &.closed {
+        .time-caption {
+          &:after {
+            content: "";
+            float: right;
+            background-image: url(/img/discover/discover-browse-triangle.png);
+            background-repeat: no-repeat;
+            height: 9px;
+            width: 14px;
+            margin-top: 14px;
+            background-position: 0 100%;
+          }
+        }
+
+        ul {
+          display: none;
+//          border-top: 1px solid rgba(0, 0, 0, 0.4);
+          &.closed {
+            display: block;
+          }
+        }
+      }
+
+      .time-caption {
+        &:after {
+          content: "";
+          float: right;
+          background-image: url(/img/discover/discover-browse-triangle.png);
+          background-repeat: no-repeat;
+          height: 9px;
+          width: 14px;
+          margin-top: 14px;
+          background-position: 0 0;
+        }
+        padding: 5px 10px 5px 5px;
+        &:hover {
+//          background: rgba(0, 0, 0, 0.04);
+        }
+      }
+
+      li:hover {
+//        border-width: 1px solid black;
+//        padding: 4px 9px;
+        &:last-child:hover {
+//          border-radius: 0 0 3px 3px;
+        }
+      }
+    }
+  }
+}
+
+div.popupFilterBrowse .time li:hover {
+
+}
+
+//div.popupFilterBrowse .time li:first-child:hover {
+//  border-radius: 3px 3px 0 0;
+//}

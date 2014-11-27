@@ -1,0 +1,571 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-weight: lighter;
+  font-size: 12px;
+  font-family: 'Open Sans', Verdana, sans-serif;
+  color: #000;
+  background: #fff;
+}
+
+
+input, textarea {
+  outline: none;
+  resize: none;
+}
+
+ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none outside none;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    //color: #8f6e02;
+  }
+}
+
+/*select {
+  background-color: #F7F8FA;
+  border: 1px solid #AEAFB0;
+  border-radius: 3px;
+  font-family: "Helvetica Neue",Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  padding: 4px 5px;
+  margin: 0 0 7px;
+}*/
+
+/* какой то виджет */
+
+.signup_field {
+  float: right;
+  margin: 7px 7px 0 0;
+  color: #fff;
+}
+
+.photographers_field:hover .drop, .drop:hover {
+  display: block;
+}
+
+.photographers_field {
+  float: right;
+  margin: 7px 7px 0 0;
+  color: #333;
+  border-radius: 3px;
+  font-family: 'Open Sans', "Helvetica Neue",Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  padding: 5px 10px 5px 30px;
+  background: url(../img/profile.png) no-repeat 5px center;
+  height: 15px;
+  cursor: pointer;
+  display: block;
+  white-space: nowrap;
+}
+
+.loginlink_field {
+  background: url(../img/login.png) no-repeat 5px center;
+}
+
+.logoutlink_field {
+  background: none;
+  padding: 5px 10px 5px 0px;
+}
+
+.photographers_field {
+  &::after {
+    content: '';
+    position: relative;
+    margin: -10px -18px 0 0;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/* end какой то виджет */
+
+#login-ul {
+  width: 650px;
+  > li {
+    float: left;
+    width: 260px;
+    vertical-align: top;
+    display: inline-block;
+  }
+}
+
+.thumbs {
+  ul {
+    list-style: none;
+  }
+  li {
+    float: left;
+    /*width:18.40%;*/
+    width: 260px;
+    margin: 0 6px 12px;
+  }
+  a img {
+    opacity: 1;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    border: 0px;
+    border-radius: 6px;
+    &:hover {
+      opacity: 0.8;
+      border: 0px;
+      border-radius: 6px;
+    }
+  }
+}
+
+.thumbScroller {
+  position: relative;
+  overflow: hidden;
+  width: 100%!important;
+  .container {
+    position: relative;
+    left: 0;
+  }
+  .content {
+    float: left;
+    div {
+      margin: 2px;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+  img {
+    border: 5px solid #fff;
+    height: 120px;
+  }
+  a {
+    padding: 2px;
+    outline: none;
+  }
+}
+
+img.clone {
+  border: 5px solid #fff;
+  height: 120px;
+}
+
+/*где то используется ================================== */
+
+.sub_menu_two li {
+  float: left;
+  transition-duration: 0.5s;
+  text-align: center;
+  a {
+    display: block;
+    color: #bcbcbc;
+    transition-duration: 0.5s;
+    padding: 6px 10px 10px 10px;
+    width: 107px;
+    height: 16px;
+    margin-top: 10px;
+    &:hover {
+      color: #3e3d39;
+    }
+    &.active {
+      border-radius: 2px;
+      color: #3e3d39;
+      background: #efdd9f;
+    }
+  }
+}
+
+
+
+.btn-hide {
+  display: none;
+  float: left;
+}
+
+.btn-upload {
+  font-size: 14px;
+  margin: 10px 0 0 15px;
+  border: 1px solid #dbdad8;
+  border-radius: 3px;
+  padding: 6px 12px;
+  float: left;
+  color: #3e3d39;
+  cursor: pointer;
+}
+
+.limiter {
+  position: relative;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 0;
+}
+
+.fp_next, .fp_prev {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 100px;
+  cursor: pointer;
+  opacity: 0.3;
+  border-radius: 50%;
+  /*display:none;*/
+}
+
+.fp_next:hover, .fp_prev:hover {
+  opacity: 0.5;
+}
+
+.fp_next {
+  background: #eedca2 url(../img/icons/next.png) no-repeat center center;
+  right: -110px;
+}
+
+.fp_prev {
+  background: #eedca2 url(../img/icons/prev.png) no-repeat center center;
+  right: -70px;
+}
+
+.fp_thumbtoggle, .fp_thumbtoggle_albums {
+  height: 130px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  position: fixed;
+  bottom: -130px;
+  line-height: 210px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+img.fp_preview {
+  /*position:absolute;*/
+  left: 0px;
+  top: 0px;
+  width: 100%;
+}
+
+/*=== на твиге index ==========================*/
+/* надеюсь не сломается (Гуртовой)
+.sub_menu {
+  width: 100%;
+  display: inline;
+  font-size: 14px;
+  float: left;
+  border-bottom: 1px solid #dbdad8;
+  .sub-menu-left-part {
+    float: left;
+    padding-left: 223px;
+  }
+  .sub-menu-right-part {
+    float: right;
+    padding-right: 75px;
+  }
+  li {
+    float: left;
+    text-align: center;
+    &.selected {
+      border: 1px solid #ddd;
+      border-top: none;
+      border-bottom: none;
+      color: #3e3d39;
+      cursor: pointer;
+      height: 36px;
+      margin-top: 1px;
+      padding: 15px 0px 1px 0px;
+      position: relative;
+      width: 128px;
+      background: #fff;
+      text-align: center;
+      a {
+        display: inline;
+        padding: 0;
+        color: #3e3d39;
+      }
+    }
+    a {
+      display: block;
+      color: #bcbcbc;
+      transition-duration: 0.5s;
+      padding: 6px 10px 10px 10px;
+      width: 109px;
+      height: 16px;
+      margin-top: 10px;
+      &:hover {
+        color: #3e3d39;
+      }
+      &.active {
+        border-radius: 2px;
+        color: #3e3d39;
+        background: #efdd9f;
+        &:after {
+          content: "";
+          display: block;
+          width: 13px;
+          height: 7px;
+          margin: 12px auto 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.sub_menu_two {
+  width: 100%;
+  max-width: 1310px;
+  margin: 0px;
+  padding: 0 50px 0 50px;
+  height: 52px;
+  display: inline;
+  font-size: 14px;
+  float: left;
+  border-bottom: 1px solid #dbdad8;
+}
+/надеюсь не сломается (Гуртовой)
+*/
+
+.fp_overlay, .fp_overlay_albums {
+  width: 100%;
+  height: 100%;
+  /*position:fixed;*/
+  top: 0px;
+  left: 0px;
+  /*background:transparent url(../img/icons/pattern2.png) repeat-x bottom left;*/
+}
+
+.fp_loading {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -35px 0px 0px -35px;
+  background: black url(../img/icons/loader.gif) no-repeat center center;
+  width: 70px;
+  height: 70px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+.fp_left_menu {
+  position: absolute;
+  top: -60px;
+  left: 30px;
+  color: #fff;
+}
+
+.fp_right_menu {
+  position: absolute;
+  top: -50px;
+  right: 20px;
+}
+
+.fp_left_panel {
+  background: #fff;
+  width: 640px;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: -650px;
+  opacity: 0.8;
+}
+
+.fp_right_panel {
+  background: #fff;
+  width: 640px;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  right: -650px;
+  opacity: 0.8;
+}
+
+#fp_right_menu_icons {
+  list-style: none;
+  padding: 0;
+  margin: 0 40px;
+  li {
+    float: left;
+    padding: 15px;
+    opacity: 0.5;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.fp_left_menu_autor {
+  margin: 0 40px;
+  padding: 3px 5px;
+  text-transform: none;
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0.4;
+  background: #EEDCA2;
+  color: #000;
+}
+
+.fp_left_menu_fotoname {
+  margin: 0 40px;
+  font-size: 15px;
+  padding: 3px 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  opacity: 0.4;
+  background: #EEDCA2;
+  line-height: 40px;
+  color: #000;
+}
+
+.fp_right_panel_close {
+  float: left;
+  padding: 60px 10px;
+  cursor: pointer;
+}
+
+.fp_left_panel_close {
+  float: right;
+  padding: 60px 10px;
+  cursor: pointer;
+}
+
+.lightbox_footer {
+  background: red;
+  height: 50px;
+}
+
+.lightbox_header {
+  height: 50px;
+  background: blue;
+}
+
+.lightbox_body {
+  background: #ccc;
+  height: 100px;
+}
+
+.lightbox_wrapper {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  opacity: 0.8;
+}
+
+.lightbox_conteiner {
+  min-width: 400px;
+  min-height: 200px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -100px;
+}
+
+
+
+.field-content-name-controls {
+  background: #54514a;
+  color: #fff;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  opacity: 0.7;
+  width: auto;
+  padding: 5px;
+  font-size: 15px;
+  position: relative;
+  margin-top: -48px;
+  cursor: pointer;
+  height: 38px;
+  text-align: right;
+}
+
+.field-content-name-controls-btn {
+  width: auto;
+  padding: 5px;
+  position: relative;
+  margin-top: -50px;
+  height: 38px;
+  text-align: center;
+}
+
+.field-content-author-controls {
+  font-size: 14px;
+  height: 18px;
+  text-align: left;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.contentSlider {
+  color: #3E3D39;
+  font-size: 14px;
+  width: 80px;
+  font-weight: bold;
+}
+
+/* Tiny Carousel */
+
+.album-slider {
+  height: 167px;
+  padding: 0 0 10px;
+  .viewport {
+    float: left;
+    width: 1007px;
+    height: 167px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 92px;
+    left: -282px; top: 200px; //хз что и где делают эти  свойства  left: -282px; top: 200px; , но в моём цсс-файле это было (добавил)
+  }
+  .next {
+    margin: 30px 0 0 10px;
+  }
+  .disable {
+    opacity: 0.48;
+    cursor: default;
+  }
+  .overview {
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 240px;
+    left: 0;
+    top: 0;
+    li {
+      float: left;
+      height: 167px;
+      margin: 0;
+      padding: 0 1px 0 0;
+      width: 167px;
+      cursor: pointer;
+    }
+  }
+}
+
+///* круглая хуета внизу, тип загрузка */
+
+.loading-text {
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding-top: 47px;
+  clear: both;
+}

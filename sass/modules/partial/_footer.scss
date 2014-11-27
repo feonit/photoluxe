@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+
+footer {
+    * {
+    box-sizing: border-box;
+    }
+    text-align: center;
+
+    img.logo-footer{
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    position: fixed;
+    z-index: -10;
+    bottom:0;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: lighter;
+    background-color: #ffffff;
+    width: 100%;
+    margin: auto;
+
+    li {
+        display: inline-block;
+        text-align: center;
+        padding: 16px;
+
+        a{
+            font-size: 2em;
+            color: rgb(120, 120, 120);
+
+            &:hover{
+                color: #8f6e02;
+            }
+        }
+    }
+}
+

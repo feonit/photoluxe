@@ -1,0 +1,110 @@
+.popupFilterLocation {
+  position: relative;
+  text-align: left;
+
+  > .caption {
+    height: 36px;
+    line-height: 36px;
+    border:1px solid #000;
+    color: #fff;
+    text-shadow: 0 0 1px black,0 0 1px black,0 0 1px black,0 0 1px black;
+    min-width: 150px;
+    background-color: rgba(0,0,0,0.4);
+    background-image: url(/img/icons/down-bracket-sprite.png);
+    background-repeat: no-repeat;
+    background-position: 98% 100%;
+    padding-right: 30px;
+    padding-left: 10px;
+    border-radius: 5px;
+
+    &:hover,&.opened {
+      /*LALALALALALAL*/
+      background-position: 98% 0%; /*   todo: вынести картинку в отдельный независимый блок */
+    }
+
+  }
+
+  .popupPanel {
+
+    &.hidden{
+      display: none;
+    }
+
+    button {
+//      outline: none;
+//      border: 1px solid black;
+      //box-shadow: 0 0 5px -1px black;
+//      background-color: rgba(255, 255, 255, .4);
+      //background-color: rgba(0, 0, 0, 0.4);
+//      color: white;
+//      border-radius: 3px;
+//      padding: 6px 0;
+//      font-size: 14px;
+//      text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black,0 0 1px black, 0 0 1px black, 0 0 1px black,0 0 1px black, 0 0 1px black, 0 0 1px black;
+
+      width: 100%;
+
+
+      &.selected {
+        border-color: white;
+        background-color: rgba(0, 0, 0, .4);
+      }
+
+      &.activeButton {
+        background-color: rgba(0, 0, 0, .4);
+      }
+    }
+
+
+
+
+
+    //display: none;
+    position: absolute;
+    min-width: 300px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1.5em 0;
+    box-shadow: 0 0 8px -2px white;
+    top: 50px; // выравнивание попап-панели с другими менюшками. (надо подстроить позже)
+
+    .topBar {
+      margin-bottom: 10px;
+      .col {
+        width: 50%;
+        float: right;
+      }
+    }
+    .combosBar {
+      .col {
+        margin-bottom: 10px;
+
+//        //hack for initialization the chosen jquery plugin with display:none;
+//        //https://github.com/harvesthq/chosen/issues/795
+//        .chosen-container {
+//          width: 100% !important;
+//        }
+
+
+        select {
+          width: 100%;
+          background-color: white;
+          padding: 3px;
+          font-size: 13px;
+          border-radius: 5px;
+          border: 1px solid black;
+          outline: none;
+        }
+
+      }
+
+    }
+    .bottomBar {
+      .col {
+        width: 50%;
+      }
+    }
+
+  }
+}

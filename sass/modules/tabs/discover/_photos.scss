@@ -1,0 +1,120 @@
+/* Портфолио фотографа начало */
+
+.thumb{
+  width: 100%;
+}
+
+.b-controls, .b-name{
+  @include transition-property(all);
+  @include transition-duration(0.2s);
+  @include transition-timing-function(ease-in-out);
+  position: absolute;
+  z-index: 1;
+}
+
+
+/* пинги , лайки */
+
+.b-controls{
+  top: -2em;
+  opacity: 0;
+
+
+
+  right: 0;
+  padding: .5em;
+
+  .btn-like, .btn-favorite{
+
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    display: block;
+    cursor: pointer;
+    float: left;
+    font-weight: 600;
+
+    margin: 2px;
+    height: 15px;
+    color: white;
+    min-width: 27px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+    padding: 30px 3px 5px 3px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    background-position: 50% 10%;
+    font-style: normal;
+
+  }
+  .btn-like{
+    background-image: url("/img/icons/like-white.png");
+    &.active{
+      background-image: url("/img/icons/like-gold.png");
+    }
+  }
+  .btn-favorite{
+    background-image: url("/img/icons/favorite-white.png");
+    &.active{
+      background-image: url("/img/icons/favorite-gold.png");
+    }
+  }
+}
+
+
+/* ссылки на фотографии */
+
+.b-name{
+
+  padding: .5em;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  bottom: 0;
+
+  //@include filter(blur( 1px ));
+
+  .top {
+    font-weight: 600;
+    @include  transition(all 0.2s ease-in-out);
+    opacity: 0;
+    bottom: -2em;
+    position: relative;
+    font-size: .6em;
+  }
+
+
+  .bottom {
+    font-weight: 600;
+    &.text-right{
+      text-align: right;
+      font-size: .8em;
+    }
+  }
+
+  .top, .bottom {
+    display: block;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      line-height: 1em;
+      text-shadow: 0 0 1px #000;
+      width: 66%;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.fixed-shadow{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  @include background-image(linear-gradient(white, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%));
+}

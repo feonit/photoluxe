@@ -1,0 +1,100 @@
+/*
+    Подменю
+*/
+
+.sub-menu-wrapper {
+  border-bottom: 1px solid #777;
+  background: white;
+  z-index: 100;
+  position: relative;
+
+  .sub-menu-list {
+    font-size:16px;
+    font-weight: normal;
+    padding: 0;
+    clear: both;
+    position: relative;
+    margin: auto;
+    height: 50px;
+
+    .item {
+      text-align:left;
+      float: left;
+      cursor: pointer;
+      height: 100%;
+    }
+  }
+}
+
+// кастомизация собственного UI
+
+header .sub-menu-wrapper{
+  .popup-filter-browse{
+    &.icon:before{
+      background-position-y: 33.5% !important;
+    }
+
+    &:hover{
+      &.icon:before{
+        background-position-y: 67.5% !important;
+      }
+    }
+
+    .link:before{
+      background-position-y: 0 !important;
+    }
+
+    .icon{
+      padding-left: 50px !important;
+      position: relative;
+
+      // бефор нужен чтобы контролировать размер иконки на спрайте
+      &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto 10px;
+        height: 32px;
+        width: 32px;
+        background-image: url(/img/icons/all-icons.png);
+        background-repeat: no-repeat;
+        background-size: auto 128px;
+      }
+
+      &.profile-icon:before{
+        background-position: -352px 33.5%;
+      }
+
+      &.notifications-icon:before{
+        background-position: -576px 33.5%;
+      }
+
+      &.display-icon:before{
+        background-position: -192px 33.5%;
+      }
+
+      &.account-icon:before{
+        background-position: -448px 33.5%;
+      }
+
+      &.portfolio-icon:before{
+        background-position: -352px 33.5%;
+      }
+
+      &.flow-icon:before{
+        background-position: -352px 33.5%;
+      }
+
+      &.favorites-icon:before{
+        background-position: -352px 33.5%;
+      }
+
+      &.requests-icon:before{
+        background-position: -352px 33.5%;
+      }
+    }
+  }
+}
+

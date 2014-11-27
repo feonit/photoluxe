@@ -1,0 +1,353 @@
+
+/* Сборщик правил для страницы Discover */
+
+
+@import "compass/css3";
+
+.discover{
+
+  /* === Импорт ============================================================*/
+
+  /* фильтры */
+  @import "../ui/controls/controlPopupFilterBrowse";
+  @import "../ui/controls/controlPopupFilterLocation";
+  @import "../ui/controls/controlPopupFilterEquipment";// там же полнотекстовый поиск
+
+
+  /* пагинация */
+  @import "./discover/paginator";
+
+  /* ленточка фотографа */
+  @import "./discover/strip";
+
+  /* фотографии в портфолио фотографа */
+  @import "./discover/photos";
+
+  /* перезапись стилей библиотеки slick */
+  @import "./discover/custom-slick";
+
+  /* === Эффекты  ============================================================*/
+
+  .empty-space{
+    color: white;
+    // резерв пустого пространства (находится в разделе media)
+  }
+
+  /* сворачивает ленточку фотографа, управление js */
+  .strip {
+
+    @include transition-property(all);
+    @include transition-duration(.3s);
+    @include transition-timing-function(ease-in);
+
+    .strip-head{
+      border-bottom-color: rgba(0,0,0,0);
+      @include transition-property(border-bottom-color);
+      @include transition-duration(.3s);
+      @include transition-timing-function(ease-in);
+    }
+
+    .strip-body{
+      opacity: 1;
+      max-height: 500px;
+      overflow: hidden;
+
+      @include transition-property(all);
+      @include transition-duration(.3s);
+      @include transition-timing-function(ease-in);
+    }
+
+    &.open-slick{
+      height: 0;
+      min-height: 0 !important;
+
+      .strip-head{
+        border-bottom-color: #cccccc;
+      }
+
+      .strip-body{
+        opacity: 0;
+        max-height: 0;
+      }
+    }
+  }
+
+  /* не сворачивает ленточку фотографа, управление css */
+  .slick-list:hover {
+    & ~ .strip {
+      height: 0;
+      min-height: 0 !important;
+
+      .strip-head{
+        border-bottom: 1px solid #cccccc;
+      }
+
+      .strip-body:not(:hover){
+        opacity: 0;
+        max-height: 0;
+      }
+    }
+  }
+
+  /* показывает и скрывает контролы на фотографиях, управляется js*/
+  .control-show-controls {
+    .b-controls{
+      top: 0em;
+      opacity: 1;
+    }
+    .b-name .top{
+      opacity: 1;
+      bottom: 0;
+    }
+  }
+
+  /* показывает и скрывает контролы на фотографиях, управляется css*/
+  .slick-slide:hover{
+
+    .b-controls {
+      opacity: 1;
+      top: 0;
+    }
+    .b-name .top{
+      opacity: 1;
+      bottom: 0;
+    }
+  }
+
+  /* Появление стрелок, управление css */
+  .multiple-items{
+
+    &:hover .slick-prev{
+      left: 2%;
+      opacity: 1;
+    }
+
+    &:hover .slick-next{
+      right: 2%;
+      opacity: 1;
+      margin-bottom: 10em;
+    }
+  }
+
+
+
+  /* === Ресайзинг ============================================================*/
+
+
+
+  /* ресайз стрелок */
+  @media all and (max-width: 480px){
+
+    .slick-prev:before, {
+      background-position: 10px 50%;
+      background-size: 20px;
+    }
+
+    .slick-next:before {
+      background-position: -10px 50%;
+      background-size: 20px;
+    }
+  }
+
+  @media all and (min-width: 480px) and (max-width: 960px){
+
+    .slick-prev:before, {
+      background-position: 5px 50%;
+      background-size: 30px;
+    }
+
+    .slick-next:before {
+      background-position: -15px 50%;
+      background-size: 30px;
+    }
+  }
+
+  /* ресайз ленты */
+  @media all and (max-width: 960px){
+    .strip{
+      width: 25%
+    }
+  }
+  @media all and (min-width: 960px) and (max-width: 1280px){
+    .strip{
+      width: 20%
+    }
+  }
+  @media all and (min-width: 1280px){
+    .strip{
+      width: 15%
+    }
+  }
+  /* ресайз буковок */
+  @media all and (max-width: 480px){
+    font-size: 12px;
+    .portfolio{
+      line-height: 1em;
+    }
+    .avatar{
+      width: 60% !important;
+    }
+  }
+  @media all and (min-width: 480px) and (max-width: 640px){
+    font-size: 14px;
+    .portfolio{
+      line-height: 1em;
+    }
+    .avatar{
+      width: 70% !important;
+    }
+  }
+  @media all and (min-width: 640px) and (max-width: 960px){
+    font-size: 16px;
+    .portfolio{
+      line-height: 4em;
+    }
+  }
+  @media all and (min-width: 960px) and (max-width: 1024px){
+    font-size: 18px;
+    .portfolio{
+      line-height: 2em;
+    }
+  }
+  @media all and (min-width: 1024px) and (max-width: 1280px){
+    font-size: 18px;
+    .portfolio{
+      line-height: 1.5em;
+    }
+  }
+  @media all and (min-width: 1280px){
+    font-size: 24px;
+    .portfolio{
+      line-height: 2em;
+    }
+  }
+
+  /* ресайз точек */
+
+  @media all and (max-width: 640px){
+    .slick-dots {
+      bottom: -30px !important;
+    }
+  }
+
+  /* === Контролы (фильтры) ============================================================*/
+
+
+  @media all and (max-width: 960px){
+
+
+
+    // позиционирование иконок контролов
+    .popup-filter-browse, .popup-filter-location{
+      padding-left: 50px;
+      background-position: 100% 50%;
+      background-repeat: no-repeat;
+      background-size: 70%;
+
+      .caption{
+        display: none;
+      }
+      .popupPanel{
+        top: 50px;
+      }
+    }
+
+    // иконки контрола browse, выравнивание текста влево
+    .popup-filter-browse{
+      text-align: left;
+
+      &.recent{
+        background-image: url(/img/icons/recent-black.png);
+        &:hover, &.active{
+          background-image: url(/img/icons/recent-gold.png);
+        }
+      }
+
+      &.appreciate{
+        background-image: url(/img/icons/appreciate-black.png);
+        &:hover, &.active{
+          background-image: url(/img/icons/appreciate-gold.png);
+        }
+      }
+
+      &.discussed{
+        background-image: url(/img/icons/discussed-black.png);
+        &:hover, &.active{
+          background-image: url(/img/icons/discussed-gold.png);
+        }
+      }
+
+      &.viewed{
+        background-image: url(/img/icons/viewed-black.png);
+        &:hover, &.active{
+          background-image: url(/img/icons/viewed-gold.png);
+        }
+      }
+
+      .icon{
+        background-repeat: no-repeat;
+        background-position: 25px 50%;
+        background-size: 9%;
+      }
+
+      .recent{
+        background-image: url(/img/icons/recent.png);
+      }
+      .appreciate{
+        background-image: url(/img/icons/appreciate-ico.png);
+      }
+      .discussed{
+        background-image: url(/img/icons/discussed.png);
+      }
+      .viewed{
+        background-image: url(/img/icons/viewed.png);
+      }
+
+      /* Элементы меню */
+      .context, .time{
+        .link{
+          padding: 0 30px 0 70px !important;
+        }
+      }
+    }
+
+
+    // уменьшенный контрол полнотекстового поиска
+    .container-discover-search-panel .input-wrap{
+      width: 215px;
+    }
+
+    // иконка локации
+    .popup-filter-location{
+      background-image: url(/img/icons/location-black.png);
+
+      &:hover, &:active{
+        background-image: url(/img/icons/location-gold.png);
+      }
+    }
+
+    // позиционирование контрола локации
+    .popup-filter-location{
+      position: inherit !important;
+
+      .popupPanel{
+        top: 50px;
+        left: 0px;
+        //width: 100%;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

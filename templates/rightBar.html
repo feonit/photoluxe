@@ -1,0 +1,283 @@
+<!--
+
+    template underscore for right side bar info
+
+-->
+
+<link rel="stylesheet" type="text/css" href="/css/modules/side-bars/bar-right.css">
+
+<!--<h1 class="album-name">Love story, from Sara with love</h1>-->
+<!-- вкладки -->
+<ul class="tabs-list">
+    <li class="tab-item">
+        <a href="#album-comments"  class="link active">Comments</a>
+    </li>
+    <li class="tab-item">
+        <a href="#album-info"  class="link">Info</a>
+    </li>
+<!--    <li class="tab-item">
+        <a href="#album-favorites"  class="link">Favorites</a>
+    </li>-->
+</ul>
+<!-- конец вкладок -->
+<!-- список страниц-->
+<ul class="content-list">
+    <!-- 1-ая страница-->
+    <li class="content-item" id="album-info">
+        <div class="pressed pseudo-tab-2">
+            <a class="link" href="#album-info" >Info</a>
+        </div>
+        <div class="side-bar-table">
+            <div class="side-bar-table-row1">
+                <div class="side-bar-table-cell">
+                    <div class="side-bar-scrolable">
+                        <div class="head">
+                            <!-- резерв -->
+                        </div>
+                        <div class="body">
+                            <form id="form_photo_edit">
+
+                                <!-- Имя файла -->
+
+                                <h2 class="headline">Title</h2>
+                                <label>
+                                    <input id="title" name="title" value="<%= title%>">
+                                </label>
+
+                                <!-- Имя категории -->
+
+                                <h2 class="headline">Category</h2>
+                                <label>
+                                    <select id="category">
+                                        <option><%= category_title %></option>
+                                    </select>
+                                </label>
+
+                                <!-- Имя подкатегории -->
+
+                                <h2 class="headline">Subcategory</h2>
+                                <label>
+                                    <select id="subcategory">
+                                        <option><%= subcategory_title %></option>
+                                    </select>
+                                </label>
+
+                                <!-- Описание -->
+
+                                <h2 class="headline">Description</h2>
+                                <div class="general-info-message">
+                                    <textarea id="description" class="info-textarea control-info-textarea"><%= description%></textarea>
+                                    <label class="btn edit btn-edit-text control-btn-edit-text"></label>
+                                    <button style="display: none" class="btn btn-active control-save-description">Save</button>
+                                </div>
+
+                                <!-- Exif -->
+
+                                <h2 class="headline">Exif</h2>
+                                <div class="row">
+                                    <div class="col col-2 left">
+                                        <div class="property">
+                                            <label>camera
+                                                <input id="camera" name="camera" class="property-value control-property-value" value="<%= camera['title']%>">
+                                            </label>
+                                        </div>
+                                        <div class="property">
+                                            <label>Focal length
+                                                <input id="focal_length" name="focal_length" class="property-value control-property-value" value="<%= focal_length%>">
+                                            </label>
+                                        </div>
+                                        <div class="property">
+                                            <label>iso_speed
+                                                <input id="iso_speed" name="iso_speed" class="property-value control-property-value" value="<%= iso_speed%>">
+                                            </label>
+                                        </div>
+                                        <div class="property">
+                                            <label>exposure_time
+                                                <input id="exposure_time" name="exposure_time" class="property-value control-property-value" value="<%= exposure_time%>">
+                                            </label>
+                                        </div>
+                                        <div class="property">
+                                            <label>f_number
+                                                <input id="f_number" name="f_number" class="property-value control-property-value" value="<%= f_number%>">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col col-2 right">
+                                        <div class="property">
+                                            <label>lens
+                                                <input id="lens" name="lens" class="property-value control-property-value" value="<%= lens['title']%>">
+                                            </label>
+                                        </div>
+                                        <div class="property">
+                                            <label>date_modified
+                                                <input id="date_modified" name="date_modified" class="property-value control-property-value" value="<%= date_modified%>">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Теги -->
+                                <h2 class="headline">Tags</h2>
+                                <label class="field-tags">
+                                    <input id="tags" type="text" class="input-tags" value="<%= tags%>">
+                                    <div class="tags">
+                                        <!-- пустой для новой фотки -->
+                                        <% _.each( tags, function( tag, index ) {%>
+                                            <p class="hash-btn"><%= tag %></p>
+                                            <input type="hidden" name="tags[<%= index%>]" value="<%= tag %>">
+                                        <% }) %>
+                                    </div>
+                                    <button class="btn edit-tags edit"></button>
+                                    <button style="display: none" class="btn btn-active btn-save-tags">Save</button>
+                                </label>
+
+                                <!-- Флаги -->
+                                <h2 class="headline">Options</h2>
+                                <div class="checkbox-block">
+                                    <input type="checkbox" name="disable_view" id="disable_view"
+                                    <% if (disable_view) { %>
+                                    checked
+                                    <% } %>
+                                    ><label for="disable_view" class="checkbox-label">Disable for view</label>
+                                </div>
+                                <div class="checkbox-block">
+                                    <input type="checkbox" name="adult_content" id="adult_content"
+                                    <% if (adult_content) { %>
+                                    checked
+                                    <% } %>
+                                    ><label for="adult_content" class="checkbox-label">Adult content</label>
+                                </div>
+
+
+                                <!-- Месторасположение -->
+
+                                <h2 class="headline">Map</h2>
+                                <div class="geography">
+
+                                    <div id="map_canvas"></div>
+                                    <input id="pac-input" value="<%= location['country']['title'] + ' ' + location['region']['title'] + ' ' + location['city']['title']%>">
+
+                                    <!--<div class="place field-location">
+                                        <input id="location" name="location" class="input-location control-location" >
+                                        <button class="btn edit-tags edit location-edit control-edit"></button>
+                                        <button style="display: none" class="btn btn-active control-save">Save</button>
+                                    </div>-->
+                                </div>
+                                <button class="btn btn-active control-save-all">Save</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- конец 1-ая страница-->
+    <!-- 2-ая страница-->
+    <li class="content-item" id="album-comments">
+        <div class="pressed pseudo-tab-1">
+            <a class="link" href="#album-comments" >Comments</a>
+        </div>
+        <div class="side-bar-table">
+            <div class="side-bar-table-row1">
+                <div class="side-bar-table-cell">
+                    <% if (authorized) { %>
+                    <form id="new_message">
+                        <div class="head">
+                            <div class="avatar">
+                                <img src="/img/user-small.jpg">
+                            </div>
+                            <div class="message">
+                                <div class="new-message">
+                                    <textarea placeholder="Your message" name="fos_comment_comment[body]"></textarea>
+                                    <input type="hidden" name="gid" value="<%= _.isEmpty(gid)?'':gid%>">
+                                </div>
+                                <button class="btn btn-active btn-mod_big-width-120 control-send-message">Send</button>
+                                <!--<button class="btn btn-base btn-mod_big-width-120">Attach file</button>-->
+                            </div>
+                        </div>
+                    </form>
+                    <% } %>
+                </div>
+            </div>
+
+            <div class="side-bar-table-row2">
+                <div class="side-bar-table-cell">
+                    <div class="side-bar-scrolable">
+                        <div class="body">
+                            <ul class="messages">
+                                <% _.each(comments, comments?function(comment){ %>
+                                <li class="item-messages">
+                                    <div class="avatar">
+                                        <img src="/img/user-small.jpg">
+                                    </div>
+                                    <div class="message">
+                                        <div class="controls">
+                                            <!--<button class="btn message-link">Complain</button>-->
+                                            <% if (authorized) { %>
+                                            <button class="btn message-link control-replay">Replay</button>
+                                            <% } %>
+                                        </div>
+                                        <!--<span><%= comment['username']%></span>-->
+                                        <span class="date"><%= comment['created_at']%></span>
+                                        <p><%= comment['body']%>
+
+                                        <% if (authorized) { %>
+                                        <form class="answer-form" style="display: none">
+                                            <div class="b-new-answer">
+                                                <div class="avatar">
+                                                    <img src="/img/user1.png">
+                                                </div>
+                                                <div class="message">
+                                                    <p class="new-answer">
+                                                        <textarea placeholder="Your message" name="fos_comment_comment[body]"></textarea>
+                                                        <input type="hidden" name="gid" value="<%= _.isEmpty(gid)?'':gid%>">
+                                                        <input name="id" type="hidden" value="<%= comment['id']%>">
+                                                    </p>
+                                                    <button class="btn btn-active btn-mod_big-width-120 control-send-answer">Send</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <% } %>
+
+                                        <ul class="messages">
+                                            <% _.each(comment['childrens'], function(children){ %>
+                                            <li class="item-messages">
+                                                <div class="avatar">
+                                                    <img src="/img/user-small.jpg">
+                                                </div>
+                                                <div class="message">
+                                                    <!--<span><%= children['username']%></span>-->
+                                                    <span class="date"><%= children['created_at']%></span>
+                                                    <p><%= children['body']%>
+                                                </div>
+                                            </li>
+                                            <% }) %>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <% }:null) %>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- конец 2-ая страница-->
+    <!-- 3-ая страница-->
+<!--    <li class="content-item" id="album-favorites">
+        <div class="pressed pseudo-tab-3">
+            <a class="link" href="#album-favorites" >Favorites</a>
+        </div>
+        <div class="">
+            <div class="head">
+                Голова
+            </div>
+            <div class="body">
+                ТЕло3
+            </div>
+        </div>
+    </li>-->
+    <!-- конец 3-ая страница-->
+</ul>
+<!-- конец список страниц-->

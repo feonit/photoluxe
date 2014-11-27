@@ -1,0 +1,47 @@
+{
+    "user": [
+        {
+            "id": "387",
+            "gid": "71c51bca1cdbc03d078f210eeadcaab0",
+            "email": "user000@example.com",
+            "title": "Francisco Reynolds",
+            "first_name": "Francisco",
+            "last_name": "Reynolds",
+            "status": "status",
+            "about": "about user000",
+            "photos_amount": 68,
+            "albums_amount": 7,
+            "stories_amount": 0,
+            "flag_chat": false,
+            "avatar": {
+                "thumbnail": "https://avatars0.githubusercontent.com/u/4903438?v=2&s=460",
+                "fullsize": "https://avatars0.githubusercontent.com/u/4903438?v=2&s=460"
+            },
+            "phones": [],
+            "websites": {
+                "social": null,
+                "others": null
+            },
+            "languages": [],
+            "location": {
+                "country": null,
+                "region": null,
+                "city": null,
+                "longitude": "80",
+                "latitude": "-108"
+            },
+            "likes": {
+                "amount": null,
+                "flag": null
+            },
+            "favorites": {
+                "amount": null,
+                "flag": null
+            },
+            "followers": {
+                "amount": null,
+                "flag": null
+            }
+        }
+    ]
+}

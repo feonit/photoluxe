@@ -1,0 +1,222 @@
+.add-collage .photo-list img {
+  height: 82px;
+  width: 82px;
+}
+.add-collage .img-div {
+  display: inline-block;
+  padding: 0 20px 20px 0;
+  position: relative;
+}
+
+.btn {
+  padding: 2px 12px;
+}
+
+.story-btn-holder .btn, .collage .btn-holder .btn {
+  padding: 2px 5px !important;
+}
+
+#add-cover-modal #cover-form-block #cover-input {
+  display: none;
+}
+
+#add-cover-modal .modal-dialog {
+  width: 1000px;
+}
+
+#add-cover-modal #uploaded-image .exif {
+  display: none;
+}
+
+#add-cover-modal #uploaded-image .exif #thumbnail {
+  display: none;
+}
+
+#add-cover-modal #cover-form-block {
+  text-align: center;
+}
+
+#stories_tags {
+  margin: 0 24px;
+  padding: 5px 9px 3px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 98%;
+}
+
+.add-tags-input {
+  margin-bottom: 0;
+}
+
+.add-tags-block .bootstrap-tagsinput {
+  text-align: left;
+  padding: 4px 15px 0;
+  margin-bottom: 0;
+  height: 32px;
+}
+
+.add-tags-block .bootstrap-tagsinput input[type="text"] {
+  border: none;
+  padding: 0;
+}
+
+.add-tags-block .bootstrap-tagsinput .tag {
+  color: #999;
+  font: 300 12px/18px 'Open Sans', Arial, Helvetica, sans-serif;
+  padding: 0 7px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+
+.autor .author-avatar, .frame .author-avatar {
+  float: none;
+}
+
+#form-xyz, #upload-cover-form {
+  display: none;
+}
+
+.add-block .add-story-title {
+  text-align: center;
+  width: 90%;
+  display: block;
+  max-width: 1140px;
+  margin: 0 auto 56px;
+  background: #666;
+  padding: 15px 20px;
+  font: 400 48px/1.5 'Open Sans', Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 0 0 2px black, 0 5px 3px rgba(0, 0, 0, 0.7);
+}
+
+.add-block .add-cover-subtitle {
+  text-align: center;
+  width: 90%;
+  display: block;
+  max-width: 842px;
+  margin: 0 auto 160px;
+  background: #666;
+  padding: 25px 20px;
+  font: 16px/1.5 'Open Sans', Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 0 0 1px black, 0 3px 2px rgba(0, 0, 0, 0.7);
+}
+
+.add-cover-subtitle .text textarea {
+  width: 100%;
+  height: 34px;
+  border-style: none;
+  background: none;
+  font: 300 24px/1.3 'Open Sans', Arial, Helvetica, sans-serif;
+  color: #333;
+  text-align: center;
+  padding: 0;
+}
+
+.add-photo-group {
+  position: relative;
+}
+
+.add-photo-group textarea {
+  position: absolute;
+  left: 9999999999px;
+}
+
+.add-photo .btn-holder .btn {
+  pointer-events: painted !important;
+}
+
+.collage .img-row .img-div:hover a.btn-close {
+  display: block;
+}
+
+.collage .img-row .img-div .btn-close {
+  right: 31px;
+}
+
+.single-photo-element {
+  max-width: 1143px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+}
+
+.single-photo-element .img-div {
+  display: inline-block;
+  padding: 0 20px 20px 0;
+  position: relative;
+}
+
+.single-photo-element .img-div .btn-close {
+  position: absolute;
+  background: url(../../../img/story/btn-close-4.png) no-repeat;
+  width: 36px;
+  height: 36px;
+  background-size: 100% 100% !important;
+  top: 10px;
+  right: 31px;
+  display: none;
+}
+
+.single-photo-element .img-div:hover a.btn-close {
+  display: block;
+}
+
+.story-title {
+  margin-top: 50px !important;
+}
+
+.story-item .description .frame a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.story-item.stories-edit .btn-close, .story-item.stories-edit .btn-edit {
+  display: block;
+}
+
+.collage .img-div:hover .btn-holder {
+  display: block;
+}
+
+.post-story .edit-story {
+  position: absolute;
+  background: url(../../../img/btn-edit-2.png) no-repeat;
+  right: 15px;
+  width: 36px;
+  height: 36px;
+  top: 60px;
+  display: none;
+  z-index: 1;
+}
+
+.post-story .autor-heading:hover .edit-story {
+  display: block;
+}
+
+/* stories edit */
+/* nominations list form */
+#add-story-nominations input[type=checkbox] {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+#contest-nominations-form-popup #error-text {
+  width: 450px;
+  margin: 0 auto;
+  color: red;
+  display: none;
+  text-align: center;
+}
+
+#confirm-contest-form-popup .frame.error {
+  text-align: center;
+  color: red;
+  display: none;
+}
+
+.visible {
+  display: block !important;
+}

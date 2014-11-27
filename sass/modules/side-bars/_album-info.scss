@@ -1,0 +1,267 @@
+/* Вкладка с информацией об альбоме */
+
+$colorGray: #999999;
+$colorLightGray: #ece7e4;
+@import "compass/utilities";
+@import "compass/css3/transform";
+
+.body{
+    padding: 30px;
+    line-height: 20px;
+    font-size: 14px;
+
+    textarea, input, select{
+        border: 1px solid rgba(0,0,0,0);
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        outline: none;
+
+        &:hover{
+            border: 1px solid rgba(148, 149, 115, 0.24);
+        }
+
+        &:focus{
+            border: 1px solid #949573;
+        }
+    }
+
+    .property input{
+/*        &:hover, &:focus{
+            padding: 5px;
+            background: white;
+            width: 100%;
+            margin-bottom: -5px;
+        }*/
+
+/*        &:hover{
+            border: 1px solid rgba(148, 149, 115, 0.24);
+        }*/
+    }
+
+    .btn-edit-text{
+        position: absolute !important;
+        top: 0;
+        right: 0;
+        height: 20px;
+        width: 20px;
+        padding: 5px;
+        background-position: 50% 50% !important;
+    }
+
+    .general-info-message{
+        position: relative;
+    }
+
+    .headline{
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 30px;
+        border-bottom: 1px dashed #ccc;
+        margin-bottom: 20px;
+    }
+
+    .row{
+        margin-bottom: 30px;
+        .col{
+            padding: 0;
+
+            &.col-2{
+                width: 46%;
+
+                &.left{
+                    margin-right: 8%;
+                }
+                &.right{
+
+                }
+            }
+        }
+    }
+
+    .edit{
+        background-image: url(/img/icons/edit.png);
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+        cursor: pointer;
+        position: relative;
+        height: 20px;
+        width: 20px;
+    }
+
+    .info-textarea, textarea{
+        white-space: pre-wrap;
+    }
+
+
+    /* теги */
+    .field-tags{
+        background-position: 100% 0%;
+        height: 45px;
+        @include pie-clearfix();
+        position: relative;
+
+        .tags{
+            float: left;
+            margin: 10px 0px;
+
+            .hash-btn{
+                background: white;
+                border: 1px solid #cccccc;
+                border-radius: 3px;
+                font-size: 12px;
+                padding: 0px 6px;
+                display: inline-block;
+            }
+        }
+
+        .edit-tags{
+            float: right;
+        }
+
+        .input-tags{
+            //display: none;
+            opacity: 0;
+            box-sizing: border-box;
+            width: 350px;
+            //float: left;
+            position: absolute;
+            top: 0;
+            &:focus{
+                opacity: 1;
+            }
+        }
+
+        .btn-save-tags{
+            display: none;
+            float: right;
+        }
+    }
+
+    .property{
+        border-bottom: 1px dashed $colorLightGray;
+        padding-top: 20px;
+        line-height: 10px;
+        position: relative;
+
+        .property-value{
+            color: $colorGray;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 130px;
+            text-align: right;
+            &:not(:focus){
+                border: 1px solid #ffffff;
+            }
+            &:focus{
+                font-weight: bold;
+                color: black;
+            }
+        }
+    }
+
+    /*===================================================*/
+
+    /*.controls {
+        margin-top: 16px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    #type-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        padding: 5px 11px 0px 11px;
+    }
+
+    #type-selector label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+    }*/
+
+    .pac-container {
+        font-family: Roboto;
+    }
+    #pac-input {
+        background-color: #fff;
+        padding: 0 11px 0 13px;
+        width: 400px;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        text-overflow: ellipsis;
+        margin-bottom: 25px;
+        height: 40px;
+        border-color: #cccccc;
+    }
+
+/*    #pac-input:focus {
+        border-color: #4d90fe;
+        margin-left: -1px;
+        padding-left: 14px;
+        width: 401px;
+    }*/
+    #map_canvas {
+        width: 100%;
+        height: 300px;
+    }
+    // Скрываем лишний родной бар
+    .gm-style-cc{
+        display: none;
+    }
+
+    /*===================================================*/
+
+    .geography{
+        position: relative;
+        margin: 40px 0;
+
+        .input-location{
+            width: 300px;
+            vertical-align: middle;
+        }
+
+        .location-edit{
+            height: 100%;
+            position: absolute;
+            right: 0;
+            padding-left: 30px;
+            top: 0;
+        }
+        .place{
+            background: rgba(0,0,0, .7);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 70px;
+            line-height: 70px;
+            padding: 0 50px;
+            color: #ffffff;
+            box-sizing: border-box;
+        }
+    }
+
+    .input-location{
+        border: none;
+        color: #ffffff;
+        background: rgba(0,0,0,0);
+        cursor: pointer;
+        box-sizing: border-box;
+
+        &:focus{
+            background: white;
+            color: #000000;
+            cursor: text;
+        }
+    }
+
+}

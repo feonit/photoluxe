@@ -1,0 +1,54 @@
+.popupFilterEquipment {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  float: right;
+}
+.popupFilterEquipment .icon {
+  width: 50px;
+  height: 44px;
+  background-image: url(/img/icons/photoapparat.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: contain;
+  margin-right: 111px;
+}
+.popupFilterEquipment .popup-panel {
+  display: none;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  right: 0;
+}
+.popupFilterEquipment .popup-panel button {
+  outline: none;
+}
+.popupFilterEquipment .popup-panel button.selected {
+  background-color: RED;
+}
+.popupFilterEquipment .popup-panel button.activeButton {
+  background-color: RED;
+}
+.popupFilterEquipment .popup-panel select {
+  background-color: white;
+  padding: 3px;
+  font-size: 13px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+}
+.popupFilterEquipment .popup-panel button,
+.popupFilterEquipment .popup-panel select {
+  width: 100%;
+}
+.popupFilterEquipment .popup-panel .actions .col,
+.popupFilterEquipment .popup-panel .sorting .col {
+  width: 50%;
+}
+.popupFilterEquipment .popup-panel .selectboxes > .col,
+.popupFilterEquipment .popup-panel .sorting {
+  margin-bottom: 10px;
+}

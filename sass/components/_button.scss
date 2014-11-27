@@ -1,0 +1,72 @@
+/* Здесь кастомизируем кнопочки */
+
+$color: #f1d7b6;
+
+/* сбрасывает любой тег в дефолтную кнопку*/
+.btn{
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 0;
+    font-weight: bold;
+    margin-right: 10px;
+    background: none;
+    outline: none;
+
+    &:last-of-type{
+        margin-right: 0;
+    }
+}
+
+/* стандартная ширина по минимуму пока что такая */
+.btn-base, .btn-active{
+    width: 100px;
+    border-radius: 4px;
+}
+
+.btn-base{
+    color: #888;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.btn-base:hover{
+    background: $color;
+    border: 1px solid $color;
+}
+
+.btn-active {
+    background-color: $color;
+    color: #444444;
+    border-width: 1px;
+    border-color: #e9d8a0 #e9d69e #d7ca95 #e7d69e;
+    border-style: solid;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+    outline:none;
+    resize:none;
+}
+
+
+/* Хорошая идея выносить сюда модификаторы */
+
+.btn-mod_big-width-120{
+    width: 120px;
+}
+
+.btn.btn-mod_big-width{
+    width: 130px;
+}

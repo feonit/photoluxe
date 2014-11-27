@@ -1,0 +1,349 @@
+@charset "UTF-8";
+/*
+    Вкладка Фото
+*/
+/*
+    Плитка фотографий
+*/
+.photos {
+  min-width: 1200px;
+}
+.photos .sub-menu-wrapper .container-expo-search-panel {
+  display: none;
+}
+.photos .expo-item h2 {
+  font-size: 23px;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+  height: 57px;
+  line-height: 57px;
+}
+.photos .expo-item h2 span.detachable {
+  background-color: white;
+  height: 57px;
+}
+.photos .expo-item h2 span.detachable .detach {
+  z-index: 11;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.photos .expo-item .pagination {
+  font-size: 23px;
+  font-weight: lighter;
+  text-align: right;
+  padding-bottom: 5px;
+}
+.photos .expo-item .pagination .page {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  width: 36px;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  font-weight: lighter;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+.photos .expo-item .pagination .page.active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* *** *** *** */
+.photos .b-controls {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  top: -2em;
+  right: 0;
+  padding: 10px;
+  z-index: 1;
+}
+.photos .b-controls .btn-like, .photos .b-controls .btn-heart {
+  position: relative;
+  background-repeat: no-repeat;
+  border: none;
+  display: block;
+  cursor: pointer;
+  float: left;
+  margin: 2px;
+  height: 15px;
+  color: white;
+  min-width: 27px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 13px;
+  padding: 30px 3px 5px 3px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  background-position: 50% 10%;
+  font-style: normal;
+  font-weight: lighter;
+}
+.photos .b-controls .btn-like {
+  background-image: url(../../../../img/icons/finger-up-white.png);
+}
+.photos .b-controls .btn-heart {
+  background-image: url(../../../../img/icons/heart-white.png);
+}
+.photos .thumb {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+  /* картинка */
+  /* общий серый блок на картинке */
+}
+.photos .thumb:before {
+  content: " ";
+  display: block;
+  padding: 100% 100% 0 0;
+}
+.photos .thumb .thumb-image {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.photos .thumb .b-name {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+  opacity: 1;
+  width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 1;
+  bottom: 0;
+  text-align: left;
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.8)));
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+.photos .thumb .b-name .b-top {
+  position: relative;
+}
+.photos .thumb .b-name .b-top .control-chat {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("/img/index/gray-chat.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+.photos .thumb .b-name .b-top .control-chat:hover {
+  background-image: url("/img/index/chat.png");
+}
+.photos .thumb .b-name .top {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  display: block;
+  bottom: -1em;
+  position: relative;
+  font-size: 14px;
+}
+.photos .thumb .b-name .bottom {
+  display: block;
+}
+.photos .thumb .b-name .bottom.text-right {
+  text-align: right;
+  font-size: 18px;
+}
+.photos .thumb .b-name .top a, .photos .thumb .b-name .bottom a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 1em;
+  text-shadow: 0 0 1px #000;
+  display: inline-block;
+  width: 66%;
+}
+.photos .thumb .b-name .top a:hover, .photos .thumb .b-name .bottom a:hover {
+  text-decoration: underline;
+}
+.photos .thumb:hover .b-name .top {
+  bottom: 0;
+  opacity: 1;
+}
+.photos .thumb:hover .b-controls {
+  opacity: 1;
+  top: 0;
+}
+.photos .page-switch-arrows {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 100%;
+  height: 0;
+}
+.photos .page-switch-arrows .left, .photos .page-switch-arrows .right {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0 3px 3px 0;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+  background-image: url(../../../../img/expo/expo-pagination-transparent-arrows.png);
+  background-position: 100% 0;
+}
+.photos .page-switch-arrows .left {
+  left: 0;
+  background-position: 0 0;
+}
+.photos .page-switch-arrows .right {
+  right: 0;
+  background-position: 100% 0;
+}
+
+.photos {
+  /* for slider plugin */
+}
+.photos .container-photo {
+  width: 100%;
+  position: relative;
+}
+.photos .first-photo {
+  width: 100%;
+}
+.photos .arrow {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.35);
+  height: 50px;
+  width: 50px;
+  color: #ffffff;
+  bottom: 0;
+  margin: auto;
+  z-index: 10000;
+  top: 0;
+  border-radius: 10%;
+  font-size: 32px;
+  text-align: center;
+}
+.photos .arrow.left {
+  left: 5%;
+}
+.photos .arrow.right {
+  right: 5%;
+}
+.photos .viewport {
+  width: 100%;
+  float: right;
+  overflow: hidden;
+  height: 60px;
+}
+.photos .viewport .overview {
+  position: relative;
+}
+.photos .viewport .overview li {
+  float: left;
+}
+.photos .style-for-type .caption {
+  font-family: 'Roboto';
+  font-size: 18px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.65);
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.photos .style-for-type .caption.open, .photos .style-for-type .caption:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #FFF;
+  border: 1px solid #000;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  text-shadow: none;
+}
+.photos .style-for-type .lists-container {
+  min-width: 0;
+  margin-top: 0;
+}
+.photos .style-for-type .lists-container ul {
+  min-width: 100%;
+  border-radius: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.photos .style-for-type .lists-container ul li {
+  font-size: 18px;
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Roboto';
+  padding: 0 1em;
+}
+.photos .style-for-type .lists-container ul li.active {
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+.photos .style-for-category .caption {
+  font-family: 'Roboto';
+  font-size: 18px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.65);
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.photos .style-for-category .caption.open, .photos .style-for-category .caption:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #FFF;
+  border: 1px solid #000;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  text-shadow: none;
+}
+.photos .style-for-category .lists-container {
+  margin-top: 0;
+}
+.photos .style-for-category .lists-container ul {
+  border-radius: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  min-width: 150px;
+}
+.photos .style-for-category .lists-container ul li {
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+  font-weight: normal;
+  font-family: 'Roboto';
+  padding: 0 1em;
+}
+.photos .style-for-category .lists-container ul li.active {
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,108 @@
+@mixin shadowed-text {
+  text-shadow: 0 0.8px 0px #000;
+}
+
+.popup-filter {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 32px;
+  //margin: 10px 0;
+  .hiiden-inputs {
+    display: none;
+  }
+  .caption {
+    line-height: 36px;
+//    padding-right: 40px;
+//    background-image: url(/img/icons/triangle-button.png);
+//    background-position: center right;
+    //    background-repeat: no-repeat;
+//    min-width: 170px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.40);
+    padding: 0 16px;
+    color: #fff;
+    //@include shadowed-text;
+
+    display: inline-block;
+    font-size: 16px;
+    font-weight: normal;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+  }
+  .lists-container {
+    display: none;
+    margin-top: 10px;
+    div.lists-wrapper {
+      /* width: 308px; */
+      position: relative;
+      background: blanchedalmond;
+      height: 271px;
+    }
+    /* position: absolute; */
+    background-color: white;
+    min-width: 170px;
+    text-align: left;
+    > ul {
+      position: relative;
+      min-width: 100%;
+    }
+    ul {
+      z-index: 3;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.80);
+      min-width: 100%;
+      border: 1px solid #777;
+      border-radius: 5px;
+    }
+    li {
+
+      padding: 0 5px 0 10px;
+      white-space: nowrap;
+      &:first-child {
+        border-radius: 5px 5px 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 0 5px 5px;
+      }
+
+      &.active {
+//        background-color: #f1d7b6;
+        background-color: #ffffff;
+      }
+
+      &:hover:not(.active) {
+//        background-color: #fffaec;
+        background-color: rgba(255, 255, 255, 0.4);
+//        color: white;
+//        outline: 1px solid rgba(0, 0, 0, 0.8);
+      }
+
+      ul {
+        display: none;
+        left: 100%;
+        top: 0;
+        min-height: 100%;
+        border: 1px solid #777;
+        border-left: none;
+        margin-top: -1px;
+//        margin-left: -5px;
+        border-radius: 0 5px 5px 0;
+      }
+      &:hover ul {
+        display: block;
+      }
+    }
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+  }
+}

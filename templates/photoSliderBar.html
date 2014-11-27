@@ -1,0 +1,46 @@
+<div class="bottom-bar control-photo-slider-bar">
+    <div class="inner row">
+        <div class="col avatar">
+            <img src="<%= user.avatar.thumbnail%>" alt="user avatar">
+        </div>
+        <div class="col info">
+            <div class="row h33">
+                <div class="col pt50 author-name" title="<%= exists(user, 'first_name') + ' ' + exists(user, 'last_name') %>">
+                    <%= exists(user, 'first_name') + ' ' + exists(user, 'last_name') %>
+                </div>
+                <div class="col pt50 photo-name tac" title="<%= exists(photo, 'title')%>">
+                    <%= exists(photo, 'title')%>
+                </div>
+            </div>
+            <div class="row h33 actions">
+                <div class="col from pt20">
+                    <%= exists(photo,'location.country.title') + ', ' + exists(photo, 'location.city.title') %>
+                </div>
+                <div class="col pt15 simple control-ping-likes">
+                    <i class="icon like">&nbsp;</i>
+                    <span>
+                        <%= exists(photo, 'likes.amount') %>
+                    </span>
+                </div>
+                <div class="col pt15 simple control-ping-followers">
+                    <i class="icon follow">&nbsp;</i>
+                    <span>
+                        <%= exists(photo, 'followers.amount') %>
+                    </span>
+                </div>
+                <div class="col pt20 simple control-show-comments">
+                    <i class="icon comments">&nbsp;</i>
+                    <span>Comments</span>
+                </div>
+                <div class="col pt10 simple control-show-shareBar">
+                    <i class="icon share">&nbsp;</i>
+                    <span>Share</span>
+                </div>
+                <div class="col pt15 simple control-show-info">
+                    <i class="icon info">&nbsp;</i>
+                    <span>Info</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

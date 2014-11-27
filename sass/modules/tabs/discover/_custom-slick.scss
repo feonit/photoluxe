@@ -1,0 +1,52 @@
+.multiple-items{
+  width: 100%;
+  background: white;
+  margin: 4em 0;
+
+  &:first-of-type{
+    margin-top: 5em;
+  }
+}
+
+
+.slick-loading{
+  width: 100%;
+  padding-bottom: 100%;
+  background-image: url(http://31.media.tumblr.com/cfa55f70bbc5ce545eed804fa61a9d26/tumblr_mfpmmdCdWA1s1r5leo1_500.gif);
+  background-position: 50% 50%;
+  height: 0;
+}
+
+.slick-dots {
+  //bottom: -10px;
+}
+
+.slick-prev, .slick-next{
+  transition-property: left, right, opacity;
+  transition-duration: .3s;
+  height: 100%;
+  top: 0;
+  margin-top: 0;
+}
+
+.slick-prev:before, .slick-next:before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 20px;
+  background-image: url(/img/icons/arrow-slider.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  left: 0px;
+}
+
+.slick-next:before{
+  background-position: -20px 50%;
+}
+
+/* размер стрелок слайдера */
+
+.slick-prev:before, .slick-next:before{
+  //font-size: 1.5em ;
+}

@@ -1,0 +1,24 @@
+<div class="thumb">
+    <div class="b-controls">
+        <i class="btn-like control-like">
+            <%= exists(likes, 'amount') %>
+        </i>
+        <i class="btn-heart control-heart">
+            <%= exists(followers,'amount') %>
+        </i>
+    </div>
+    <div class="b-name">
+        <div class="top">
+            <a href="#photographer-info" class="control-info ">
+                <%= exists(user, 'title') %>
+            </a>
+        </div>
+        <div class="bottom text-right">
+            <a href="#album-info" class="control-comment">
+                <%= exists(title) %>
+            </a>
+        </div>
+    </div>
+    <div style=" background-image: url( <%= url.thumbnail %> ) " class="thumb-image control-thumb"></div>
+    <div></div>
+</div>

@@ -1,0 +1,25 @@
+/* Пагинатор */
+
+.pagination {
+  font-size: 23px;
+  font-weight: lighter;
+  padding-bottom: 5px;
+  text-align: center;
+
+  .page {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    width: 36px;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    &.active {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}

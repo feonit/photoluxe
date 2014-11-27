@@ -1,0 +1,240 @@
+/*
+    Вкладка Profiles
+*/
+
+@import "compass/css3";
+@import "./../../../mixin/placeholderText";
+@import "controlPlusInput";
+
+// это временно
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("./../../../../fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("./../../../../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),
+  url("./../../../../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"),
+  url("./../../../../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"),
+  url("./../../../../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+
+// применение бутстрапа на данном этапе разработки возможно только эксклюзивно для конктретной страницы,
+// ко всему сайту пока что нельзя, т.к. сбиваются дефолтные настройки //todo
+
+.profile{
+  margin-top: 100px;
+
+  @import "bootstrap";
+
+  .soc-field, .soc-button-popup-panel{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  // костыль для соответствия макету
+  label{
+    line-height: 24px !important;
+  }
+
+  .form-control-feedback{
+    top: 29px !important;
+  }
+  // end костыль для соответствия макету
+
+  .btn-plus{
+    font-size: 24px;
+    line-height: 24px;
+    height: 34px;
+    width: 34px;
+    border: 1px solid #333;
+    text-align: center;
+    border-radius: 3px;
+    background: white;
+    color: #333;
+    font-weight: 100;
+  }
+
+  .mylocation{
+    cursor: pointer;
+    background-image: url(/img/google/map/auto-geolocation-2.png);
+    height: 18px;
+    width: 18px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    top: 10px;
+    position: relative;
+    right: 13px;
+
+    &:hover{
+    }
+
+    &.mylocation-fail{
+      background-image: url(/img/google/map/auto-geolocation-1.png);
+    }
+    &.mylocation-process{
+      background-image: url(/img/google/map/auto-geolocation-3.png);
+    }
+    &.mylocation-success{
+      background-image: url(/img/google/map/auto-geolocation-4.png);
+    }
+  }
+
+
+  .btn-align-center{
+    margin-top: 10px;
+  }
+
+  @media (max-width: 767px){
+    .btn-align-center{
+      text-align: center;
+    }
+  }
+
+
+  // vs hack common.css
+  input[type="checkbox"] {
+//    clip: inherit;
+//    height: 25px !important;
+//    width: 25px !important;
+//    display: inline-block !important;
+//    vertical-align: middle !important;
+//    position: relative !important;
+//    margin: 0 10px 0 0 !important;
+  }
+
+  .checkbox label{
+    padding-left: 0 !important;
+  }
+
+  input, select, textarea{
+    @include input-placeholder{
+      color: #ccc !important;
+      font-style: italic !important;
+      font-size: 12px !important;
+    }
+  }
+
+  @media (min-width: 1200px){
+    .container {
+      width: 820px !important;
+    }
+  }
+
+  .btn-change-avatar{
+    //display: block;
+    //margin: 0 auto !important;
+  }
+
+
+  .delete{
+    position: relative;
+    padding-left: 30px;
+    line-height: 33px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+
+    &.account-forever{
+      font-size: 12px;
+      padding-top: 1px;
+      padding-bottom: 1px;
+    }
+
+    background: url(/img/delete.png) no-repeat 0% 50%;
+    background-size: contain;
+
+  }
+
+  .avatar {
+    img, canvas{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+    }
+  }
+
+  .canvas{
+    max-width: 100%;
+  }
+
+  .popover-title{
+    color: #333333;
+  }
+
+  .soc li{
+    position: relative;
+
+    .cross {
+      background: url(/img/delete.png) no-repeat 0% 50%;
+      background-size: contain;
+      height: 17px;
+      width: 17px;
+      display: block;
+      position: absolute;
+      z-index: 1;
+      bottom: -8px;
+      right: 2px;
+    }
+  }
+
+  .geography{
+    width: 100%;
+
+    .container-map{
+      position: relative;
+
+      button{
+        position: absolute;
+        top: 0;
+        left: 60%;
+        margin: 10px 20px;
+      }
+    }
+
+    .map-canvas{
+      width: 100%;
+      height: 200px;
+    }
+
+    // Скрываем лишний родной бар
+    .gm-style-cc{
+      display: none;
+    }
+
+    .pac-container {
+      font-family: Roboto;
+    }
+
+    #pac-input {
+      width: 60%;
+      margin: 10px;
+    }
+  }
+
+  .change-photo-modal{
+    text-align: center;
+  }
+
+  a {
+    color: orange;
+    text-decoration: none;
+  }
+
+  img {
+    border: 0;
+    vertical-align: middle;
+  }
+
+  .result,
+  .thumbnail {
+    padding: 20px;
+    background: #fff;
+    color: #222;
+    text-align: center;
+  }
+  .jcrop-holder {
+    margin: 0 auto;
+  }
+}

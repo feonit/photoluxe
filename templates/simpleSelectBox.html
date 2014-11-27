@@ -1,0 +1,6 @@
+<select<%= (name ?  ' name="'+ name +'"' : '') %>>
+    <option disabled="disabled">Select <%= name %></option>
+    <% _(items).each(function(item){ %>
+        <option<%= (item.customAttr || '')    +    (item.id ?  ' value="'+ item.id +'"' : '')     %>><%= item.text %></option>
+    <% }); %>
+</select>

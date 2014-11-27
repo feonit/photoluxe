@@ -1,0 +1,192 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600&subset=cyrillic);
+.col {
+  padding: 0;
+}
+
+.row .row {
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+}
+
+.wrap {
+  position: absolute;
+  width: 680px;
+  margin-left: -340px;
+  left: 50%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.roleChoicer {
+  padding: 0 40px 25px;
+}
+.roleChoicer .row {
+  margin-top: 10px;
+}
+
+.authForm {
+  width: 50%;
+  padding: 0 40px;
+}
+
+.divider {
+  border-left: 1px solid #bbb;
+  margin: 55px -1px 0 0;
+  height: 125px;
+  width: 0;
+}
+
+.socialButtons {
+  width: 50%;
+  padding: 0 40px;
+}
+.socialButtons > .row > .col {
+  width: 50%;
+}
+
+.smallHeading {
+  font-size: 12px;
+  padding-top: 13px;
+}
+
+.bigHeading {
+  font-size: 24px;
+  padding-top: 0;
+}
+
+.smallHeading,
+.bigHeading {
+  font-weight: normal;
+  margin: 0;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #444;
+}
+
+.authForm > .row,
+.socialButtons > .row {
+  margin-top: 10px;
+}
+
+/* /////////////////////////////////////////// */
+/*form elements*/
+.textInput {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #bbb;
+  font-weight: lighter;
+  text-indent: 10px;
+  font-size: 14px;
+  outline: none;
+  padding: 0;
+  border-radius: 3px;
+  color: #444 !important;
+}
+
+.oneSizeButton {
+  width: 120px;
+  height: 35px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-weight: lighter;
+  font-size: 14px;
+  outline: none;
+  background-color: #fff;
+  color: #444;
+  /*modifer for .oneSizeButton*/
+}
+.oneSizeButton.withIcon {
+  background-image: url(/img/social/s-glyph-22-vertical.png) !important;
+  background-repeat: no-repeat;
+  /* hide img if position not set */
+  background-position: -40px 40px;
+  padding-left: 30px;
+}
+.oneSizeButton.withIcon.facebook {
+  background-position: 10px -125px;
+}
+.oneSizeButton.withIcon.twitter {
+  background-position: 10px -81px;
+}
+.oneSizeButton.withIcon.google {
+  background-position: 10px -38px;
+}
+.oneSizeButton.withIcon.vk {
+  background-position: 10px 6px;
+}
+
+.roleChoicer label {
+  cursor: pointer;
+  font-size: 14px;
+  vertical-align: top;
+  color: #444;
+  display: block;
+}
+
+.roleChoicer input[type=radio] {
+  display: none;
+}
+
+.choicer {
+  width: 32%;
+}
+
+.roleHint {
+  visibility: hidden;
+  width: 68%;
+  /* background: red; */
+  border: 1px dashed #bbb;
+  color: #444;
+  padding: 13px 18px;
+  font-size: 11px;
+  font-weight: lighter;
+  border-radius: 3px;
+  min-height: 100px;
+  line-height: 18px;
+}
+
+.roleChoicer label:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #444;
+  border-radius: 99px;
+  margin-right: 9px;
+}
+
+.roleChoicer input[type=radio]:checked + label:before {
+  background-color: #bbb;
+}
+
+.roleChoicer input[type=radio]:checked + label:after {
+  content: "";
+  float: right;
+  margin-right: -5px;
+  margin-top: .5em;
+  border-width: 1px;
+  border-style: dashed;
+  border-color: darkgray;
+  border-top: 0;
+  border-right: 0;
+  width: 8px;
+  height: 8px;
+  -webkit-transform: rotate(45deg);
+  background: #fff;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.block-right {
+  float: right;
+}

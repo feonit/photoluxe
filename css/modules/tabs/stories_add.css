@@ -1,0 +1,63 @@
+.add-collage .photo-list img {
+  height: 82px;
+  width: 82px;
+}
+.add-collage .img-div {
+  display: inline-block;
+  padding: 0 20px 20px 0;
+  position: relative;
+}
+
+#add-cover-modal #cover-form-block #cover-input {
+  display: none;
+}
+
+#add-cover-modal .modal-dialog {
+  width: 1000px;
+}
+
+#add-cover-modal #uploaded-image .exif {
+  display: none;
+}
+
+#add-cover-modal #uploaded-image .exif #thumbnail {
+  display: none;
+}
+
+#add-cover-modal #cover-form-block {
+  text-align: center;
+}
+
+#stories_tags {
+  margin: 0 24px;
+  padding: 5px 9px 3px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 98%;
+}
+
+.add-tags-input {
+  margin-bottom: 0;
+}
+
+.add-tags-block .bootstrap-tagsinput {
+  text-align: left;
+  padding: 4px 15px 0;
+  margin-bottom: 0;
+  height: 32px;
+}
+
+.add-tags-block .bootstrap-tagsinput input[type="text"] {
+  border: none;
+  padding: 0;
+}
+
+.add-tags-block .bootstrap-tagsinput .tag {
+  color: #999;
+  font: 300 12px/18px 'Open Sans', Arial, Helvetica, sans-serif;
+  padding: 0 7px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: #ffffff;
+}

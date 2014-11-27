@@ -1,0 +1,139 @@
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.css"/>
+<link href="/lib/select/select2-3.5.1/select2.css" rel="stylesheet"/>
+
+<link rel="stylesheet" type="text/css" href="/css/modules/tabs/discover.css">
+
+<DIV class="discover sections">
+
+    <!-- Контейнер для фотослайдера -->
+    {#<div id="photo-slider" class="photo-slider"></div>#}
+
+    <!-- Фильтры -->
+    <div class="sub-menu-wrapper">
+        <ul class="sub-menu-list">
+
+            <!-- first control select -->
+
+            <li class="item">
+                <div class="popup-filter-browse control-popupBrowse">
+                    <div class="caption">
+                        <span class="caption-text control-caption-text"></span>
+                    </div>
+                    <div class="popupPanel">
+                        <div class="context">
+                            <ul>
+                                <li class="list-item">
+                                    <a class="link control-link icon recent active" data-icon="recent" data-request="recent">Most Recent</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="link control-link icon appreciate" data-icon="appreciate" data-request="appreciated" >Most Appreciated</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="link control-link icon discussed" data-icon="discussed" data-request="discussed">Most Discussed</a>
+                                </li>
+                                <li class="list-item ">
+                                    <a class="link control-link icon viewed" data-icon="viewed" data-request="viewed">Most Viewed</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="time">
+                            <div class="time-caption">
+                                <span class="control-caption-time-text caption-text"></span>
+                            </div>
+                            <ul class="time-list">
+                                <li class="list-item">
+                                    <a class="link control-link active" data-href="?range=all" data-request="all" >All Time</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="link control-link" data-href="?range=today" data-request="today">Today</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="link control-link" data-href="?range=week" data-request="week">Week</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="link control-link" data-href="?range=month" data-request="month">Month</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!-- end first control select -->
+
+            <!-- control location -->
+
+            <li class="item">
+                <div class="popup-filter-location control-popupLocation">
+                    <div class="caption">Any location</div>
+                    <div class="popupPanel hidden">
+                        <div class="row topBar">
+                            <div class="col">
+                                <button class='control-nearby'>Nearby</button>
+                            </div>
+                        </div>
+                        <div class="row combosBar">
+                            <div class="col">
+                                <input class="control-select2" type="hidden">
+                            </div>
+                        </div>
+                        <div class="row bottomBar">
+                            <div class="col">
+                                <button class="control-clear">Clear</button>
+                            </div>
+                            <div class="col">
+                                <button class="control-apply">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="item container-discover-search-panel">
+                <div class="input-wrap control-field-search">
+                    <input class="control-search-select" type="search">
+                </div>
+                <div class="popupFilterEquipment control-popupEquipment">
+                    <div class="icon"></div>
+                    <div class="popup-panel">
+                        <div class="row container-sortTheSelectBox sorting control-sorting">
+                            <div class="col">
+                                <button class="active" data-sort="abc">Alphabetical</button>
+                            </div>
+                            <div class="col">
+                                <button data-sort="popular">by Popular</button>
+                            </div>
+                        </div>
+                        <div class="row container-selectBoxes selectboxes">
+                            <div class="col">
+                                <div class="select2-camera"></div>
+                            </div>
+                            <div class="col">
+                                <div class="select2-lens"></div>
+                            </div>
+                        </div>
+                        <div class="row container-actionButtons actions">
+                            <div class="col">
+                                <button class="control-clear">Clear</button>
+                            </div>
+                            <div class="col">
+                                <button class="control-apply active">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Контейнер для контента -->
+    <div id="control-content-photographer-list">
+        <!-- Photographer list content -->
+    </div>
+
+    <!-- Контейнер для пагинатора -->
+    <div class="pagination control-pagination-photographer">
+        <!-- Photographer list pagination -->
+    </div>
+
+</DIV>

@@ -1,0 +1,322 @@
+@import "compass/utilities";
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes slideLeft {
+    from {left: 100%;}
+    to {left: 0%;}
+}
+
+/* Standard syntax */
+@keyframes slideLeft {
+    from {left: 100%;}
+    to {left: 0%;}
+}
+
+
+.photo-slider{
+    position: relative;
+
+    .btn-like, .btn-heart{
+        background-repeat: no-repeat;
+        border: none;
+        display: block;
+        cursor: pointer;
+        float: left;
+        margin: 2px;
+        color: white;
+        width: 60px;
+        text-align: right;
+        line-height: 30px;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 15%;
+        background-position: 0% 50%;
+    }
+    .btn-like{
+        background-image: url(/img/icons/finger-up-white.png);
+    }
+    .btn-heart{
+        background-image: url(/img/icons/heart-white.png);
+    }
+
+    .arrow-left, .arrow-right{
+        height: 50px;
+        width: 50px;
+        margin-top: -25px;
+        position: absolute;
+        top: 50%;
+        z-index: 1000;
+        background: rgba(0,0,0, .1);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        cursor: pointer;
+    }
+    .arrow-left{
+        background-image: url('/img/index/arrow-left.png');
+        left: 0;
+    }
+
+    .arrow-right{
+        right: 0;
+        background-image: url('/img/index/arrow-right.png');
+    }
+
+    .top-bar, .bottom-bar{
+        background: rgba(0,0,0, .1);
+        width: 100%;
+    }
+
+
+
+    .slides{
+        cursor: pointer;
+
+        //my $FillMode
+        .preview-big{
+            min-height: 100%;
+            right: 0;
+            margin: 0 auto;
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+
+    .loading{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        .shadow{
+            filter: alpha(opacity=70);
+            opacity:0.7;
+            position: absolute;
+            display: block;
+            background-color: #000000;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height:100%;
+        }
+        .image-loader{
+            position: absolute;
+            display: block;
+            background: url(/lib/slider.js-master/img/loading.gif) no-repeat center center;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height:100%;
+        }
+    }
+
+    .bottom-bar{
+        position: absolute;
+        bottom: 0;
+
+
+      //Ресет грида. Здесь отступы не нужны
+      .col {
+        padding: 0;
+      }
+
+      .row {
+        .row {
+          margin: 0;
+        }
+      }
+
+      background: rgba(255,255,255,1);
+      background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,1)));
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+
+      .inner {
+          -webkit-animation: slideLeft .5s; /* Chrome, Safari, Opera */
+          animation: slideLeft .5s;
+          position: relative;
+
+        color: white;
+        text-shadow: 0 0 3px #000;
+        margin: 0 auto;
+        width: 700px;
+        //height: 100px;
+          padding-top: 15px;
+
+        .avatar {
+          width: 100px;
+        }
+        .info {
+          width: 600px;
+          .author-name,
+          .photo-name {
+            font-size: 16px;
+            display: inline-block;
+            max-width: 50%;
+            white-space: nowrap;
+            overflow: hidden;
+            -ms-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            display: inline-block;
+            vertical-align: middle;
+
+          }
+          .photo-name {
+            font-weight: bold;
+            font-size: 18px;
+          }
+          .from {
+            font-size: 13px;
+          }
+
+//          .actions {
+//          }
+          .actions {
+            .simple {
+              i.icon {
+                display: inline-block;
+                height: 25px;
+                width: 25px;
+                vertical-align: middle; //эта строчка выровняет текст который идёт за этим блоком
+                background-repeat: no-repeat;
+
+                background-image: url(/img/icons/photo-slider-bar-sprite.png);
+                &.like {
+                  background-position: 0 0;
+                }
+                &.follow   {
+                  background-position: -25px 0;
+                }
+                &.comments {
+                  background-position: -50px 0;
+                }
+                &.share {
+                  background-position: -75px 0;
+                }
+                &.info {
+                  background-position: -100px 0;
+                }
+                &.set {
+                  background-position-y: -25px;
+                }
+              }
+              span {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .pt50 {
+        width: 50%;
+      }
+      .pt40 {
+        width: 40%;
+      }
+      .pt30 {
+        width: 30%;
+      }
+      .pt20 {
+        width: 20%;
+      }
+      .pt15 {
+        width: 15%;
+      }
+      .pt10 {
+        width: 10%;
+      }
+      .h33 {
+        height: 33px;
+      }
+      .tac {
+        text-align: center;
+      }
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .user-album-name /*.right-links .control*/, .link.resource span, .section-name{
+        display: none !important;
+    }
+}
+
+
+// Это тема номер 7 из проекта jssor
+
+/* jssor slider thumbnail navigator skin 07 css */
+/*
+.thumbnavigator .p            (normal)
+.thumbnavigator .p:hover      (normal mouseover)
+.thumbnavigator .pav          (active)
+.thumbnavigator .pav:hover    (active mouseover)
+.thumbnavigator .pdn          (mousedown)
+*/
+
+
+$size : 172px;
+
+/* ie quirks mode adjust */
+* html .thumbnavigator .rama {
+    width /**/: $size;
+    height /**/: $size;
+}
+
+.thumbnavigator{
+    position: relative;
+    height : $size;
+
+    .thumb {
+        top: 0px;
+        left: 0px;
+        width: $size;
+        height: $size;
+        /*filter: alpha(opacity=80);
+        opacity: .8;*/
+    }
+
+    .p{
+
+    }
+
+    .p:hover .thumb, .thumbnavigator .pav .thumb {
+        filter: alpha(opacity=100);
+        opacity: 1;
+    }
+
+    .rama {
+        position: absolute;
+        top:0px;
+        width: $size - 2px;
+        height: $size - 2px;
+
+        border: 1px solid rgba(255,255,255, 0);
+
+        transition: border-color .6s;
+        -moz-transition: border-color .6s;
+        -webkit-transition: border-color .6s;
+        -o-transition: border-color .6s;
+    }
+
+    .pav .rama, .thumbnavigator .p:hover .rama
+    {
+        border-color: #fff;
+    }
+
+    .pav:hover .rama {
+        border-color: #0099FF;
+    }
+
+    .p:hover .rama
+    {
+        transition: none;
+        -moz-transition: none;
+        -webkit-transition: none;
+        -o-transition: none;
+    }
+}
+
+
+
+

@@ -1,0 +1,20 @@
+<% _(items).each(function(item){ %>
+<li>
+    <div class="thumb downloaded" data-id="<%- item.uid %>" data-order="<%- item.uid %>">
+        <div class="b-controls" style="display: none;"> <i class="btn-edit"></i>
+            <i class="btn-remove"></i>
+        </div>
+        <div class="b-name">
+            <div class="b-top">
+                <a href="#" class="e-link-name m-top m-right-padding-icon control-info"><%- item.title %></a>
+                <a href="#" class="control-chat"></a>
+            </div>
+            <div class="b-bottom">
+                <a href="#" class="e-link-name m-bottom control-comment"><%- item.author %></a>
+            </div>
+        </div>
+        <img src="<%- item.thumbnail + '?' + Math.random()%>" class="thumb-image">
+    </div>
+</li>
+<% }); %>
+

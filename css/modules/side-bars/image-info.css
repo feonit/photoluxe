@@ -1,0 +1,8 @@
+/* Старый сайдбар, по информации о картинке, надо будет разобраться */
+
+.image-info{
+    margin-top: 50px;
+}
+.image-info label{
+    display: block;
+}

@@ -1,0 +1,39 @@
+/* хлебные ккрошки*/
+
+.breadcrumb {
+    display: block;
+    width: 100%;
+    padding: 0 50px 0 50px;
+    border-bottom: 1px solid #dbdad8;
+    border-top: 1px solid #dbdad8;
+    box-sizing: border-box;
+
+    li {
+        display: inline-block;
+        background: url(../img/icons/arrow-breadcrumb.png) center right no-repeat;
+
+        &:last-child {
+            background: none;
+        }
+        a {
+            display: block;
+            color: #000000;
+            height: 50px;
+            line-height: 50px;
+            font-size: 14px;
+            padding-right: 40px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .email, .city, .breadcrumb{
+        display: none;
+    }
+
+}

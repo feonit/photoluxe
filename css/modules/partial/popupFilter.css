@@ -1,0 +1,82 @@
+.popup-filter {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 32px;
+}
+.popup-filter .hiiden-inputs {
+  display: none;
+}
+.popup-filter .caption {
+  line-height: 36px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0 16px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.popup-filter .lists-container {
+  display: none;
+  margin-top: 10px;
+  /* position: absolute; */
+  background-color: white;
+  min-width: 170px;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.popup-filter .lists-container div.lists-wrapper {
+  /* width: 308px; */
+  position: relative;
+  background: blanchedalmond;
+  height: 271px;
+}
+.popup-filter .lists-container > ul {
+  position: relative;
+  min-width: 100%;
+}
+.popup-filter .lists-container ul {
+  z-index: 3;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  min-width: 100%;
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+.popup-filter .lists-container li {
+  padding: 0 5px 0 10px;
+  white-space: nowrap;
+}
+.popup-filter .lists-container li:first-child {
+  border-radius: 5px 5px 0 0;
+}
+.popup-filter .lists-container li:last-child {
+  border-radius: 0 0 5px 5px;
+}
+.popup-filter .lists-container li.active {
+  background-color: #ffffff;
+}
+.popup-filter .lists-container li:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.popup-filter .lists-container li ul {
+  display: none;
+  left: 100%;
+  top: 0;
+  min-height: 100%;
+  border: 1px solid #777;
+  border-left: none;
+  margin-top: -1px;
+  border-radius: 0 5px 5px 0;
+}
+.popup-filter .lists-container li:hover ul {
+  display: block;
+}

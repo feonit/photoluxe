@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="">
+    <meta name="Keywords" content=""/>
+    <meta name="robots" content="noindex,nofollow"/>
+    <title>example</title>
+
+    <link rel="stylesheet" type="text/css" href="css/vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor/dead-simple-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+
+    <link rel="stylesheet" type="text/css" href="css/modules/tabs/expo/photos.css">
+
+    <script>
+
+        /** insert in the src/FtWs/DefaultBundle/Resources/views/Default/appConfig.js.twig all cabinet urls */
+        /* додумать как от этого избавиться */
+        Urls = {
+            "appConfigBaseUrl": "/",
+            "appConfigUrl": "/",
+            "assetRowVersion": "0.0.1",
+            "assetVersion": "0.0.1",
+            "ownerGid": "2f42-2f4f-f24f-24f4"
+        };
+    </script>
+    <script data-main="js/config.js" src="lib/require/require-2.1.11.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="w1">
+        <header>
+            <!-- Header region -->
+            <div class="wrapper-header">
+
+                <!-- Selected item-menu in mobile-size -->
+                <div class="select-wrap">
+                    <span class="selected-element"></span>
+                </div>
+
+                <!-- Logotype -->
+                <a href="#" class="logo"></a>
+
+                <!-- Navigation bar -->
+                <nav class="navigation control-nav">
+
+                    <!-- General menu -->
+                    <ul class="list-items">
+                        <li class="item">
+                            <a class="link expo-icon" data-bypass href="/expo">Expo</a>
+                            <div class="sub-list-items control-auto-open">
+                                <ul class="wrapper-list">
+                                    <li class="sub-item" >
+                                        <a id="expoPhotosLink" href="/expoPhotos" data-bypass class="link photos-icon">Photos</a>
+                                    </li>
+                                    <li  class="sub-item" >
+                                        <a id="expoStoriesLink" href="#" data-bypass class="link stories-icon">Stories</a>
+                                    </li>
+                                    <li class="sub-item" >
+                                        <a id="expoLiveLink"  href="#" data-bypass class="link live-icon">Live</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <a id="discoverLink" class="link discover-icon" data-bypass href="/discover">Discover</a>
+                        </li>
+                        <li class="item">
+                            <a id="forumLink" class="link forum-icon" href="#">Forum</a>
+                        </li>
+                        <li class="item">
+                            <a class="link contests-icon" data-bypass href="#">Contests</a>
+                            <div class="sub-list-items control-auto-open">
+                                <ul class="wrapper-list">
+                                    <li class="sub-item" >
+                                        <a id="contestsCurrentLink" data-bypass href="#" class="link current-icon">Current</a>
+                                    </li>
+                                    <li class="sub-item" >
+                                        <a id="contestsCompletedLink" data-bypass href="#" class="link completed-icon">Completed</a>
+                                    </li>
+                                    <li class="sub-item" >
+                                        <a id="contestsArchiveLink" data-bypass href="#" class="link archive-icon">Archive</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Personal menu -->
+                    <div class="auth-menu control-auth-menu">
+
+                        <div class="auth-yes control-auth-yes">
+                            <div class="table-cell">
+                                <span class="unread-messages">98</span>
+                            </div>
+                            <div class="table-cell">
+                                <i class="avatar control-user-avatar"></i>
+                            </div>
+                            <div class="table-cell">
+                                <span class="username control-username">Feonit</span>
+                            </div>
+                        </div>
+                        <!--<div class="auth-no">
+                            <a href="#" class="link control-login">Log in</a>
+                            <a href="#" class="link control-register">Sign up</a>
+                        </div>-->
+                        <!-- personal menu -->
+
+                        <div class="list-items_auth-menu control-list-items-auth">
+                            <ul class="wrapper-list">
+                                <li class="item">
+                                    <a class="link personal-icon" data-bypass href="/portfolio">Personal</a>
+                                </li>
+                                <li class="item">
+                                    <a class="link chat-icon" data-bypass href="#">Chat</a>
+                                </li>
+                                <li class="item">
+                                    <a class="link settings-icon" data-bypass href="/profile">Settings</a>
+                                </li>
+                                <li class="item">
+                                    <a class="link logout-icon" href="#">LogOut</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Search bar -->
+                <i class="search control-search"></i>
+
+                <!-- Unique menu for each section -->
+                <div class="section-menu control-settings-menu">
+                    <ul>
+                        <li><a data-bypass href="/profile">profile</a></li>
+                        <li><a data-bypass href="#">notifications</a></li>
+                        <li><a data-bypass href="#">display</a></li>
+                        <li><a data-bypass href="/account">account</a></li>
+                    </ul>
+                </div>
+
+                <div class="section-menu control-personal-menu">
+                    <ul>
+                        <li><a data-bypass href="/portfolio">portfolio</a></li>
+                        <li><a data-bypass href="#">flow</a></li>
+                        <li><a data-bypass href="#">favorites</a></li>
+                        <li><a data-bypass href="#">requests</a></li>
+                        <li><a data-bypass href="#">personal stories</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </header>
+        <div class="sliders-wrapper">
+            <ul class="sliders-ul">
+                <!-- Главные страницы -->
+                <li id="expoPhotos"         data-name="Expo/Photos"         class="sections-li">
+                    <DIV class="photos sections">
+
+                        <!--<div class="photo-slider">-->
+
+                            <!--&lt;!&ndash; Сам фотослайдер &ndash;&gt;-->
+                            <!--<div id="slider1_container">-->
+                                <!--<a u="arrowright"  class="control arrow-right next" href="#"></a>-->
+                                <!--<a u="arrowleft"  class="control arrow-left prev" href="#"></a>-->
+
+                                <!--&lt;!&ndash; Верхний бар фото слайдера &ndash;&gt;-->
+                                <!--<div class="top-bar">-->
+                                    <!--<div class="left-user-info">-->
+                                        <!--<div class="avatar">-->
+                                            <!--<img src="img/user1.png">-->
+                                        <!--</div>-->
+                                        <!--<h2 class="user-album-name">Olga Ruchkina, «Near the fence»</h2>-->
+                                    <!--</div>-->
+                                    <!--<div class="right-links">-->
+                                        <!--<a  class="link resource like" href="#" ><span>32</span></a>-->
+                                        <!--<a  class="link resource chat" href="#" ><span>3</span></a>-->
+                                        <!--<a  class="link resource star" href="#" ><span>56</span></a>-->
+                                        <!--&lt;!&ndash;<a class="link resource ebalda" href="#" ></a>&ndash;&gt;-->
+                                        <!--<a  class="link resource heart follow" title="heart">2K</a>-->
+                                        <!--<a  class="link resource complain" href="#" ></a>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
+                                <!--&lt;!&ndash; Loading Screen &ndash;&gt;-->
+                                <!--<div u="loading" class="loading">-->
+                                    <!--<div class="shadow">-->
+                                    <!--</div>-->
+                                    <!--<div class="image-loader">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
+                                <!--&lt;!&ndash; Слайды &ndash;&gt;-->
+                                <!--<div id="slide-container" u="slides" class="slides">-->
+                                    <!--&lt;!&ndash; Шаблон каждого слайда, используется при инициализации слайдера &ndash;&gt;-->
+                                    <!--<script id="slide-template" type="text/templates-underscore">-->
+                                        <!--<div>-->
+                                            <!--<IMG class="preview-big" u="image" src2="<%= bigPhoto%>" />-->
+                                            <!--<img u="thumb" src2="<%= smallPhoto%>" />-->
+                                        <!--</div>-->
+                                    <!--</script>-->
+                                <!--</div>-->
+
+                                <!--&lt;!&ndash; Слайдер превьюшек обёрнут нижним баром &ndash;&gt;-->
+                                <!--&lt;!&ndash;{#        <div class="bottom-bar">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<h2 class="section-name">Editors Choice</h2>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="thumbnavigator" u="thumbnavigator" style="height: 172px;">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="slides" u="slides">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="p" u="prototype"style="WIDTH: 172px; HEIGHT: 172px;">&ndash;&gt;-->
+                                <!--&lt;!&ndash;&lt;!&ndash; Шаблон либы jssor, используется внутри неё&ndash;&gt;&ndash;&gt;-->
+                                <!--&lt;!&ndash;<ThumbnailTemplate class="thumb"></ThumbnailTemplate>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="rama"></div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>#}&ndash;&gt;-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+
+
+
+                        <!--under header panel-->
+                        <div class="under-header-panel cf">
+
+                            <!-- filtration controls-->
+                            <div class="wrap">
+
+                                <!-- choose the type -->
+                                <div class="panel-item">
+                                    <div class="box">
+                                        <!--<div class="popup-filter control-photo-type style-for-type">-->
+                                            <!--<div class="caption">Day's Photo</div>-->
+
+                                            <!--<div class="lists-container">-->
+                                                <!--<ul>-->
+
+                                                    <!--<li class="active">Day's Photo</li>-->
+                                                    <!--<li>Editors Choice</li>-->
+                                                    <!--<li>Popular</li>-->
+                                                    <!--<li>New</li>-->
+                                                    <!--<li>Nearby</li>-->
+                                                <!--</ul>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+                                <!-- /choose the type -->
+
+                                <!--choose the category-->
+                                <div class="panel-item">
+                                    <div class="box">
+                                        <div class="popup-filter control-photo-category style-for-category"></div>
+                                    </div>
+                                </div>
+                                <!--/choose the category-->
+
+                                <div class="separator"></div>
+
+                            </div>
+                            <!--/ filtration controls-->
+
+                        </div>
+                        <!--/under header panel-->
+
+                        <div id="photo-slider" class="photo-slider"></div>
+
+                        <!-- Editors choice -->
+                        <div class="expo-item cf" style="padding-top: 56px;">
+                            <h2>
+                                <span class="detachable">Photoluxe Weeks Top 50 (Editors choice)</span>
+                            </h2>
+                            <div class="pagination pagination-editors" style="text-align: center;display: inherit;"></div>
+                            <div class="content-photo-editors cf" style="position: relative;"></div>
+                        </div>
+                    </DIV>
+                </li>
+                <li id="expoStories"        data-name="Expo/Stories"        class="sections-li"></li>
+                <li id="expoLive"           data-name="Expo/Live"           class="sections-li"></li>
+                <li id="discover"           data-name="Discover"            class="sections-li">
+                    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.css"/>
+                    <link href="lib/select/select2-3.5.1/select2.css" rel="stylesheet"/>
+
+                    <link rel="stylesheet" type="text/css" href="css/modules/tabs/discover.css">
+
+                    <DIV class="discover sections">
+
+
+                        <!-- Фильтры -->
+                        <div class="sub-menu-wrapper">
+                            <ul class="sub-menu-list">
+
+                                <!-- first control select -->
+
+                                <li class="item">
+                                    <div class="popup-filter-browse control-popupBrowse">
+                                        <div class="caption">
+                                            <span class="caption-text control-caption-text"></span>
+                                        </div>
+                                        <div class="popupPanel">
+                                            <div class="context">
+                                                <ul>
+                                                    <li class="list-item">
+                                                        <a class="link control-link icon recent active" data-icon="recent" data-request="recent">Most Recent</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a class="link control-link icon appreciate" data-icon="appreciate" data-request="appreciated" >Most Appreciated</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a class="link control-link icon discussed" data-icon="discussed" data-request="discussed">Most Discussed</a>
+                                                    </li>
+                                                    <li class="list-item ">
+                                                        <a class="link control-link icon viewed" data-icon="viewed" data-request="viewed">Most Viewed</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="time">
+                                                <div class="time-caption">
+                                                    <span class="control-caption-time-text caption-text"></span>
+                                                </div>
+                                                <ul class="time-list">
+                                                    <li class="list-item">
+                                                        <a class="link control-link active" data-href="?range=all" data-request="all" >All Time</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a class="link control-link" data-href="?range=today" data-request="today">Today</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a class="link control-link" data-href="?range=week" data-request="week">Week</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a class="link control-link" data-href="?range=month" data-request="month">Month</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- end first control select -->
+
+                                <!-- control location -->
+
+                                <li class="item">
+                                    <div class="popup-filter-location control-popupLocation">
+                                        <div class="caption">Any location</div>
+                                        <div class="popupPanel hidden">
+                                            <div class="row topBar">
+                                                <div class="col">
+                                                    <button class='control-nearby'>Nearby</button>
+                                                </div>
+                                            </div>
+                                            <div class="row combosBar">
+                                                <div class="col">
+                                                    <input class="control-select2" type="hidden">
+                                                </div>
+                                            </div>
+                                            <div class="row bottomBar">
+                                                <div class="col">
+                                                    <button class="control-clear">Clear</button>
+                                                </div>
+                                                <div class="col">
+                                                    <button class="control-apply">Apply</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="item container-discover-search-panel">
+                                    <div class="input-wrap control-field-search">
+                                        <input class="control-search-select" type="search">
+                                    </div>
+                                    <div class="popupFilterEquipment control-popupEquipment">
+                                        <div class="icon"></div>
+                                        <div class="popup-panel">
+                                            <div class="row container-sortTheSelectBox sorting control-sorting">
+                                                <div class="col">
+                                                    <button class="active" data-sort="abc">Alphabetical</button>
+                                                </div>
+                                                <div class="col">
+                                                    <button data-sort="popular">by Popular</button>
+                                                </div>
+                                            </div>
+                                            <div class="row container-selectBoxes selectboxes">
+                                                <div class="col">
+                                                    <div class="select2-camera"></div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="select2-lens"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row container-actionButtons actions">
+                                                <div class="col">
+                                                    <button class="control-clear">Clear</button>
+                                                </div>
+                                                <div class="col">
+                                                    <button class="control-apply active">Apply</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Контейнер для контента -->
+                        <div id="control-content-photographer-list">
+                            <!-- Photographer list content -->
+                        </div>
+
+                        <!-- Контейнер для пагинатора -->
+                        <div class="pagination control-pagination-photographer">
+                            <!-- Photographer list pagination -->
+                        </div>
+
+                    </DIV>
+
+                </li>
+                <li id="forum"              data-name="Forum"               class="sections-li"></li>
+                <li id="contests"           data-name="Contests"            class="sections-li"></li>
+                <li id="chat"               data-name="Chat"                class="sections-li"></li>
+                <li id="flow"               data-name="Flow"                class="sections-li"></li>
+                <li id="profile"            data-name="Profile"             class="sections-li"></li>
+                <li id="portfolio"          data-name="Portfolio"           class="sections-li"></li>
+                <li id="stories"            data-name="Stories"             class="sections-li"></li>
+                <li id="story"              data-name="Story"               class="sections-li"></li>
+                <li id="edit_stories"       data-name="EditStories"         class="sections-li"></li>
+                <li id="manage_story"       data-name="ManageStory"         class="sections-li"></li>
+                <li id="preview_story"      data-name="PreviewStory"        class="sections-li"></li>
+                <li id="favorites"          data-name="Favorites"           class="sections-li"></li>
+                <li id="requests"           data-name="Requests"            class="sections-li"></li>
+                <li id="display"            data-name="Display"             class="sections-li"></li>
+                <li id="notifications"      data-name="Notifications"       class="sections-li"></li>
+                <li id="account"            data-name="Account"             class="sections-li"></li>
+                <li id="contestsCurrent"    data-name="Contests/Current"    class="sections-li"></li>
+                <li id="contestsCompleted"  data-name="Contests/Completed"  class="sections-li"></li>
+                <li id="contestsArchive"    data-name="Contests/Archive"    class="sections-li"></li>
+            </ul>
+            <footer id="footer">
+                <div class="footer-hover visible-desktop"></div>
+                <div class="footer-holder">
+                    <div class="logo"><a href="#"><img src="img/logo-footer.png" alt="PhotoLuxe" /></a></div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Map</a></li>
+                        </ul>
+                    </nav>
+                    <p>&copy; Photoluxe all rights</p>
+                </div>
+            </footer>
+        </div>
+
+        <div id="ajax_loader" class="ajax-loader"></div>
+    </div>
+</div>
+</body>
+</html>
