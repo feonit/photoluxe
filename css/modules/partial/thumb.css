@@ -65,10 +65,10 @@
   background-repeat: no-repeat;
 }
 .portfolio .thumb .b-controls .btn-edit {
-  background-image: url("/img/icons/photo-edit.png");
+  background-image: url("../../../img/icons/photo-edit.png");
 }
 .portfolio .thumb .b-controls .btn-remove {
-  background-image: url("/img/icons/photo-remove.png");
+  background-image: url("../../../img/icons/photo-remove.png");
 }
 .portfolio .thumb .b-name {
   width: 100%;

@@ -44,6 +44,7 @@ define(['app', 'backbone', 'ajax', 'options'], function(app, Backbone, ajax, opt
             '(/)': 'expoPhotos',
             'expo.html': 'expoPhotos',
             'photos.html': 'expoPhotos',
+            'portfolio.html' : 'portfolio',
             'expo/stories': 'expoStories',
             'expo/live': 'expoLive',
             'discover.html' : 'discover',
@@ -165,6 +166,7 @@ define(['app', 'backbone', 'ajax', 'options'], function(app, Backbone, ajax, opt
 
         defaultRoute: function(){
             router.navigate('/', { trigger: true })
+            alert('Роут не найден')
         }
     });
 

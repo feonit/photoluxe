@@ -1,0 +1,74 @@
+<link rel="stylesheet" type="text/css" href="css/modules/tabs/portfolio.css">
+<link rel="stylesheet" type="text/css" href="css/modules/partial/thumb.css">
+<link rel="stylesheet" type="text/css" href="css/modules/side-bars/image-info.css">
+
+<DIV class="portfolio sections">
+    <div class="wrapper head-frame">
+        <!-- Sub-menu part -->
+        <h1>Страница Portfolio</h1>
+        <button class="btn btn-base control-uploader-edit">Upload/Edit</button>
+        <button class="btn btn-base control-uploader-cancel" style="display:none">Cancel</button>
+        <button class="btn btn-base control-uploader-save" style="display:none">Save</button>
+        <button class="btn btn-base control-uploader-finish" style="display: none;">Finish</button>
+    </div>
+
+
+    <!-- Images bar -->
+    <div id="plitka">
+        <div class="limiter thumbs clearfix">
+            <div class="container-box">
+                <link rel="stylesheet" type="text/css" href="css/modules/tabs/portfolio.css">
+                <link rel="stylesheet" type="text/css" href="css/modules/partial/thumb.css">
+                <link rel="stylesheet" type="text/css" href="css/modules/side-bars/image-info.css">
+                <link rel="stylesheet" type="text/css" href="lib/file-upload/css/style.css">
+                <link rel="stylesheet" type="text/css" href="lib/file-upload/css/jquery.fileupload.css">
+
+                <!-- Drag photos control new-->
+
+                <div id="drop_zone" class="b-drag-box" style="display: none;">
+                    <p class="e-instruction">Drag photos from your computer in here</p>
+                    <p class="e-instruction-or">or</p>
+
+                    <!-- The fileinput-button span is used to style the file input field as button -->
+                    <span class="btn btn-success fileinput-button">
+                        <span>Choose photos</span>
+                        <!-- The file input field used as target for the file upload widget -->
+                        <input id="fileupload" type="file" accept="image/*" name="fileupload" data-url="" multiple>
+                    </span>
+
+                    <!-- The global progress bar -->
+                    <div id="progress" class="progress" style="display: none;">
+                        <div class="progress-bar progress-bar-success"></div>
+                    </div>
+                    <!-- The container for the uploaded files -->
+                    <div id="files" class="files"></div>
+
+
+                </div>
+
+                <!-- TODO when it is ready database for Photos bar-->
+                <ul class="thumb-scrollers hidden-block-controls" id="fp_preview_albums">
+                    <!--{% for id, item in media %}-->
+
+                    <!--<li>-->
+                        <!--<div class="thumb" id="{{ id }}">-->
+                            <!--<div class="b-controls" style="display: none;">-->
+                                <!--<i class="btn-edit"></i>-->
+                                <!--<i class="btn-remove"></i>-->
+                            <!--</div>-->
+                            <!--<div class="b-name">-->
+                                <!--<a href="#" class="e-link-name">{{ item.authorTitle }}</a>-->
+                            <!--</div>-->
+                            <!--<div style="background-image: {{ asset(item.thumbSrc) }};"></div>-->
+                        <!--</div>-->
+                        <!--<div>{{ item.title }}</div>-->
+                    <!--</li>-->
+
+                    <!--{% endfor %}-->
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</DIV>
+
