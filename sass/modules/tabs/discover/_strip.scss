@@ -114,21 +114,21 @@
 
 
         &.heart{
-          background-image: url("/img/icons/follower-gray.png");
+          background-image: url("../../../../img/icons/follower-gray.png");
           &.active{
-            background-image: url("/img/icons/follower-gold.png");
+            background-image: url("../../../../img/icons/follower-gold.png");
           }
         }
         &.star{
-          background-image: url("/img/icons/favorite-gray.png");
+          background-image: url("../../../../img/icons/favorite-gray.png");
           &.active{
-            background-image: url("/img/icons/favorite-gold.png");
+            background-image: url("../../../../img/icons/favorite-gold.png");
           }
         }
         &.chat{
-          background-image: url("/img/icons/chat-gray.png");
+          background-image: url("../../../../img/icons/chat-gray.png");
           &.active{
-            background-image: url("/img/icons/chat-gold.png");
+            background-image: url("../../../../img/icons/chat-gold.png");
           }
         }
       }

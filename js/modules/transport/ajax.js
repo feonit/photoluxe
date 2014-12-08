@@ -47,13 +47,13 @@ define(['jquery', 'app', 'options', 'backbone', 'statusLoad'], function($, app, 
             }
 
             // demo
-            //$('body').animate({opacity : '0.3'}, 100);
+            $('body').animate({opacity : '0.3'}, 100);
             statusLoad.start();
 
 
             var jqXHR = $.ajax({
                 type : 'GET',
-                url : app.root + path,
+                url : '' + app.root + 'pages/' + path + '.html',
                 dataType: 'html',
                 statusCode: {
                     404: function() {
@@ -74,7 +74,7 @@ define(['jquery', 'app', 'options', 'backbone', 'statusLoad'], function($, app, 
                 })
                 .always(function(){
                     // demo
-                    //$('body').animate({opacity : '1'}, 100);
+                    $('body').animate({opacity : '1'}, 100);
                     statusLoad.stop();
 
                 });

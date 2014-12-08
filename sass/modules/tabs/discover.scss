@@ -257,30 +257,30 @@
       text-align: left;
 
       &.recent{
-        background-image: url(/img/icons/recent-black.png);
+        background-image: url(../../../img/icons/recent-black.png);
         &:hover, &.active{
-          background-image: url(/img/icons/recent-gold.png);
+          background-image: url(../../../img/icons/recent-gold.png);
         }
       }
 
       &.appreciate{
-        background-image: url(/img/icons/appreciate-black.png);
+        background-image: url(../../../img/icons/appreciate-black.png);
         &:hover, &.active{
-          background-image: url(/img/icons/appreciate-gold.png);
+          background-image: url(../../../img/icons/appreciate-gold.png);
         }
       }
 
       &.discussed{
-        background-image: url(/img/icons/discussed-black.png);
+        background-image: url(../../../img/icons/discussed-black.png);
         &:hover, &.active{
-          background-image: url(/img/icons/discussed-gold.png);
+          background-image: url(../../../img/icons/discussed-gold.png);
         }
       }
 
       &.viewed{
-        background-image: url(/img/icons/viewed-black.png);
+        background-image: url(../../../img/icons/viewed-black.png);
         &:hover, &.active{
-          background-image: url(/img/icons/viewed-gold.png);
+          background-image: url(../../../img/icons/viewed-gold.png);
         }
       }
 
@@ -291,16 +291,16 @@
       }
 
       .recent{
-        background-image: url(/img/icons/recent.png);
+        background-image: url(../../../img/icons/recent.png);
       }
       .appreciate{
-        background-image: url(/img/icons/appreciate-ico.png);
+        background-image: url(../../../img/icons/appreciate-ico.png);
       }
       .discussed{
-        background-image: url(/img/icons/discussed.png);
+        background-image: url(../../../img/icons/discussed.png);
       }
       .viewed{
-        background-image: url(/img/icons/viewed.png);
+        background-image: url(../../../img/icons/viewed.png);
       }
 
       /* Элементы меню */
@@ -319,10 +319,10 @@
 
     // иконка локации
     .popup-filter-location{
-      background-image: url(/img/icons/location-black.png);
+      background-image: url(../../../img/icons/location-black.png);
 
       &:hover, &:active{
-        background-image: url(/img/icons/location-gold.png);
+        background-image: url(../../../img/icons/location-gold.png);
       }
     }
 

@@ -8,7 +8,7 @@ define(['underscore', 'PhotographerModel', 'options', 'paginator'], function(_, 
     return Backbone.PageableCollection.extend({
         //url: "/js/json/photographers.json",                         // фейковые данные
         url: function(){
-            return _.template( '/js/json/users.json' || options['Urls']['discover']['users'], {
+            return _.template(options['Urls']['discover']['users'], {
                 page: 0,
                 size: 1000,
                 type: this.query.type,

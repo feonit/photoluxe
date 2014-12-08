@@ -13,8 +13,8 @@ define(["jquery", 'underscore', 'helpers', 'options'], function($, _, helpers, o
         var $this = this;
 
         $.when(
-                $.get(_.template('/js/json/model.json' || options.Urls.discover['dict-model'], { sort : curSort })),
-                $.get(_.template('/js/json/lens.json' || options.Urls.discover['dict-lens'], { sort : curSort }))
+                $.get(_.template(options.Urls.discover['dict-model'], { sort : curSort })),
+                $.get(_.template(options.Urls.discover['dict-lens'], { sort : curSort }))
             )
         .then(function( responseCamera, responseLens) {
 

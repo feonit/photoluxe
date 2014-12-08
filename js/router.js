@@ -42,11 +42,11 @@ define(['app', 'backbone', 'ajax', 'options'], function(app, Backbone, ajax, opt
     var Router = Backbone.Router.extend({
         routes:{
             '(/)': 'expoPhotos',
-            'expo(/)': 'expoPhotos',
-            'expo/photos': 'expoPhotos',
+            'expo.html': 'expoPhotos',
+            'photos.html': 'expoPhotos',
             'expo/stories': 'expoStories',
             'expo/live': 'expoLive',
-            'discover(/)' : 'discover',
+            'discover.html' : 'discover',
             'forum(/)' : 'forum',
             'settings/profile(/)' : 'profile',
             'settings/notifications(/)' : 'notifications',
@@ -164,7 +164,7 @@ define(['app', 'backbone', 'ajax', 'options'], function(app, Backbone, ajax, opt
         },
 
         defaultRoute: function(){
-            router.navigate('expo', { trigger: true })
+            router.navigate('/', { trigger: true })
         }
     });
 

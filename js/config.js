@@ -75,7 +75,7 @@ requirejs.config({
         'controlPopupFilterEquipment': 'js/modules/ui/controls/controlPopupFilterEquipment',
         'controlPopupFilterLocation': 'js/modules/ui/controls/controlPopupFilterLocation',
         'controlSearchFullText': 'js/modules/ui/controls/controlSearchFullText',
-        'select2': '/lib/select/select2-3.5.1/select2',
+        'select2': 'lib/select/select2-3.5.1/select2',
 
 
         /*
@@ -117,11 +117,6 @@ requirejs.config({
         'bootstrap-tagsinput' :       'js/modules/bootstrap/bootstrap-tagsinput.min',
         'typehead' :                  'js/modules/typeahead.min',
         'jquery-iframe-transport' :   'js/modules/jquery.iframe-transport',
-
-        /**
-         * пакет для контрола мультиселект/комбобокс/серчабле-селекбокс и др.
-         */
-        'chosen': '/lib/chosen/chosen.jquery',
 
 
         // плагины для require.js

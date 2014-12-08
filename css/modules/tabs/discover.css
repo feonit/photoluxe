@@ -51,7 +51,7 @@
 }
 .discover .popup-filter-browse .caption-text:after {
   content: "";
-  background-image: url(/img/icons/drop-box-arrow.png);
+  background-image: url(../../../img/icons/drop-box-arrow.png);
   background-repeat: no-repeat;
   height: 16px;
   width: 16px;
@@ -167,7 +167,7 @@
 }
 .discover .popup-filter-location .caption:after {
   content: "";
-  background-image: url(/img/icons/drop-box-arrow.png);
+  background-image: url(../../../img/icons/drop-box-arrow.png);
   background-repeat: no-repeat;
   height: 16px;
   width: 16px;
@@ -278,7 +278,7 @@
 .discover .popupFilterEquipment .icon {
   width: 50px;
   height: 50px;
-  background-image: url(/img/icons/photoapparat.png);
+  background-image: url(../../../img/icons/photoapparat.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -465,22 +465,22 @@
   transition-timing-function: ease-in-out;
 }
 .discover .strip .strip-body .icon-container .icon.heart {
-  background-image: url("/img/icons/follower-gray.png");
+  background-image: url("../../../img/icons/follower-gray.png");
 }
 .discover .strip .strip-body .icon-container .icon.heart.active {
-  background-image: url("/img/icons/follower-gold.png");
+  background-image: url("../../../img/icons/follower-gold.png");
 }
 .discover .strip .strip-body .icon-container .icon.star {
-  background-image: url("/img/icons/favorite-gray.png");
+  background-image: url("../../../img/icons/favorite-gray.png");
 }
 .discover .strip .strip-body .icon-container .icon.star.active {
-  background-image: url("/img/icons/favorite-gold.png");
+  background-image: url("../../../img/icons/favorite-gold.png");
 }
 .discover .strip .strip-body .icon-container .icon.chat {
-  background-image: url("/img/icons/chat-gray.png");
+  background-image: url("../../../img/icons/chat-gray.png");
 }
 .discover .strip .strip-body .icon-container .icon.chat.active {
-  background-image: url("/img/icons/chat-gold.png");
+  background-image: url("../../../img/icons/chat-gold.png");
 }
 .discover .strip .strip-body .icon-container .icon:hover {
   top: 0;
@@ -536,16 +536,16 @@
   font-style: normal;
 }
 .discover .b-controls .btn-like {
-  background-image: url("/img/icons/like-white.png");
+  background-image: url("../../../img/icons/like-white.png");
 }
 .discover .b-controls .btn-like.active {
-  background-image: url("/img/icons/like-gold.png");
+  background-image: url("../../../img/icons/like-gold.png");
 }
 .discover .b-controls .btn-favorite {
-  background-image: url("/img/icons/favorite-white.png");
+  background-image: url("../../../img/icons/favorite-white.png");
 }
 .discover .b-controls .btn-favorite.active {
-  background-image: url("/img/icons/favorite-gold.png");
+  background-image: url("../../../img/icons/favorite-gold.png");
 }
 .discover .b-name {
   padding: .5em;
@@ -624,7 +624,7 @@
   height: 100%;
   top: 0;
   width: 20px;
-  background-image: url(/img/icons/arrow-slider.png);
+  background-image: url(../../../img/icons/arrow-slider.png);
   background-repeat: no-repeat;
   background-position: 0 50%;
   left: 0px;
@@ -840,28 +840,28 @@
     /* Элементы меню */
   }
   .discover .popup-filter-browse.recent {
-    background-image: url(/img/icons/recent-black.png);
+    background-image: url(../../../img/icons/recent-black.png);
   }
   .discover .popup-filter-browse.recent:hover, .discover .popup-filter-browse.recent.active {
-    background-image: url(/img/icons/recent-gold.png);
+    background-image: url(../../../img/icons/recent-gold.png);
   }
   .discover .popup-filter-browse.appreciate {
-    background-image: url(/img/icons/appreciate-black.png);
+    background-image: url(../../../img/icons/appreciate-black.png);
   }
   .discover .popup-filter-browse.appreciate:hover, .discover .popup-filter-browse.appreciate.active {
-    background-image: url(/img/icons/appreciate-gold.png);
+    background-image: url(../../../img/icons/appreciate-gold.png);
   }
   .discover .popup-filter-browse.discussed {
-    background-image: url(/img/icons/discussed-black.png);
+    background-image: url(../../../img/icons/discussed-black.png);
   }
   .discover .popup-filter-browse.discussed:hover, .discover .popup-filter-browse.discussed.active {
-    background-image: url(/img/icons/discussed-gold.png);
+    background-image: url(../../../img/icons/discussed-gold.png);
   }
   .discover .popup-filter-browse.viewed {
-    background-image: url(/img/icons/viewed-black.png);
+    background-image: url(../../../img/icons/viewed-black.png);
   }
   .discover .popup-filter-browse.viewed:hover, .discover .popup-filter-browse.viewed.active {
-    background-image: url(/img/icons/viewed-gold.png);
+    background-image: url(../../../img/icons/viewed-gold.png);
   }
   .discover .popup-filter-browse .icon {
     background-repeat: no-repeat;
@@ -887,10 +887,10 @@
     width: 215px;
   }
   .discover .popup-filter-location {
-    background-image: url(/img/icons/location-black.png);
+    background-image: url(../../../img/icons/location-black.png);
   }
   .discover .popup-filter-location:hover, .discover .popup-filter-location:active {
-    background-image: url(/img/icons/location-gold.png);
+    background-image: url(../../../img/icons/location-gold.png);
   }
   .discover .popup-filter-location {
     position: inherit !important;

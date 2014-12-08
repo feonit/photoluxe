@@ -5,8 +5,8 @@
  * @events = ['change-location', 'change-nearby']
  */
 
-define(['jquery', 'underscore', 'chosen' , 'options', 'select2'],
-    function($, _, choosen, opt, select2){
+define(['jquery', 'underscore' , 'options', 'select2'],
+    function($, _, opt, select2){
 
 
      /**

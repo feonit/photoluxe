@@ -62,7 +62,7 @@ define([
             // всегда вызывает его. Этот фрагмент взят из корня.
 
             // Вычитаем базовую часть из якоря (по идее, роутеру это должно быть и так понятно)
-            href.attr = href.attr.slice(app.root.length);
+            // href.attr = href.attr.slice(app.root.length);
             var routIsFound = Backbone.history.navigate(href.attr,  {trigger: true});
 
             // Для дебага

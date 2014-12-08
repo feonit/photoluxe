@@ -50,15 +50,15 @@
 
   }
   .btn-like{
-    background-image: url("/img/icons/like-white.png");
+    background-image: url("../../../../img/icons/like-white.png");
     &.active{
-      background-image: url("/img/icons/like-gold.png");
+      background-image: url("../../../../img/icons/like-gold.png");
     }
   }
   .btn-favorite{
-    background-image: url("/img/icons/favorite-white.png");
+    background-image: url("../../../../img/icons/favorite-white.png");
     &.active{
-      background-image: url("/img/icons/favorite-gold.png");
+      background-image: url("../../../../img/icons/favorite-gold.png");
     }
   }
 }

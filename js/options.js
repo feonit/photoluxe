@@ -29,24 +29,31 @@ define(['underscore', /*'appConfig'*/], function(_, appConfig){
         * */
 
         mainScrollSpeed : 400,
-        mainAnimateSpeed : 500,
+        mainAnimateSpeed : 500
 
     };
 
     appConfig = {};
 
+    // акупунктурные точки
     appConfig.Urls = {
         baseUrl : '/photoluxe/',
         user : 'firstname',
         portfolio : {
             postUpload : 'http://example-post.ru',
-            resourceName : 'photo'
+            resourceName : 'photo',
+            userPortfolio : 'js/json/album-beer.json'
         },
         expo : {
             frames : 'js/json/expo.json'
+        },
+        discover : {
+            searchFullTextUrl : '',
+            "dict-model" : 'js/json/model.json',
+            "dict-lens" : 'js/json/lens.json',
+            "users" : 'js/json/users.json'
         }
     };
-
 
     // Расширяем локальные настройки до бекендовских
     return _.extend(options, appConfig);

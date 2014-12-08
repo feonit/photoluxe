@@ -587,7 +587,7 @@ img.fp_preview {
 }
 .popup-filter-browse .caption-text:after {
   content: "";
-  background-image: url(/img/icons/drop-box-arrow.png);
+  background-image: url(../img/icons/drop-box-arrow.png);
   background-repeat: no-repeat;
   height: 16px;
   width: 16px;

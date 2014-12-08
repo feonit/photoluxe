@@ -12,7 +12,7 @@ define(['PhotoModel', 'options'], function(PhotoModel, options){
 
 
         url : function(){
-            return _.template('/js/json/album-beer.json' || options['Urls']['portfolio']['userPortfolio'], { page: this.page, size: this.size, user_gid : this.user_gid });
+            return _.template(options['Urls']['portfolio']['userPortfolio'], { page: this.page, size: this.size, user_gid : this.user_gid });
         },
 
         initialize: function( opt ){

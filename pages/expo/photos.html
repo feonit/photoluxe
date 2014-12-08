@@ -1,0 +1,119 @@
+<DIV class="photos sections">
+
+    <!--<div class="photo-slider">-->
+
+    <!--&lt;!&ndash; Сам фотослайдер &ndash;&gt;-->
+    <!--<div id="slider1_container">-->
+    <!--<a u="arrowright"  class="control arrow-right next" href="#"></a>-->
+    <!--<a u="arrowleft"  class="control arrow-left prev" href="#"></a>-->
+
+    <!--&lt;!&ndash; Верхний бар фото слайдера &ndash;&gt;-->
+    <!--<div class="top-bar">-->
+    <!--<div class="left-user-info">-->
+    <!--<div class="avatar">-->
+    <!--<img src="img/user1.png">-->
+    <!--</div>-->
+    <!--<h2 class="user-album-name">Olga Ruchkina, «Near the fence»</h2>-->
+    <!--</div>-->
+    <!--<div class="right-links">-->
+    <!--<a  class="link resource like" href="#" ><span>32</span></a>-->
+    <!--<a  class="link resource chat" href="#" ><span>3</span></a>-->
+    <!--<a  class="link resource star" href="#" ><span>56</span></a>-->
+    <!--&lt;!&ndash;<a class="link resource ebalda" href="#" ></a>&ndash;&gt;-->
+    <!--<a  class="link resource heart follow" title="heart">2K</a>-->
+    <!--<a  class="link resource complain" href="#" ></a>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash; Loading Screen &ndash;&gt;-->
+    <!--<div u="loading" class="loading">-->
+    <!--<div class="shadow">-->
+    <!--</div>-->
+    <!--<div class="image-loader">-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash; Слайды &ndash;&gt;-->
+    <!--<div id="slide-container" u="slides" class="slides">-->
+    <!--&lt;!&ndash; Шаблон каждого слайда, используется при инициализации слайдера &ndash;&gt;-->
+    <!--<script id="slide-template" type="text/templates-underscore">-->
+    <!--<div>-->
+    <!--<IMG class="preview-big" u="image" src2="<%= bigPhoto%>" />-->
+    <!--<img u="thumb" src2="<%= smallPhoto%>" />-->
+    <!--</div>-->
+    <!--</script>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash; Слайдер превьюшек обёрнут нижним баром &ndash;&gt;-->
+    <!--&lt;!&ndash;{#        <div class="bottom-bar">&ndash;&gt;-->
+    <!--&lt;!&ndash;<h2 class="section-name">Editors Choice</h2>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="thumbnavigator" u="thumbnavigator" style="height: 172px;">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="slides" u="slides">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="p" u="prototype"style="WIDTH: 172px; HEIGHT: 172px;">&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash; Шаблон либы jssor, используется внутри неё&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;<ThumbnailTemplate class="thumb"></ThumbnailTemplate>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="rama"></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>#}&ndash;&gt;-->
+    <!--</div>-->
+    <!--</div>-->
+
+
+
+
+    <!--under header panel-->
+    <div class="under-header-panel cf">
+
+        <!-- filtration controls-->
+        <div class="wrap">
+
+            <!-- choose the type -->
+            <div class="panel-item">
+                <div class="box">
+                    <!--<div class="popup-filter control-photo-type style-for-type">-->
+                    <!--<div class="caption">Day's Photo</div>-->
+
+                    <!--<div class="lists-container">-->
+                    <!--<ul>-->
+
+                    <!--<li class="active">Day's Photo</li>-->
+                    <!--<li>Editors Choice</li>-->
+                    <!--<li>Popular</li>-->
+                    <!--<li>New</li>-->
+                    <!--<li>Nearby</li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <!-- /choose the type -->
+
+            <!--choose the category-->
+            <div class="panel-item">
+                <div class="box">
+                    <div class="popup-filter control-photo-category style-for-category"></div>
+                </div>
+            </div>
+            <!--/choose the category-->
+
+            <div class="separator"></div>
+
+        </div>
+        <!--/ filtration controls-->
+
+    </div>
+    <!--/under header panel-->
+
+    <div id="photo-slider" class="photo-slider"></div>
+
+    <!-- Editors choice -->
+    <div class="expo-item cf" style="padding-top: 56px;">
+        <h2>
+            <span class="detachable">Photoluxe Weeks Top 50 (Editors choice)</span>
+        </h2>
+        <div class="pagination pagination-editors" style="text-align: center;display: inherit;"></div>
+        <div class="content-photo-editors cf" style="position: relative;"></div>
+    </div>
+</DIV>
