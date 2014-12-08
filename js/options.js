@@ -42,7 +42,7 @@ define(['underscore', /*'appConfig'*/], function(_, appConfig){
             portfolio : {
                 postUpload : 'http://example-post.ru',
                 resourceName : 'photo',
-                userPortfolio : 'js/json/album-beer.json'
+                userPortfolio : 'js/json/album-galant.json'
             },
             expo : {
                 frames : 'js/json/expo.json'
